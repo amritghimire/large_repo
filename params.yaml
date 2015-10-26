@@ -1,0 +1,25 @@
+validation:
+  columns: 30
+  dense: 200
+prepare:
+  epochs: 80
+  trees: 69
+  batch_size: 384
+  layers: 2
+  learning_rate: 0.12
+concurrent:
+  columns: 66
+  sample: 1.0
+  batch_size: 112
+  layers: 6
+  min_split: 32
+tagging:
+  drop: 0.3
+  features: 3670
+  batch_size: 144
+  tags: 126
+  columns: 15
+model:
+  drop: 0.2
+  min_features: 100
+  max_features: 2300
