@@ -17,6 +17,6 @@ train:
   epochs: 40
 settings:
   split: 0.1
-  estimators: 52
+  estimators: 59
 model:
   split: 0.5
