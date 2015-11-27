@@ -1,0 +1,79 @@
+schema: '2.0'
+stages:
+  split:
+    cmd: python split.py documents.csv documents-train.csv documents-test.csv
+    deps:
+    - path: documents.csv
+      md5: a181e156773daf1620f139fd87d0b9eb
+      size: 1119
+    - path: split.py
+      md5: b3a178d35c7926190fb8bdce5b7681d5
+      size: 713
+    outs:
+    - path: documents-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    - path: documents-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+  featurize:
+    cmd: python featurize.py documents-train.csv documents-train-feats.csv
+    deps:
+    - path: documents-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+    - path: featurize.py
+      md5: 7b2a95111520e5fb198f97e83665bb11
+      size: 698
+    outs:
+    - path: documents-train-feats.csv
+      md5: 15032bccb83038ca69590b92dd4cc205
+      size: 46
+  train:
+    cmd: python train.py documents-train-feats.csv model.json
+    deps:
+    - path: documents-train-feats.csv
+      md5: 15032bccb83038ca69590b92dd4cc205
+      size: 46
+    - path: train.py
+      md5: 26dd300b00a97b47ff0a4f81ed456819
+      size: 1714
+    params:
+      params.yaml:
+        concurrent.estimators: 160
+        concurrent.features: 2780
+        concurrent.ngrams: 4
+        concurrent.passes: 2
+        concurrent.weight_factor: 0.2
+        model.split: 0.5
+        settings.estimators: 52
+        settings.split: 0.1
+        tagging.epochs: 25
+        tagging.estimators: 183
+        tagging.folds: 12
+        tagging.seed: 500277000
+        tagging.trees: 75
+        train.batch_size: 816
+        train.epochs: 40
+        train.estimators: 54
+        train.weight_factor: 0.2
+    outs:
+    - path: model.json
+      md5: 44ebf3b58a2a68efe2b9983c21811f86
+      size: 676
+  evaluate:
+    cmd: python evaluate.py model.json documents-test.csv
+    deps:
+    - path: documents-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    - path: evaluate.py
+      md5: 30d372ef6c700d2e24e1d9d9ed475085
+      size: 41942
+    - path: model.json
+      md5: 44ebf3b58a2a68efe2b9983c21811f86
+      size: 676
+    outs:
+    - path: metrics.json
+      md5: 79786d29b10614fc5627308112afd235
+      size: 446

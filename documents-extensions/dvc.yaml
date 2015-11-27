@@ -1,0 +1,50 @@
+stages:
+  split:
+    cmd: python split.py documents.csv documents-train.csv documents-test.csv
+    deps:
+    - documents.csv
+    - split.py
+    outs:
+    - documents-test.csv
+    - documents-train.csv
+  featurize:
+    cmd: python featurize.py documents-train.csv documents-train-feats.csv
+    deps:
+    - documents-train.csv
+    - featurize.py
+    outs:
+    - documents-train-feats.csv
+  train:
+    cmd: python train.py documents-train-feats.csv model.json
+    deps:
+    - documents-train-feats.csv
+    - train.py
+    params:
+    - concurrent.estimators
+    - concurrent.features
+    - concurrent.ngrams
+    - concurrent.passes
+    - concurrent.weight_factor
+    - model.split
+    - settings.estimators
+    - settings.split
+    - tagging.epochs
+    - tagging.estimators
+    - tagging.folds
+    - tagging.seed
+    - tagging.trees
+    - train.batch_size
+    - train.epochs
+    - train.estimators
+    - train.weight_factor
+    outs:
+    - model.json
+  evaluate:
+    cmd: python evaluate.py model.json documents-test.csv
+    deps:
+    - documents-test.csv
+    - evaluate.py
+    - model.json
+    metrics:
+    - metrics.json:
+        cache: false
