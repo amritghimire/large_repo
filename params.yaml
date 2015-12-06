@@ -8,7 +8,7 @@ prepare:
   layers: 2
   learning_rate: 0.13526
 concurrent:
-  columns: 76
+  columns: 62
   sample: 1.02248
   batch_size: 112
   layers: 6
