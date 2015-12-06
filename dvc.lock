@@ -55,16 +55,16 @@ stages:
         model.drop: 0.2
         model.max_features: 2606
         model.min_features: 75
-        tagging.batch_size: 165
+        tagging.batch_size: 172
         tagging.columns: 15
         tagging.drop: 0.36884
         tagging.features: 3782
         tagging.tags: 100
-        validation.columns: 23
+        validation.columns: 34
         validation.dense: 158
     outs:
     - path: model.json
-      md5: 89d06508d1c8af95a1ab45cfe0c20a59
+      md5: c71e76e0c4591ee61c938d9763a160ad
       size: 613
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -73,12 +73,12 @@ stages:
       md5: d5d8669288ae64f648df311f21137ee6
       size: 41991
     - path: model.json
-      md5: 89d06508d1c8af95a1ab45cfe0c20a59
+      md5: c71e76e0c4591ee61c938d9763a160ad
       size: 613
     - path: sentences-test.csv
       md5: dd759bab3fc1e1cb1523155753c310a2
       size: 983
     outs:
     - path: metrics.json
-      md5: f9f33116aa4430b6a592bbb57e5a9962
-      size: 520
+      md5: a2b76309042686947ed1a5bc1787b84f
+      size: 522
