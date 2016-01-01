@@ -11,15 +11,15 @@ concurrent:
   columns: 74
   sample: 1.02132
   batch_size: 121
-  layers: 5
-  min_split: 31
+  layers: 6
+  min_split: 33
 tagging:
   drop: 0.25343
   features: 3150
   batch_size: 135
-  tags: 109
+  tags: 118
   columns: 15
 model:
-  drop: 0.2
+  drop: 0.18837
   min_features: 105
   max_features: 2211
