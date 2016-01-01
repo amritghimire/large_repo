@@ -4,37 +4,37 @@ stages:
     cmd: python split.py documents.csv documents-train.csv documents-test.csv
     deps:
     - path: documents.csv
-      md5: a181e156773daf1620f139fd87d0b9eb
-      size: 1119
+      md5: 89e9afb028a2f682c8a9ab7de6096d11
+      size: 1566
     - path: split.py
       md5: fa89e79d4dd6fdd62a5e1135a089a9bd
       size: 714
     outs:
     - path: documents-test.csv
-      md5: 012d63ebb79cbf475c14ba8f3c2078d5
-      size: 345
+      md5: 405495810e743b30a51dddc736569a2f
+      size: 484
     - path: documents-train.csv
-      md5: bc0884988797a71c9e7dee2d95fb448b
-      size: 774
+      md5: 2618e3976c5f442b3fcb3b9ee4649c0f
+      size: 1082
   featurize:
     cmd: python featurize.py documents-train.csv documents-train-feats.csv
     deps:
     - path: documents-train.csv
-      md5: bc0884988797a71c9e7dee2d95fb448b
-      size: 774
+      md5: 2618e3976c5f442b3fcb3b9ee4649c0f
+      size: 1082
     - path: featurize.py
       md5: 9587d6334f0ddeddfedb107ef901e117
       size: 698
     outs:
     - path: documents-train-feats.csv
-      md5: 43637513261684271f85e4dd2df1f7cc
-      size: 46
+      md5: c691fe0e8e9d299552f85102b1e35c97
+      size: 47
   train:
     cmd: python train.py documents-train-feats.csv model.json
     deps:
     - path: documents-train-feats.csv
-      md5: 43637513261684271f85e4dd2df1f7cc
-      size: 46
+      md5: c691fe0e8e9d299552f85102b1e35c97
+      size: 47
     - path: train.py
       md5: 40bba97b09a8784de46cd0837198fa0f
       size: 1714
@@ -59,21 +59,21 @@ stages:
         train.weight_factor: 0.2
     outs:
     - path: model.json
-      md5: 1911201b911c2db27a11c819327b3f15
-      size: 676
+      md5: 0ad0250f847c66c72bb89e836cb7b3d2
+      size: 677
   evaluate:
     cmd: python evaluate.py model.json documents-test.csv
     deps:
     - path: documents-test.csv
-      md5: 012d63ebb79cbf475c14ba8f3c2078d5
-      size: 345
+      md5: 405495810e743b30a51dddc736569a2f
+      size: 484
     - path: evaluate.py
       md5: 30d372ef6c700d2e24e1d9d9ed475085
       size: 41942
     - path: model.json
-      md5: 1911201b911c2db27a11c819327b3f15
-      size: 676
+      md5: 0ad0250f847c66c72bb89e836cb7b3d2
+      size: 677
     outs:
     - path: metrics.json
-      md5: 8be5889f384a4c26bb7dc3bdf6a78d39
-      size: 445
+      md5: 982a22756a0c3761d9b85fc1609a05f6
+      size: 449
