@@ -7,11 +7,11 @@ stages:
       md5: 70c8b97f4c299ed9d153a97bc456ecde
       size: 4637
     - path: split.py
-      md5: 40b0dec1f324d8bfd2ba79825b5926c4
-      size: 1325
+      md5: 1e10c3bf58266d74d2c663e1e3d84d2f
+      size: 1326
     params:
       params.yaml:
-        prepare.batch_size: 454
+        prepare.batch_size: 348
         prepare.epochs: 98
         prepare.layers: 2
         prepare.learning_rate: 0.14752
