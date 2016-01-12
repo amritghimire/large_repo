@@ -5,18 +5,18 @@ tagging:
   estimators: 183
   seed: 500277000
 concurrent:
-  weight_factor: 0.19594
+  weight_factor: 0.19721
   ngrams: 4
   passes: 2
-  features: 2947
+  features: 3089
   estimators: 160
 train:
   estimators: 54
   batch_size: 816
   weight_factor: 0.2
-  epochs: 40
+  epochs: 47
 settings:
   split: 0.1
   estimators: 59
 model:
-  split: 0.5
+  split: 0.59362
