@@ -3,10 +3,10 @@ validation:
   dense: 166
 prepare:
   epochs: 98
-  trees: 73
+  trees: 61
   batch_size: 348
-  layers: 2
-  learning_rate: 0.14752
+  layers: 1
+  learning_rate: 0.13919
 concurrent:
   columns: 74
   sample: 1.02132
