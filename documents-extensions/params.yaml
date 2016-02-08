@@ -1,6 +1,6 @@
 tagging:
   trees: 57
-  epochs: 29
+  epochs: 28
   folds: 12
   estimators: 156
   seed: 500277000
