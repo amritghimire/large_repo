@@ -1,0 +1,32 @@
+variables:
+  max_depth: 4
+  random_state: 44000000
+  split: 0.5
+train:
+  features: 2100
+  folds: 3
+  layers: 2
+  num_est: 200
+  seed: 205696000
+  tags: 56
+  batch_size: 576
+  trees: 24
+concurrent:
+  trees: 54
+  features: 2520
+  epochs: 55
+  layers: 6
+featurize:
+  threads: 28
+  estimators: 120
+  trees: 45
+  tags: 56
+  layers: 4
+  ngrams: 6
+tagging:
+  dense: 500
+  epochs: 15
+  sample: 0.25
+  weight_factor: 0.3
+  max_depth: 4
+  ngrams: 6
