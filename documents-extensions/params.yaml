@@ -7,8 +7,8 @@ tagging:
 concurrent:
   weight_factor: 0.19721
   ngrams: 4
-  passes: 2
-  features: 3089
+  passes: 1
+  features: 3350
   estimators: 160
 train:
   estimators: 54
@@ -19,4 +19,4 @@ settings:
   split: 0.08574
   estimators: 64
 model:
-  split: 0.59362
+  split: 0.48411
