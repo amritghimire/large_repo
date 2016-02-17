@@ -2,7 +2,7 @@ validation:
   columns: 22
   dense: 166
 prepare:
-  epochs: 85
+  epochs: 90
   trees: 62
   batch_size: 325
   layers: 1
