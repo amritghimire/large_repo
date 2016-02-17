@@ -12,10 +12,10 @@ stages:
     params:
       params.yaml:
         prepare.batch_size: 318
-        prepare.epochs: 98
+        prepare.epochs: 85
         prepare.layers: 1
         prepare.learning_rate: 0.13919
-        prepare.trees: 61
+        prepare.trees: 84
     outs:
     - path: sentences-test.csv
       md5: 68a0fab7193f55e1898d47e5feec2f19
