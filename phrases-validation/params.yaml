@@ -21,7 +21,7 @@ featurize:
   estimators: 120
   trees: 45
   tags: 56
-  layers: 4
+  layers: 3
   ngrams: 6
 tagging:
   dense: 500
