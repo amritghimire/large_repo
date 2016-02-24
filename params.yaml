@@ -14,9 +14,9 @@ concurrent:
   layers: 6
   min_split: 33
 tagging:
-  drop: 0.25343
-  features: 3395
-  batch_size: 135
+  drop: 0.24599
+  features: 3479
+  batch_size: 143
   tags: 130
   columns: 12
 model:
