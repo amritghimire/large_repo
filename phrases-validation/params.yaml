@@ -27,6 +27,6 @@ tagging:
   dense: 500
   epochs: 15
   sample: 0.25
-  weight_factor: 0.3
+  weight_factor: 0.25645
   max_depth: 4
   ngrams: 6
