@@ -17,12 +17,12 @@ concurrent:
   epochs: 55
   layers: 6
 featurize:
-  threads: 28
-  estimators: 120
+  threads: 24
+  estimators: 107
   trees: 45
-  tags: 56
+  tags: 55
   layers: 3
-  ngrams: 6
+  ngrams: 4
 tagging:
   dense: 500
   epochs: 15
