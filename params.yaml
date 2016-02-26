@@ -10,7 +10,7 @@ prepare:
 concurrent:
   columns: 74
   sample: 1.02132
-  batch_size: 121
+  batch_size: 86
   layers: 6
   min_split: 33
 tagging:
@@ -22,4 +22,4 @@ tagging:
 model:
   drop: 0.18837
   min_features: 121
-  max_features: 2211
+  max_features: 2391
