@@ -3,10 +3,10 @@ variables:
   random_state: 44000000
   split: 0.5
 train:
-  features: 2100
+  features: 2538
   folds: 3
   layers: 2
-  num_est: 200
+  num_est: 216
   seed: 205696000
   tags: 56
   batch_size: 576
