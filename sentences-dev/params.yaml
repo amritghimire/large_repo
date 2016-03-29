@@ -1,0 +1,36 @@
+prepare:
+  min_split: 64
+  dense: 300
+  passes: 16
+  num_est: 250
+train:
+  min_split: 64
+  estimators: 41
+  min_features: 4000
+  max_features: 1600
+  columns: 15
+  threads: 2
+model:
+  random_state: 583000000
+  max_depth: 32
+  split: 0.1
+  ngrams: 2
+  threads: 20
+  max_features: 1300
+  num_est: 100
+  folds: 6
+  passes: 6
+variables:
+  sample: 0.75
+  num_est: 75
+  min_split: 80
+  columns: 18
+  weight_factor: 0.2
+  features: 5010
+validation:
+  learning_rate: 0.04
+  weight_factor: 0.3
+  seed: 71182000
+  features: 1190
+  ngrams: 6
+  min_split: 64

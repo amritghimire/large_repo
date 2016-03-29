@@ -1,0 +1,95 @@
+schema: '2.0'
+stages:
+  split:
+    cmd: python split.py sentences.csv sentences-train.csv sentences-test.csv
+    deps:
+    - path: sentences.csv
+      md5: a181e156773daf1620f139fd87d0b9eb
+      size: 1119
+    - path: split.py
+      md5: 24b4ca607917a3d32565d0c2d1e2c8ae
+      size: 1281
+    params:
+      params.yaml:
+        prepare.dense: 300
+        prepare.min_split: 64
+        prepare.num_est: 250
+        prepare.passes: 16
+    outs:
+    - path: sentences-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    - path: sentences-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+  featurize:
+    cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
+    deps:
+    - path: featurize.py
+      md5: 7b2a95111520e5fb198f97e83665bb11
+      size: 698
+    - path: sentences-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+    outs:
+    - path: sentences-train-feats.csv
+      md5: 15032bccb83038ca69590b92dd4cc205
+      size: 46
+  train:
+    cmd: python train.py sentences-train-feats.csv model.json
+    deps:
+    - path: sentences-train-feats.csv
+      md5: 15032bccb83038ca69590b92dd4cc205
+      size: 46
+    - path: train.py
+      md5: 85e29ed1d6ce626e989a4b8a7f0a11e5
+      size: 2104
+    params:
+      params.yaml:
+        model.folds: 6
+        model.max_depth: 32
+        model.max_features: 1300
+        model.ngrams: 2
+        model.num_est: 100
+        model.passes: 6
+        model.random_state: 583000000
+        model.split: 0.1
+        model.threads: 20
+        train.columns: 15
+        train.estimators: 41
+        train.max_features: 1600
+        train.min_features: 4000
+        train.min_split: 64
+        train.threads: 2
+        validation.features: 1190
+        validation.learning_rate: 0.04
+        validation.min_split: 64
+        validation.ngrams: 6
+        validation.seed: 71182000
+        validation.weight_factor: 0.3
+        variables.columns: 18
+        variables.features: 5010
+        variables.min_split: 80
+        variables.num_est: 75
+        variables.sample: 0.75
+        variables.weight_factor: 0.2
+    outs:
+    - path: model.json
+      md5: 611251000709ef88b08f2bc4df0d2b6d
+      size: 1058
+  evaluate:
+    cmd: python evaluate.py model.json sentences-test.csv
+    deps:
+    - path: evaluate.py
+      md5: 3d8ca15d77b7525971f958af3d1d9af3
+      size: 42011
+    - path: model.json
+      md5: 611251000709ef88b08f2bc4df0d2b6d
+      size: 1058
+    - path: sentences-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    outs:
+    - path: metrics.json
+      md5: af6bbeb16d5618febcc2dbf5ea567f14
+      size: 415
