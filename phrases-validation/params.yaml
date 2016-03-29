@@ -6,7 +6,7 @@ train:
   features: 2538
   folds: 3
   layers: 2
-  num_est: 216
+  num_est: 203
   seed: 205696000
   tags: 56
   batch_size: 576
