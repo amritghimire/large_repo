@@ -25,7 +25,7 @@ featurize:
   ngrams: 4
 tagging:
   dense: 500
-  epochs: 15
+  epochs: 16
   sample: 0.25
   weight_factor: 0.25645
   max_depth: 4
