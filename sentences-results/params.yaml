@@ -1,0 +1,28 @@
+tagging:
+  learning_rate: 0.1
+  tags: 119
+  epochs: 20
+  sample: 1.0
+  split: 0.1
+settings:
+  layers: 2
+  random_state: 985000000
+  columns: 60
+  epochs: 5
+concurrent:
+  columns: 12
+  tags: 105
+  split: 0.1
+  random_state: 200000000
+  dense: 500
+  estimators: 182
+featurize:
+  random_state: 524000000
+  batch_size: 1024
+  layers: 2
+  weight_factor: 0.1
+model:
+  trees: 12
+  estimators: 172
+  min_features: 3650
+  num_est: 100
