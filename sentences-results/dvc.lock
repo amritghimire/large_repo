@@ -20,8 +20,8 @@ stages:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
     - path: featurize.py
-      md5: 96713e0bd20bdf9c92f656af9ca90190
-      size: 1288
+      md5: a1cfbe6b67d8ffe9a86f2686df66ef4f
+      size: 1289
     - path: sentences-train.csv
       md5: bc0884988797a71c9e7dee2d95fb448b
       size: 774
@@ -73,8 +73,8 @@ stages:
     cmd: python evaluate.py model.json sentences-test.csv
     deps:
     - path: evaluate.py
-      md5: 4f892093a3111219f2d9e177aef1d47e
-      size: 41842
+      md5: 6c680b43d2ca62eff7519ec011524a31
+      size: 41843
     - path: model.json
       md5: a1f30d5f23c0f3cbc90251ef05920958
       size: 929
