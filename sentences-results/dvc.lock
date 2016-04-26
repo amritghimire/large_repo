@@ -51,7 +51,7 @@ stages:
         concurrent.estimators: 182
         concurrent.random_state: 200000000
         concurrent.split: 0.1
-        concurrent.tags: 105
+        concurrent.tags: 81
         model.estimators: 172
         model.min_features: 3650
         model.num_est: 100
@@ -67,8 +67,8 @@ stages:
         tagging.tags: 119
     outs:
     - path: model.json
-      md5: 8488ff98c02c9ae8d65416d7bb61fae7
-      size: 930
+      md5: a1f30d5f23c0f3cbc90251ef05920958
+      size: 929
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
     deps:
@@ -76,12 +76,12 @@ stages:
       md5: 4f892093a3111219f2d9e177aef1d47e
       size: 41842
     - path: model.json
-      md5: 8488ff98c02c9ae8d65416d7bb61fae7
-      size: 930
+      md5: a1f30d5f23c0f3cbc90251ef05920958
+      size: 929
     - path: sentences-test.csv
       md5: 012d63ebb79cbf475c14ba8f3c2078d5
       size: 345
     outs:
     - path: metrics.json
-      md5: a367efd86c7958e026eeb2de0013d6ab
-      size: 410
+      md5: df213c4d6343d76ea9a01dedfe829abd
+      size: 412

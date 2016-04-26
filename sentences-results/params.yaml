@@ -11,7 +11,7 @@ settings:
   epochs: 4
 concurrent:
   columns: 12
-  tags: 105
+  tags: 81
   split: 0.1
   random_state: 200000000
   dense: 500
