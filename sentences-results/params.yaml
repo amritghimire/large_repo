@@ -13,7 +13,7 @@ concurrent:
   columns: 12
   tags: 81
   split: 0.1
-  random_state: 200000000
+  random_state: 177697809
   dense: 500
   estimators: 182
 featurize:
@@ -22,7 +22,7 @@ featurize:
   layers: 2
   weight_factor: 0.1
 model:
-  trees: 12
+  trees: 9
   estimators: 172
   min_features: 3650
   num_est: 100
