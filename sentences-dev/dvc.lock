@@ -11,9 +11,9 @@ stages:
       size: 1281
     params:
       params.yaml:
-        prepare.dense: 300
-        prepare.min_split: 64
-        prepare.num_est: 245
+        prepare.dense: 265
+        prepare.min_split: 72
+        prepare.num_est: 253
         prepare.passes: 16
     outs:
     - path: sentences-test.csv
