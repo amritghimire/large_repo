@@ -15,14 +15,14 @@ model:
   max_depth: 32
   split: 0.1
   ngrams: 2
-  threads: 20
+  threads: 16
   max_features: 1300
   num_est: 100
   folds: 5
   passes: 6
 variables:
   sample: 0.75
-  num_est: 75
+  num_est: 69
   min_split: 80
   columns: 18
   weight_factor: 0.2
