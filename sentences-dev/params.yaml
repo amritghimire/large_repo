@@ -5,7 +5,7 @@ prepare:
   num_est: 253
 train:
   min_split: 64
-  estimators: 41
+  estimators: 50
   min_features: 4000
   max_features: 1600
   columns: 15
@@ -18,7 +18,7 @@ model:
   threads: 20
   max_features: 1300
   num_est: 100
-  folds: 6
+  folds: 5
   passes: 6
 variables:
   sample: 0.75
