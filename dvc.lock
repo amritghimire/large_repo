@@ -27,24 +27,24 @@ stages:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
     - path: featurize.py
-      md5: 408be38d5a9be5183ed4683043e7b5e3
+      md5: fc3a8e7e2930d5ff86237255e11ff856
       size: 703
     - path: sentences-train.csv
       md5: f4a000215d96b957971593afe764c5a4
       size: 4800
     outs:
     - path: sentences-train-feats.csv
-      md5: 4aa1ff64f73fbfd1644f876551803f20
+      md5: 5959626b2d139319150864d37a8353ba
       size: 47
   train:
     cmd: python train.py sentences-train-feats.csv model.json
     deps:
     - path: sentences-train-feats.csv
-      md5: 4aa1ff64f73fbfd1644f876551803f20
+      md5: 5959626b2d139319150864d37a8353ba
       size: 47
     - path: train.py
-      md5: 1d0872873cc94d61970d90c266f061e1
-      size: 1652
+      md5: 20765b23cd37e66a954b06b59e6b73a3
+      size: 1654
     params:
       params.yaml:
         concurrent.batch_size: 84
@@ -64,7 +64,7 @@ stages:
         validation.dense: 246
     outs:
     - path: model.json
-      md5: eef19597f990690a3a7bfda0200079a7
+      md5: c3babe74b7e60e26ac4f40910c3bdcc4
       size: 617
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -73,12 +73,12 @@ stages:
       md5: 4b477c47f1efd15a010e847adaa3f0e3
       size: 41993
     - path: model.json
-      md5: eef19597f990690a3a7bfda0200079a7
+      md5: c3babe74b7e60e26ac4f40910c3bdcc4
       size: 617
     - path: sentences-test.csv
       md5: 68a0fab7193f55e1898d47e5feec2f19
       size: 1268
     outs:
     - path: metrics.json
-      md5: be3c159d940b5f067c457d60cf8e2017
-      size: 518
+      md5: 585cc0606b358315ed923d8f1655ffe0
+      size: 521
