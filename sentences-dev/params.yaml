@@ -16,7 +16,7 @@ model:
   split: 0.1
   ngrams: 2
   threads: 16
-  max_features: 1300
+  max_features: 1052
   num_est: 100
   folds: 5
   passes: 6
