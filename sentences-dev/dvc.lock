@@ -13,8 +13,8 @@ stages:
       params.yaml:
         prepare.dense: 366
         prepare.min_split: 72
-        prepare.num_est: 282
-        prepare.passes: 17
+        prepare.num_est: 202
+        prepare.passes: 18
     outs:
     - path: sentences-test.csv
       md5: e90a691a7ceb79b980db6168b45d0c16
