@@ -3,7 +3,7 @@ variables:
   random_state: 47353310
   split: 0.5
 train:
-  features: 2538
+  features: 2234
   folds: 3
   layers: 2
   num_est: 203
