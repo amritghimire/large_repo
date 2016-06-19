@@ -5,7 +5,7 @@ variables:
 train:
   features: 2234
   folds: 3
-  layers: 2
+  layers: 1
   num_est: 203
   seed: 205696000
   tags: 66
