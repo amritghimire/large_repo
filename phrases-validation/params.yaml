@@ -20,7 +20,7 @@ featurize:
   threads: 30
   estimators: 140
   trees: 51
-  tags: 64
+  tags: 54
   layers: 4
   ngrams: 4
 tagging:
