@@ -17,7 +17,7 @@ model:
   ngrams: 2
   threads: 21
   max_features: 1052
-  num_est: 100
+  num_est: 112
   folds: 5
   passes: 6
 variables:

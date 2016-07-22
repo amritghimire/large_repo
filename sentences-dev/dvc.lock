@@ -50,7 +50,7 @@ stages:
         model.max_depth: 32
         model.max_features: 1052
         model.ngrams: 2
-        model.num_est: 100
+        model.num_est: 112
         model.passes: 6
         model.random_state: 583000000
         model.split: 0.1
@@ -75,7 +75,7 @@ stages:
         variables.weight_factor: 0.2
     outs:
     - path: model.json
-      md5: fc432406f06d0456b17b29b8426a5dd4
+      md5: 8bcfa1967664ea882427ac95a732e53e
       size: 1060
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -84,12 +84,12 @@ stages:
       md5: deffd2221eff34d96d6e8e9fea14765c
       size: 42013
     - path: model.json
-      md5: fc432406f06d0456b17b29b8426a5dd4
+      md5: 8bcfa1967664ea882427ac95a732e53e
       size: 1060
     - path: sentences-test.csv
       md5: b9649742c42da45835185c7ce4a815b1
       size: 697
     outs:
     - path: metrics.json
-      md5: 248fb6c7cf1aa4e20cfbee84f181a5c9
+      md5: 8c3aaad368f80bc614d68a99c37dd0dd
       size: 413
