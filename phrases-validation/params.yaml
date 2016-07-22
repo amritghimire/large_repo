@@ -3,16 +3,16 @@ variables:
   random_state: 47353310
   split: 0.5
 train:
-  features: 2234
+  features: 1793
   folds: 3
   layers: 1
   num_est: 203
   seed: 205696000
-  tags: 66
+  tags: 67
   batch_size: 576
   trees: 26
 concurrent:
-  trees: 52
+  trees: 53
   features: 2520
   epochs: 48
   layers: 6
@@ -24,7 +24,7 @@ featurize:
   layers: 3
   ngrams: 4
 tagging:
-  dense: 500
+  dense: 604
   epochs: 16
   sample: 0.25
   weight_factor: 0.25645
