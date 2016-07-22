@@ -4,8 +4,8 @@ stages:
     cmd: python split.py sentences.csv sentences-train.csv sentences-test.csv
     deps:
     - path: sentences.csv
-      md5: c31b846de87a9f720e68813279db9f52
-      size: 6541
+      md5: 99fffca640d3adaa5ea46a1ca60a3840
+      size: 7156
     - path: split.py
       md5: 8fba0173b10ec000b1a65af90721bc64
       size: 1328
@@ -18,11 +18,11 @@ stages:
         prepare.trees: 64
     outs:
     - path: sentences-test.csv
-      md5: 63969a0991fcfb83182bb617416bd01c
-      size: 1367
+      md5: 13fe463a9fe3f139957e510664d3b547
+      size: 1419
     - path: sentences-train.csv
-      md5: 345affa90825a074a7b1cb6cfa305ea8
-      size: 5174
+      md5: e49c24338fa94ac52b7c1f73b70b1960
+      size: 5737
   featurize:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
@@ -30,17 +30,17 @@ stages:
       md5: 656cebfa3482da5f9ef864462219d6a9
       size: 705
     - path: sentences-train.csv
-      md5: 345affa90825a074a7b1cb6cfa305ea8
-      size: 5174
+      md5: e49c24338fa94ac52b7c1f73b70b1960
+      size: 5737
     outs:
     - path: sentences-train-feats.csv
-      md5: fe4133e3dcce46a06ec117e3a084cf0c
+      md5: 0feee5af7e4e7a57ce6386195575dfcc
       size: 46
   train:
     cmd: python train.py sentences-train-feats.csv model.json
     deps:
     - path: sentences-train-feats.csv
-      md5: fe4133e3dcce46a06ec117e3a084cf0c
+      md5: 0feee5af7e4e7a57ce6386195575dfcc
       size: 46
     - path: train.py
       md5: bd2368302afdb6f5fc50028cffa98e5b
@@ -64,7 +64,7 @@ stages:
         validation.dense: 246
     outs:
     - path: model.json
-      md5: ee9a1215756d43b99b7537151cc76839
+      md5: 0fe5ba6656d5696672277812c22f5c85
       size: 615
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -73,12 +73,12 @@ stages:
       md5: 4b477c47f1efd15a010e847adaa3f0e3
       size: 41993
     - path: model.json
-      md5: ee9a1215756d43b99b7537151cc76839
+      md5: 0fe5ba6656d5696672277812c22f5c85
       size: 615
     - path: sentences-test.csv
-      md5: 63969a0991fcfb83182bb617416bd01c
-      size: 1367
+      md5: 13fe463a9fe3f139957e510664d3b547
+      size: 1419
     outs:
     - path: metrics.json
-      md5: 7c8393b291a08c01ecaa1e6106858cd4
-      size: 517
+      md5: 5be7bf6a141ac0a1dcbc0834130b2248
+      size: 520
