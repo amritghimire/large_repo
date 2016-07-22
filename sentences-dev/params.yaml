@@ -15,7 +15,7 @@ model:
   max_depth: 32
   split: 0.1
   ngrams: 2
-  threads: 16
+  threads: 21
   max_features: 1052
   num_est: 100
   folds: 5
@@ -23,7 +23,7 @@ model:
 variables:
   sample: 0.75
   num_est: 69
-  min_split: 80
+  min_split: 83
   columns: 18
   weight_factor: 0.2
   features: 5010
