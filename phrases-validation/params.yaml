@@ -6,15 +6,15 @@ train:
   features: 1793
   folds: 2
   layers: 1
-  num_est: 203
-  seed: 205696000
+  num_est: 171
+  seed: 205246193
   tags: 67
   batch_size: 576
   trees: 26
 concurrent:
   trees: 53
   features: 2520
-  epochs: 48
+  epochs: 66
   layers: 5
 featurize:
   threads: 31
@@ -25,8 +25,8 @@ featurize:
   ngrams: 6
 tagging:
   dense: 604
-  epochs: 16
-  sample: 0.25
+  epochs: 11
+  sample: 0.21868
   weight_factor: 0.25645
   max_depth: 4
   ngrams: 5
