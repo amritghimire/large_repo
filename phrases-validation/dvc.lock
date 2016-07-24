@@ -55,7 +55,7 @@ stages:
         tagging.dense: 604
         tagging.epochs: 11
         tagging.max_depth: 4
-        tagging.ngrams: 5
+        tagging.ngrams: 4
         tagging.sample: 0.21868
         tagging.weight_factor: 0.25645
         train.batch_size: 576
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.5
     outs:
     - path: model.json
-      md5: 394b5edbce6cc4ea5ec62df7f9d902ef
+      md5: ef5ca4108f1b9c9d12d2b404c166f594
       size: 1026
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: 11fc007f7e9db4cd2ab5ac73c0fd227a
       size: 41940
     - path: model.json
-      md5: 394b5edbce6cc4ea5ec62df7f9d902ef
+      md5: ef5ca4108f1b9c9d12d2b404c166f594
       size: 1026
     - path: phrases-test.csv
       md5: 6abcd4e48b50f2104bb177eec27a025b
       size: 1011
     outs:
     - path: metrics.json
-      md5: 1982c7dfc51502dc01398f7df36bd199
-      size: 444
+      md5: 2e2562981edd6673672f73e60b64398a
+      size: 445
