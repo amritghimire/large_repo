@@ -5,7 +5,7 @@ tagging:
   estimators: 224
   seed: 451228327
 concurrent:
-  weight_factor: 0.19721
+  weight_factor: 0.23465
   ngrams: 4
   passes: 1
   features: 3350
