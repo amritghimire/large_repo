@@ -2,9 +2,9 @@ validation:
   columns: 23
   dense: 246
 prepare:
-  epochs: 62
+  epochs: 89
   trees: 75
-  batch_size: 381
+  batch_size: 389
   layers: 2
   learning_rate: 0.09076
 concurrent:
