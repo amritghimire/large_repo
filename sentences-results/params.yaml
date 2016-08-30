@@ -6,14 +6,14 @@ tagging:
   split: 0.1
 settings:
   layers: 2
-  random_state: 1122335510
+  random_state: 1136267455
   columns: 60
   epochs: 4
 concurrent:
   columns: 12
   tags: 81
   split: 0.1
-  random_state: 177697809
+  random_state: 223441389
   dense: 500
   estimators: 182
 featurize:
