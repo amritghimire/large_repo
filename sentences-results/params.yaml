@@ -5,7 +5,7 @@ tagging:
   sample: 1.0
   split: 0.1
 settings:
-  layers: 2
+  layers: 1
   random_state: 1136267455
   columns: 60
   epochs: 4
