@@ -7,7 +7,7 @@ train:
   folds: 3
   layers: 1
   num_est: 171
-  seed: 239566251
+  seed: 222712654
   tags: 67
   batch_size: 576
   trees: 22
@@ -27,6 +27,6 @@ tagging:
   dense: 604
   epochs: 11
   sample: 0.20743
-  weight_factor: 0.32474
+  weight_factor: 0.2384
   max_depth: 4
   ngrams: 4
