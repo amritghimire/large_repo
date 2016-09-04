@@ -18,7 +18,7 @@ concurrent:
   layers: 4
 featurize:
   threads: 33
-  estimators: 100
+  estimators: 91
   trees: 33
   tags: 68
   layers: 4
