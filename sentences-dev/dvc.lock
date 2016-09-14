@@ -47,7 +47,7 @@ stages:
     params:
       params.yaml:
         model.folds: 5
-        model.max_depth: 32
+        model.max_depth: 31
         model.max_features: 1052
         model.ngrams: 2
         model.num_est: 112
@@ -75,7 +75,7 @@ stages:
         variables.weight_factor: 0.2
     outs:
     - path: model.json
-      md5: 4907c5720a7c057029b5438c871aaa5a
+      md5: f047f2c79a9811f51b5328b64de6cd71
       size: 1060
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -84,12 +84,12 @@ stages:
       md5: deffd2221eff34d96d6e8e9fea14765c
       size: 42013
     - path: model.json
-      md5: 4907c5720a7c057029b5438c871aaa5a
+      md5: f047f2c79a9811f51b5328b64de6cd71
       size: 1060
     - path: sentences-test.csv
       md5: b19a0081d2ff6898a90ff1d583b440f3
       size: 767
     outs:
     - path: metrics.json
-      md5: 553343f0c15cdd6017934448e06e5103
-      size: 416
+      md5: 570d9de9815ed23a8a4b8078a279b91d
+      size: 415

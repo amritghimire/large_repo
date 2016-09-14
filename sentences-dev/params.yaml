@@ -12,7 +12,7 @@ train:
   threads: 2
 model:
   random_state: 727168549
-  max_depth: 32
+  max_depth: 31
   split: 0.1
   ngrams: 2
   threads: 17
