@@ -42,8 +42,8 @@ stages:
       md5: 4476af79fa4abd983f156763d52e76ae
       size: 47
     - path: train.py
-      md5: 269bdb203f53056960cf33f2e1102701
-      size: 2106
+      md5: c4b9eb391429918dfae8f6741216ad14
+      size: 2107
     params:
       params.yaml:
         model.folds: 5
