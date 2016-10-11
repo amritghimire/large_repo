@@ -10,7 +10,7 @@ settings:
   columns: 60
   epochs: 4
 concurrent:
-  columns: 12
+  columns: 9
   tags: 96
   split: 0.1
   random_state: 210259065
