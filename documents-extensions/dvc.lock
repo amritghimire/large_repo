@@ -4,37 +4,37 @@ stages:
     cmd: python split.py documents.csv documents-train.csv documents-test.csv
     deps:
     - path: documents.csv
-      md5: ec28b39573f029225522ea9dab2b1ffa
-      size: 2654
+      md5: 1121d1e109b4aefa910d013fba06eb8f
+      size: 3075
     - path: split.py
       md5: 415b31da2ec45670d3cb4998ae575aed
       size: 715
     outs:
     - path: documents-test.csv
-      md5: 8bd68440471f4090be3f5a399ada64b5
-      size: 719
+      md5: 48552fe50f173372d23b76bf97892e50
+      size: 792
     - path: documents-train.csv
-      md5: 80d96e756a285446420824495fa733ee
-      size: 1935
+      md5: 1f83f36eb51861a13961859d4a9df8f1
+      size: 2283
   featurize:
     cmd: python featurize.py documents-train.csv documents-train-feats.csv
     deps:
     - path: documents-train.csv
-      md5: 80d96e756a285446420824495fa733ee
-      size: 1935
+      md5: 1f83f36eb51861a13961859d4a9df8f1
+      size: 2283
     - path: featurize.py
       md5: 2d6553b5a2c9d270c18d2321c4198893
       size: 699
     outs:
     - path: documents-train-feats.csv
-      md5: 15357f267d5d936c8b99849fb5f802e8
-      size: 47
+      md5: 74e35dad9005b8eae93dc51374cf9569
+      size: 45
   train:
     cmd: python train.py documents-train-feats.csv model.json
     deps:
     - path: documents-train-feats.csv
-      md5: 15357f267d5d936c8b99849fb5f802e8
-      size: 47
+      md5: 74e35dad9005b8eae93dc51374cf9569
+      size: 45
     - path: train.py
       md5: e9756620209ab7bb2e88df5e2755b364
       size: 1720
@@ -59,21 +59,21 @@ stages:
         train.weight_factor: 0.24879
     outs:
     - path: model.json
-      md5: edf774fd7e650df0509798f40df77ffb
-      size: 694
+      md5: a22d38b1942fe2a17143d10cb49ba7fb
+      size: 692
   evaluate:
     cmd: python evaluate.py model.json documents-test.csv
     deps:
     - path: documents-test.csv
-      md5: 8bd68440471f4090be3f5a399ada64b5
-      size: 719
+      md5: 48552fe50f173372d23b76bf97892e50
+      size: 792
     - path: evaluate.py
-      md5: 24147f973325fc9715f8339bbe2822cd
-      size: 41946
+      md5: fbd4964701d73862a2033e87ff0d0fef
+      size: 41948
     - path: model.json
-      md5: edf774fd7e650df0509798f40df77ffb
-      size: 694
+      md5: a22d38b1942fe2a17143d10cb49ba7fb
+      size: 692
     outs:
     - path: metrics.json
-      md5: b9922ffc2d78be2d32a1c0a873454fa1
+      md5: 4b032401904a04295670b762191474d3
       size: 450
