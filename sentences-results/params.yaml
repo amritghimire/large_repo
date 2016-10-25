@@ -23,6 +23,6 @@ featurize:
   weight_factor: 0.10341
 model:
   trees: 9
-  estimators: 186
+  estimators: 189
   min_features: 3854
   num_est: 100
