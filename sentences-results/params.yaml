@@ -22,7 +22,7 @@ featurize:
   layers: 2
   weight_factor: 0.10341
 model:
-  trees: 9
+  trees: 14
   estimators: 189
   min_features: 3854
   num_est: 100
