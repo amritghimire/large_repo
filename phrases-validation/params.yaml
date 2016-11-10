@@ -1,13 +1,13 @@
 variables:
   max_depth: 4
-  random_state: 35097535
+  random_state: 35679747
   split: 0.51687
 train:
-  features: 1793
-  folds: 2
+  features: 2276
+  folds: 3
   layers: 1
   num_est: 171
-  seed: 222712654
+  seed: 161542173
   tags: 60
   batch_size: 576
   trees: 26
@@ -15,7 +15,7 @@ concurrent:
   trees: 53
   features: 2520
   epochs: 59
-  layers: 4
+  layers: 5
 featurize:
   threads: 22
   estimators: 91
