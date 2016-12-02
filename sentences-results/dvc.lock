@@ -20,8 +20,8 @@ stages:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
     - path: featurize.py
-      md5: 3fa017e308b5a61e8639eada51e72bef
-      size: 1291
+      md5: d9dadb3400f7b5a2817d384f721f535f
+      size: 1292
     - path: sentences-train.csv
       md5: 9990af563e4936312bcfb9837413ad88
       size: 1019
@@ -42,8 +42,8 @@ stages:
       md5: f9bdc4b98cd54e853ad1ff6c1c8c1547
       size: 219
     - path: train.py
-      md5: c2adee78fd7790b10468a1bca10cdb1e
-      size: 1793
+      md5: 753beb4cb6f592647febff3d2b32b9c0
+      size: 1796
     params:
       params.yaml:
         concurrent.columns: 9
