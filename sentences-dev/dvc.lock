@@ -26,20 +26,20 @@ stages:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
     - path: featurize.py
-      md5: 15d39497231ffcece127cd67468220bb
+      md5: d6fb1a2864369dfeac203b05682d786b
       size: 703
     - path: sentences-train.csv
       md5: 27ed4c3415d8611313241410a4ea0a6b
       size: 2384
     outs:
     - path: sentences-train-feats.csv
-      md5: fb9504d768cadd7ad5a0933731ea1826
+      md5: 907a822777adbd52445586865eb74a61
       size: 47
   train:
     cmd: python train.py sentences-train-feats.csv model.json
     deps:
     - path: sentences-train-feats.csv
-      md5: fb9504d768cadd7ad5a0933731ea1826
+      md5: 907a822777adbd52445586865eb74a61
       size: 47
     - path: train.py
       md5: 5c081dda784da8fd14ee1a18a1f91531
@@ -75,7 +75,7 @@ stages:
         variables.weight_factor: 0.2
     outs:
     - path: model.json
-      md5: 6959aa1fd5e8d8c03e0e99bb3fa4e768
+      md5: b2b11b5c637f684f0c84d902dd10f578
       size: 1060
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -84,12 +84,12 @@ stages:
       md5: d2e6dcd76dbc5f20924a1083833273f8
       size: 42015
     - path: model.json
-      md5: 6959aa1fd5e8d8c03e0e99bb3fa4e768
+      md5: b2b11b5c637f684f0c84d902dd10f578
       size: 1060
     - path: sentences-test.csv
       md5: b19a0081d2ff6898a90ff1d583b440f3
       size: 767
     outs:
     - path: metrics.json
-      md5: e5d2a4886541a5ba54b35b679ea55698
-      size: 414
+      md5: 8232ae55e39b7fbf6fbeddc195d6571e
+      size: 416
