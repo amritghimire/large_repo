@@ -1,5 +1,5 @@
 tagging:
-  trees: 73
+  trees: 67
   epochs: 23
   folds: 14
   estimators: 178
