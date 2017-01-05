@@ -1,6 +1,6 @@
 validation:
-  columns: 32
-  dense: 198
+  columns: 31
+  dense: 222
 prepare:
   epochs: 61
   trees: 61
