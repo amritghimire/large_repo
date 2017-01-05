@@ -18,7 +18,7 @@ tagging:
   features: 3102
   batch_size: 132
   tags: 105
-  columns: 16
+  columns: 15
 model:
   drop: 0.19968
   min_features: 91
