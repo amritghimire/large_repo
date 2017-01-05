@@ -4,7 +4,7 @@ prepare:
   passes: 12
   num_est: 285
 train:
-  min_split: 64
+  min_split: 60
   estimators: 50
   min_features: 4000
   max_features: 1600
@@ -15,7 +15,7 @@ model:
   max_depth: 31
   split: 0.1
   ngrams: 2
-  threads: 17
+  threads: 16
   max_features: 1052
   num_est: 112
   folds: 5
@@ -24,7 +24,7 @@ variables:
   sample: 0.75
   num_est: 69
   min_split: 83
-  columns: 15
+  columns: 18
   weight_factor: 0.2
   features: 6058
 validation:
@@ -32,5 +32,5 @@ validation:
   weight_factor: 0.3
   seed: 71182000
   features: 1190
-  ngrams: 6
+  ngrams: 5
   min_split: 64
