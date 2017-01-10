@@ -29,4 +29,4 @@ tagging:
   sample: 0.2432
   weight_factor: 0.30095
   max_depth: 3
-  ngrams: 6
+  ngrams: 5
