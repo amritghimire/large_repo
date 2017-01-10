@@ -4,7 +4,7 @@ variables:
   split: 0.51687
 train:
   features: 2276
-  folds: 3
+  folds: 2
   layers: 1
   num_est: 171
   seed: 161542173
@@ -12,7 +12,7 @@ train:
   batch_size: 576
   trees: 26
 concurrent:
-  trees: 53
+  trees: 50
   features: 2520
   epochs: 59
   layers: 5
@@ -27,6 +27,6 @@ tagging:
   dense: 504
   epochs: 11
   sample: 0.2432
-  weight_factor: 0.26141
-  max_depth: 4
+  weight_factor: 0.30095
+  max_depth: 3
   ngrams: 6
