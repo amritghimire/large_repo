@@ -49,29 +49,29 @@ stages:
     params:
       params.yaml:
         concurrent.epochs: 59
-        concurrent.features: 3115
+        concurrent.features: 2905
         concurrent.layers: 5
         concurrent.trees: 50
         tagging.dense: 504
-        tagging.epochs: 11
+        tagging.epochs: 16
         tagging.max_depth: 3
         tagging.ngrams: 5
         tagging.sample: 0.2432
         tagging.weight_factor: 0.30095
-        train.batch_size: 576
-        train.features: 2276
+        train.batch_size: 610
+        train.features: 2268
         train.folds: 2
         train.layers: 1
         train.num_est: 171
         train.seed: 161542173
         train.tags: 60
         train.trees: 26
-        variables.max_depth: 4
+        variables.max_depth: 3
         variables.random_state: 35679747
         variables.split: 0.51687
     outs:
     - path: model.json
-      md5: f571e8d9068f386f558631e07cc5f039
+      md5: 87a1503cbeb62d35af4b76db1e297ce7
       size: 1028
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: 33257ae9b11cf0d9291a8019cfaa5f9e
       size: 41942
     - path: model.json
-      md5: f571e8d9068f386f558631e07cc5f039
+      md5: 87a1503cbeb62d35af4b76db1e297ce7
       size: 1028
     - path: phrases-test.csv
       md5: 9c81fd003e452d95ca724b2eeb30bdbb
       size: 1258
     outs:
     - path: metrics.json
-      md5: c653134537506d7678b4c8025be16aa0
-      size: 444
+      md5: 4ff4a0f099381719be3bdbd20a2d4341
+      size: 447
