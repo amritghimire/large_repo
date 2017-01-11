@@ -1,10 +1,10 @@
 variables:
   max_depth: 3
   random_state: 35679747
-  split: 0.51687
+  split: 0.443
 train:
   features: 2268
-  folds: 3
+  folds: 2
   layers: 1
   num_est: 171
   seed: 161542173
@@ -14,8 +14,8 @@ train:
 concurrent:
   trees: 50
   features: 2905
-  epochs: 59
-  layers: 4
+  epochs: 60
+  layers: 5
 featurize:
   threads: 21
   estimators: 90
