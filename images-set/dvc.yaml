@@ -1,0 +1,55 @@
+stages:
+  split:
+    cmd: python split.py images.csv images-train.csv images-test.csv
+    deps:
+    - images.csv
+    - split.py
+    outs:
+    - images-test.csv
+    - images-train.csv
+  featurize:
+    cmd: python featurize.py images-train.csv images-train-feats.csv
+    deps:
+    - featurize.py
+    - images-train.csv
+    outs:
+    - images-train-feats.csv
+  train:
+    cmd: python train.py images-train-feats.csv model.json
+    deps:
+    - images-train-feats.csv
+    - train.py
+    params:
+    - concurrent.columns
+    - concurrent.features
+    - concurrent.ngrams
+    - concurrent.random_state
+    - concurrent.split
+    - model.columns
+    - model.dense
+    - model.estimators
+    - model.min_split
+    - model.passes
+    - model.tags
+    - settings.batch_size
+    - settings.min_features
+    - settings.num_est
+    - settings.passes
+    - tagging.features
+    - tagging.learning_rate
+    - tagging.min_features
+    - validation.layers
+    - validation.min_split
+    - validation.num_est
+    - validation.split
+    outs:
+    - model.json
+  evaluate:
+    cmd: python evaluate.py model.json images-test.csv
+    deps:
+    - evaluate.py
+    - images-test.csv
+    - model.json
+    metrics:
+    - metrics.json:
+        cache: false
