@@ -1,0 +1,51 @@
+stages:
+  split:
+    cmd: python split.py phrases.csv phrases-train.csv phrases-test.csv
+    deps:
+    - phrases.csv
+    - split.py
+    outs:
+    - phrases-test.csv
+    - phrases-train.csv
+  featurize:
+    cmd: python featurize.py phrases-train.csv phrases-train-feats.csv
+    deps:
+    - featurize.py
+    - phrases-train.csv
+    outs:
+    - phrases-train-feats.csv
+  train:
+    cmd: python train.py phrases-train-feats.csv model.json
+    deps:
+    - phrases-train-feats.csv
+    - train.py
+    params:
+    - concurrent.drop
+    - concurrent.min_features
+    - concurrent.ngrams
+    - concurrent.split
+    - concurrent.tags
+    - preprocessing.layers
+    - preprocessing.max_features
+    - preprocessing.min_features
+    - preprocessing.min_split
+    - preprocessing.num_est
+    - tagging.epochs
+    - tagging.min_features
+    - tagging.min_split
+    - tagging.threads
+    - validation.batch_size
+    - validation.split
+    - variables.random_state
+    - variables.threads
+    outs:
+    - model.json
+  evaluate:
+    cmd: python evaluate.py model.json phrases-test.csv
+    deps:
+    - evaluate.py
+    - model.json
+    - phrases-test.csv
+    metrics:
+    - metrics.json:
+        cache: false

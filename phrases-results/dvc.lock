@@ -1,0 +1,80 @@
+schema: '2.0'
+stages:
+  split:
+    cmd: python split.py phrases.csv phrases-train.csv phrases-test.csv
+    deps:
+    - path: phrases.csv
+      md5: a181e156773daf1620f139fd87d0b9eb
+      size: 1119
+    - path: split.py
+      md5: b3a178d35c7926190fb8bdce5b7681d5
+      size: 713
+    outs:
+    - path: phrases-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    - path: phrases-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+  featurize:
+    cmd: python featurize.py phrases-train.csv phrases-train-feats.csv
+    deps:
+    - path: featurize.py
+      md5: 7b2a95111520e5fb198f97e83665bb11
+      size: 698
+    - path: phrases-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+    outs:
+    - path: phrases-train-feats.csv
+      md5: 15032bccb83038ca69590b92dd4cc205
+      size: 46
+  train:
+    cmd: python train.py phrases-train-feats.csv model.json
+    deps:
+    - path: phrases-train-feats.csv
+      md5: 15032bccb83038ca69590b92dd4cc205
+      size: 46
+    - path: train.py
+      md5: ff1cf6cd93fcbb12b27c778235785310
+      size: 1805
+    params:
+      params.yaml:
+        concurrent.drop: 0.1
+        concurrent.min_features: 1450
+        concurrent.ngrams: 6
+        concurrent.split: 0.2
+        concurrent.tags: 49
+        preprocessing.layers: 4
+        preprocessing.max_features: 700
+        preprocessing.min_features: 100
+        preprocessing.min_split: 64
+        preprocessing.num_est: 75
+        tagging.epochs: 35
+        tagging.min_features: 800
+        tagging.min_split: 48
+        tagging.threads: 31
+        validation.batch_size: 640
+        validation.split: 0.3
+        variables.random_state: 698000000
+        variables.threads: 6
+    outs:
+    - path: model.json
+      md5: a0de6697a0f8abae5d76499dfb36f0b9
+      size: 764
+  evaluate:
+    cmd: python evaluate.py model.json phrases-test.csv
+    deps:
+    - path: evaluate.py
+      md5: e7fd5ea0b9027c0974eed94856de4435
+      size: 41781
+    - path: model.json
+      md5: a0de6697a0f8abae5d76499dfb36f0b9
+      size: 764
+    - path: phrases-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    outs:
+    - path: metrics.json
+      md5: 8c48d81732f3aa97d7fceac46d150700
+      size: 320
