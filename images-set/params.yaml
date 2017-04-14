@@ -2,11 +2,11 @@ concurrent:
   ngrams: 6
   random_state: 83000000
   split: 0.2
-  columns: 51
+  columns: 44
   features: 1071
 model:
   tags: 90
-  estimators: 22
+  estimators: 21
   columns: 27
   passes: 120
   min_split: 32
