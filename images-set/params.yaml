@@ -3,10 +3,10 @@ concurrent:
   random_state: 83000000
   split: 0.2
   columns: 51
-  features: 1270
+  features: 1071
 model:
-  tags: 91
-  estimators: 21
+  tags: 90
+  estimators: 22
   columns: 27
   passes: 120
   min_split: 32
@@ -17,9 +17,9 @@ tagging:
   min_features: 4000
 settings:
   batch_size: 672
-  num_est: 75
+  num_est: 67
   min_features: 1500
-  passes: 80
+  passes: 94
 validation:
   split: 0.4
   min_split: 48
