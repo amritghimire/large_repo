@@ -1,5 +1,5 @@
 concurrent:
-  ngrams: 6
+  ngrams: 7
   split: 0.2
   min_features: 1450
   drop: 0.1
@@ -14,10 +14,10 @@ tagging:
   threads: 27
   min_features: 800
   min_split: 48
-  epochs: 35
+  epochs: 37
 preprocessing:
   min_features: 92
   layers: 4
   min_split: 64
   num_est: 75
-  max_features: 700
+  max_features: 580

@@ -42,15 +42,15 @@ stages:
       params.yaml:
         concurrent.drop: 0.1
         concurrent.min_features: 1450
-        concurrent.ngrams: 6
+        concurrent.ngrams: 7
         concurrent.split: 0.2
         concurrent.tags: 49
         preprocessing.layers: 4
-        preprocessing.max_features: 700
+        preprocessing.max_features: 580
         preprocessing.min_features: 92
         preprocessing.min_split: 64
         preprocessing.num_est: 75
-        tagging.epochs: 35
+        tagging.epochs: 37
         tagging.min_features: 800
         tagging.min_split: 48
         tagging.threads: 27
@@ -60,7 +60,7 @@ stages:
         variables.threads: 6
     outs:
     - path: model.json
-      md5: bf59d2705d2f532e827c802aecefe9d0
+      md5: 2d83cc309d62fec6d43e26bdaf93378b
       size: 767
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
@@ -69,12 +69,12 @@ stages:
       md5: f860dcc9cb86b60ee44d2ad2aac7066d
       size: 41782
     - path: model.json
-      md5: bf59d2705d2f532e827c802aecefe9d0
+      md5: 2d83cc309d62fec6d43e26bdaf93378b
       size: 767
     - path: phrases-test.csv
       md5: 7a6870c133a3496425103878f7452be9
       size: 548
     outs:
     - path: metrics.json
-      md5: 63f25830cf289576c9c8455196a0a792
-      size: 317
+      md5: 7aefe617f96e15c9e30b0efeff3c8ad5
+      size: 319
