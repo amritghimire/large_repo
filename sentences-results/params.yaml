@@ -1,6 +1,6 @@
 tagging:
   learning_rate: 0.08193
-  tags: 119
+  tags: 105
   epochs: 23
   sample: 1.0
   split: 0.11027
@@ -11,10 +11,10 @@ settings:
   epochs: 4
 concurrent:
   columns: 9
-  tags: 111
+  tags: 126
   split: 0.0974
   random_state: 248172105
-  dense: 512
+  dense: 466
   estimators: 149
 featurize:
   random_state: 511002373
