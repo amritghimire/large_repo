@@ -12,7 +12,7 @@ settings:
 concurrent:
   columns: 9
   tags: 111
-  split: 0.1
+  split: 0.0974
   random_state: 248172105
   dense: 512
   estimators: 149
