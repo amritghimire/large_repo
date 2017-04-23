@@ -8,7 +8,7 @@ train:
   layers: 2
   num_est: 171
   seed: 161542173
-  tags: 49
+  tags: 63
   batch_size: 610
   trees: 26
 concurrent:
