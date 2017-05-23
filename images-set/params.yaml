@@ -1,6 +1,6 @@
 concurrent:
   ngrams: 6
-  random_state: 83000000
+  random_state: 65088950
   split: 0.2
   columns: 44
   features: 1071
