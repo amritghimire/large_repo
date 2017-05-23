@@ -7,7 +7,7 @@ concurrent:
 model:
   tags: 90
   estimators: 21
-  columns: 27
+  columns: 24
   passes: 120
   min_split: 32
   dense: 200
