@@ -28,5 +28,5 @@ tagging:
   epochs: 13
   sample: 0.2432
   weight_factor: 0.22642
-  max_depth: 4
+  max_depth: 3
   ngrams: 5
