@@ -7,13 +7,13 @@ stages:
       md5: a030699306bab71111728f00b01ba2e5
       size: 4698
     - path: split.py
-      md5: 1d9da330ea2f1cda522ad55b3cdcfe06
-      size: 1283
+      md5: 8a3bb97fc9a4011575e197b5f6b0f8b1
+      size: 1284
     params:
       params.yaml:
         prepare.dense: 324
         prepare.min_split: 51
-        prepare.num_est: 312
+        prepare.num_est: 257
         prepare.passes: 18
     outs:
     - path: sentences-test.csv
