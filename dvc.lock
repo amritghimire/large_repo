@@ -15,7 +15,7 @@ stages:
         prepare.epochs: 62
         prepare.layers: 2
         prepare.learning_rate: 0.10249
-        prepare.trees: 59
+        prepare.trees: 58
     outs:
     - path: sentences-test.csv
       md5: bc38cefecb4a609c1926587598666d3f
@@ -43,8 +43,8 @@ stages:
       md5: ccb3d825282ec3ddaa4f6aded37b6e48
       size: 47
     - path: train.py
-      md5: 60e4f47f860411f0195b7637d11ffd49
-      size: 1657
+      md5: 654e5b7b82aad06f9f61c2b53e9fa630
+      size: 1658
     params:
       params.yaml:
         concurrent.batch_size: 126
