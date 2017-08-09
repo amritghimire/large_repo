@@ -10,7 +10,7 @@ train:
   seed: 161542173
   tags: 63
   batch_size: 610
-  trees: 18
+  trees: 25
 concurrent:
   trees: 50
   features: 2905
