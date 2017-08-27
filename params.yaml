@@ -1,6 +1,6 @@
 validation:
   columns: 23
-  dense: 230
+  dense: 172
 prepare:
   epochs: 62
   trees: 58
@@ -10,16 +10,16 @@ prepare:
 concurrent:
   columns: 68
   sample: 1.08424
-  batch_size: 126
+  batch_size: 95
   layers: 4
   min_split: 36
 tagging:
   drop: 0.24196
-  features: 3102
+  features: 4029
   batch_size: 133
   tags: 105
   columns: 14
 model:
   drop: 0.23765
-  min_features: 84
-  max_features: 2789
+  min_features: 77
+  max_features: 2209
