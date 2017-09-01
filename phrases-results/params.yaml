@@ -3,7 +3,7 @@ concurrent:
   split: 0.2
   min_features: 1450
   drop: 0.1
-  tags: 49
+  tags: 60
 validation:
   batch_size: 556
   split: 0.28618
