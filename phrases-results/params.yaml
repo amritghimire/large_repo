@@ -8,12 +8,12 @@ validation:
   batch_size: 556
   split: 0.28618
 variables:
-  random_state: 820999398
+  random_state: 610142014
   threads: 6
 tagging:
   threads: 27
   min_features: 800
-  min_split: 48
+  min_split: 43
   epochs: 37
 preprocessing:
   min_features: 92
