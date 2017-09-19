@@ -1,13 +1,13 @@
 tagging:
   learning_rate: 0.10672
-  tags: 119
+  tags: 89
   epochs: 23
   sample: 1.1798
   split: 0.11879
 settings:
   layers: 2
-  random_state: 1021531880
-  columns: 60
+  random_state: 1209647101
+  columns: 58
   epochs: 4
 concurrent:
   columns: 9
