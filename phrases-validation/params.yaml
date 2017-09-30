@@ -1,5 +1,5 @@
 variables:
-  max_depth: 3
+  max_depth: 4
   random_state: 41044610
   split: 0.40194
 train:
