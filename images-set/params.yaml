@@ -8,8 +8,8 @@ model:
   tags: 90
   estimators: 23
   columns: 24
-  passes: 120
-  min_split: 32
+  passes: 101
+  min_split: 28
   dense: 200
 tagging:
   learning_rate: 0.07
@@ -17,11 +17,11 @@ tagging:
   min_features: 4843
 settings:
   batch_size: 759
-  num_est: 77
+  num_est: 78
   min_features: 1825
   passes: 94
 validation:
-  split: 0.4
-  min_split: 48
+  split: 0.49628
+  min_split: 57
   layers: 2
   num_est: 150
