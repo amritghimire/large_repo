@@ -6,7 +6,7 @@ concurrent:
   features: 1071
 model:
   tags: 90
-  estimators: 21
+  estimators: 23
   columns: 24
   passes: 120
   min_split: 32
@@ -16,7 +16,7 @@ tagging:
   features: 3500
   min_features: 4843
 settings:
-  batch_size: 672
+  batch_size: 759
   num_est: 77
   min_features: 1825
   passes: 94
