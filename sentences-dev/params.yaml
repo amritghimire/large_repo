@@ -1,7 +1,7 @@
 prepare:
   min_split: 70
-  dense: 318
-  passes: 15
+  dense: 317
+  passes: 12
   num_est: 257
 train:
   min_split: 71
