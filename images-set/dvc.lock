@@ -59,12 +59,12 @@ stages:
         tagging.learning_rate: 0.07
         tagging.min_features: 4843
         validation.layers: 2
-        validation.min_split: 57
+        validation.min_split: 56
         validation.num_est: 150
         validation.split: 0.49628
     outs:
     - path: model.json
-      md5: f1fd8a0560849d0b612e237da09c1cf1
+      md5: 93686c764e78f1ad6026eeb69e994326
       size: 881
   evaluate:
     cmd: python evaluate.py model.json images-test.csv
@@ -76,9 +76,9 @@ stages:
       md5: 7a6870c133a3496425103878f7452be9
       size: 548
     - path: model.json
-      md5: f1fd8a0560849d0b612e237da09c1cf1
+      md5: 93686c764e78f1ad6026eeb69e994326
       size: 881
     outs:
     - path: metrics.json
-      md5: 7a121590173b786e1e92ac9c254b2330
-      size: 472
+      md5: e453269cc37fcaf12d48e90e35f3f4b7
+      size: 475
