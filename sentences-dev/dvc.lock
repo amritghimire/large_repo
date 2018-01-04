@@ -4,8 +4,8 @@ stages:
     cmd: python split.py sentences.csv sentences-train.csv sentences-test.csv
     deps:
     - path: sentences.csv
-      md5: ad29cd9efd8f207a945528f0abfde62e
-      size: 5287
+      md5: 9138ae8448821504098ac0430cd0b10d
+      size: 5682
     - path: split.py
       md5: 2c203b8ebdb3fc9104f1dd7586c0bb58
       size: 1285
@@ -17,11 +17,11 @@ stages:
         prepare.passes: 18
     outs:
     - path: sentences-test.csv
-      md5: 2c2f69b47143892cb2ac56719f8c881c
-      size: 1104
+      md5: b0f6ee8212fc1076e8c28ff242756425
+      size: 1116
     - path: sentences-train.csv
-      md5: fd5b6a70e47cf5027219808de2c3cae8
-      size: 4183
+      md5: 7d747c5e7e6e5dada645ea84a69493bf
+      size: 4566
   featurize:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
@@ -29,18 +29,18 @@ stages:
       md5: 6c3e29f684b752e72d66e03938c510fd
       size: 706
     - path: sentences-train.csv
-      md5: fd5b6a70e47cf5027219808de2c3cae8
-      size: 4183
+      md5: 7d747c5e7e6e5dada645ea84a69493bf
+      size: 4566
     outs:
     - path: sentences-train-feats.csv
-      md5: 1c13c87f104a3d816c430ae8ebe47502
-      size: 47
+      md5: bf0ffc0e3946e6cd2a9cce9e0cf947f1
+      size: 44
   train:
     cmd: python train.py sentences-train-feats.csv model.json
     deps:
     - path: sentences-train-feats.csv
-      md5: 1c13c87f104a3d816c430ae8ebe47502
-      size: 47
+      md5: bf0ffc0e3946e6cd2a9cce9e0cf947f1
+      size: 44
     - path: train.py
       md5: 248786dcd9072a5b5fe3fd2ff58aa023
       size: 2110
@@ -75,8 +75,8 @@ stages:
         variables.weight_factor: 0.2
     outs:
     - path: model.json
-      md5: 71d09cbe6e6f1d6a8b55f1990bedfbf9
-      size: 1060
+      md5: 423940188c784977537065c8f777ccb5
+      size: 1057
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
     deps:
@@ -84,12 +84,12 @@ stages:
       md5: 5a9fc61be7b65344764e9dac49693a9e
       size: 42020
     - path: model.json
-      md5: 71d09cbe6e6f1d6a8b55f1990bedfbf9
-      size: 1060
+      md5: 423940188c784977537065c8f777ccb5
+      size: 1057
     - path: sentences-test.csv
-      md5: 2c2f69b47143892cb2ac56719f8c881c
-      size: 1104
+      md5: b0f6ee8212fc1076e8c28ff242756425
+      size: 1116
     outs:
     - path: metrics.json
-      md5: f5f371020b4cac84228e2cedcc1b9a9f
-      size: 413
+      md5: 5f4f9e2b9a5b1f1f44f4d5f1bfbe6919
+      size: 420
