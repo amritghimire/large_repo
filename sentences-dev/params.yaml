@@ -16,7 +16,7 @@ model:
   split: 0.1
   ngrams: 2
   threads: 16
-  max_features: 1052
+  max_features: 1425
   num_est: 112
   folds: 5
   passes: 6
@@ -25,7 +25,7 @@ variables:
   num_est: 69
   min_split: 65
   columns: 18
-  weight_factor: 0.2
+  weight_factor: 0.24243
   features: 6058
 validation:
   learning_rate: 0.04
