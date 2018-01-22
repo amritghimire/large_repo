@@ -7,7 +7,7 @@ tagging:
 concurrent:
   weight_factor: 0.22749
   ngrams: 4
-  passes: 1
+  passes: 2
   features: 2684
   estimators: 127
 train:
