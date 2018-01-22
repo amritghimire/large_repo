@@ -44,7 +44,7 @@ stages:
         concurrent.features: 2684
         concurrent.ngrams: 4
         concurrent.passes: 2
-        concurrent.weight_factor: 0.22749
+        concurrent.weight_factor: 0.192
         model.split: 0.62394
         settings.estimators: 50
         settings.split: 0.08028
@@ -53,14 +53,14 @@ stages:
         tagging.folds: 10
         tagging.seed: 527774928
         tagging.trees: 78
-        train.batch_size: 643
+        train.batch_size: 1000
         train.epochs: 44
         train.estimators: 48
         train.weight_factor: 0.22383
     outs:
     - path: model.json
-      md5: 36950e19a5e1de98752827ebe4cb0aeb
-      size: 694
+      md5: 3f75e5243134e1a880546e8ce39e4edd
+      size: 693
   evaluate:
     cmd: python evaluate.py model.json documents-test.csv
     deps:
@@ -71,9 +71,9 @@ stages:
       md5: 979432db9288b87070b4cdc527f692d5
       size: 41949
     - path: model.json
-      md5: 36950e19a5e1de98752827ebe4cb0aeb
-      size: 694
+      md5: 3f75e5243134e1a880546e8ce39e4edd
+      size: 693
     outs:
     - path: metrics.json
-      md5: 82932b5a0cfecd6f32d21bfbfd472868
-      size: 453
+      md5: a58cde4cfccbb103949796f7466150bd
+      size: 456
