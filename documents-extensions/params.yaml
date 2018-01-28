@@ -8,7 +8,7 @@ concurrent:
   weight_factor: 0.192
   ngrams: 4
   passes: 2
-  features: 2684
+  features: 2361
   estimators: 127
 train:
   estimators: 48
