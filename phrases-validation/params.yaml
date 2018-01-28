@@ -1,6 +1,6 @@
 variables:
   max_depth: 4
-  random_state: 41044610
+  random_state: 38892391
   split: 0.40194
 train:
   features: 2583
@@ -8,7 +8,7 @@ train:
   layers: 2
   num_est: 185
   seed: 242510001
-  tags: 58
+  tags: 68
   batch_size: 568
   trees: 25
 concurrent:
@@ -25,7 +25,7 @@ featurize:
   ngrams: 7
 tagging:
   dense: 424
-  epochs: 17
+  epochs: 12
   sample: 0.27073
   weight_factor: 0.33461
   max_depth: 3
