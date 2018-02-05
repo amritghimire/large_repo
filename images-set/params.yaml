@@ -13,7 +13,7 @@ model:
   dense: 200
 tagging:
   learning_rate: 0.07738
-  features: 3585
+  features: 4098
   min_features: 4843
 settings:
   batch_size: 759
