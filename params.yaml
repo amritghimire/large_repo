@@ -16,7 +16,7 @@ concurrent:
 tagging:
   drop: 0.25906
   features: 3986
-  batch_size: 125
+  batch_size: 127
   tags: 156
   columns: 12
 model:
