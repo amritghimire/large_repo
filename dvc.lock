@@ -15,7 +15,7 @@ stages:
         prepare.epochs: 64
         prepare.layers: 1
         prepare.learning_rate: 0.1311
-        prepare.trees: 55
+        prepare.trees: 53
     outs:
     - path: sentences-test.csv
       md5: 29c2d044d4dc7919b711c677454e943b
