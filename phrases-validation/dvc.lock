@@ -7,8 +7,8 @@ stages:
       md5: a854a5ec14745ace4d9470bbd947f9b4
       size: 8591
     - path: split.py
-      md5: d631e0a0cb0f1b09999a63103c8e3b78
-      size: 721
+      md5: fc95976e548845742418bcbf54ec1e24
+      size: 722
     outs:
     - path: phrases-test.csv
       md5: d17134b7bbeee03b5c7fe73670bbe0b0
@@ -49,7 +49,7 @@ stages:
     params:
       params.yaml:
         concurrent.epochs: 66
-        concurrent.features: 2027
+        concurrent.features: 2341
         concurrent.layers: 5
         concurrent.trees: 50
         tagging.dense: 424
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.40194
     outs:
     - path: model.json
-      md5: 4bb8e13ff8863ec67c15a7e1bb1b72f5
+      md5: 23a21c5e716fbed4aef0a159c973a644
       size: 1030
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: 4e7f56dc31ba1dfdddbf0a2a2d743533
       size: 41946
     - path: model.json
-      md5: 4bb8e13ff8863ec67c15a7e1bb1b72f5
+      md5: 23a21c5e716fbed4aef0a159c973a644
       size: 1030
     - path: phrases-test.csv
       md5: d17134b7bbeee03b5c7fe73670bbe0b0
       size: 1647
     outs:
     - path: metrics.json
-      md5: c091ac8030eb63c766f7962c53a3f48f
-      size: 444
+      md5: 81cf1a754fad8f389ad5063b29504498
+      size: 448

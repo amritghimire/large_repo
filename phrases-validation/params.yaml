@@ -13,7 +13,7 @@ train:
   trees: 25
 concurrent:
   trees: 50
-  features: 2027
+  features: 2341
   epochs: 66
   layers: 5
 featurize:
