@@ -58,7 +58,7 @@ stages:
         model.trees: 11
         settings.columns: 58
         settings.epochs: 4
-        settings.layers: 1
+        settings.layers: 2
         settings.random_state: 1209647101
         tagging.epochs: 23
         tagging.learning_rate: 0.10672
@@ -67,7 +67,7 @@ stages:
         tagging.tags: 118
     outs:
     - path: model.json
-      md5: 736bb05da5c5098ec9506f863b24ac6e
+      md5: 1a09964b895430d4816b97bbf572d65f
       size: 951
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -76,12 +76,12 @@ stages:
       md5: 0be894ed9216012d9151d5d32ee7f90d
       size: 41849
     - path: model.json
-      md5: 736bb05da5c5098ec9506f863b24ac6e
+      md5: 1a09964b895430d4816b97bbf572d65f
       size: 951
     - path: sentences-test.csv
       md5: 0987d3605a1623ef21c45ff6ed213715
       size: 1506
     outs:
     - path: metrics.json
-      md5: 9302dd81722d4c75c03822efa31067db
-      size: 417
+      md5: 85641a6ee5bb71fce29e756b7e3dbda1
+      size: 418
