@@ -1,5 +1,5 @@
 tagging:
-  trees: 78
+  trees: 79
   epochs: 23
   folds: 10
   estimators: 166
@@ -11,12 +11,12 @@ concurrent:
   features: 2361
   estimators: 127
 train:
-  estimators: 48
+  estimators: 47
   batch_size: 945
-  weight_factor: 0.22383
+  weight_factor: 0.22917
   epochs: 44
 settings:
-  split: 0.08028
-  estimators: 50
+  split: 0.11147
+  estimators: 59
 model:
   split: 0.62394
