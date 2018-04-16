@@ -4,7 +4,7 @@ validation:
 prepare:
   epochs: 64
   trees: 70
-  batch_size: 439
+  batch_size: 377
   layers: 1
   learning_rate: 0.1427
 concurrent:
