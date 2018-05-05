@@ -1,0 +1,62 @@
+stages:
+  split:
+    cmd: python split.py users.csv users-train.csv users-test.csv
+    deps:
+    - split.py
+    - users.csv
+    outs:
+    - users-test.csv
+    - users-train.csv
+  featurize:
+    cmd: python featurize.py users-train.csv users-train-feats.csv
+    deps:
+    - featurize.py
+    - users-train.csv
+    outs:
+    - users-train-feats.csv
+  train:
+    cmd: python train.py users-train-feats.csv model.json
+    deps:
+    - train.py
+    - users-train-feats.csv
+    params:
+    - concurrent.dense
+    - concurrent.features
+    - concurrent.layers
+    - concurrent.max_depth
+    - concurrent.num_est
+    - concurrent.threads
+    - concurrent.trees
+    - model.batch_size
+    - model.min_features
+    - model.seed
+    - preprocessing.drop
+    - preprocessing.max_features
+    - preprocessing.ngrams
+    - preprocessing.num_est
+    - preprocessing.passes
+    - preprocessing.seed
+    - preprocessing.split
+    - preprocessing.trees
+    - preprocessing.weight_factor
+    - settings.batch_size
+    - settings.features
+    - settings.layers
+    - settings.min_split
+    - settings.split
+    - variables.batch_size
+    - variables.features
+    - variables.learning_rate
+    - variables.min_features
+    - variables.split
+    outs:
+    - model.json
+  evaluate:
+    cmd: python evaluate.py model.json users-test.csv
+    deps:
+    - evaluate.py
+    - model.json
+    - users-test.csv
+    metrics:
+    - metrics.json:
+        cache: false

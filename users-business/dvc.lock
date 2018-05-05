@@ -1,0 +1,91 @@
+schema: '2.0'
+stages:
+  split:
+    cmd: python split.py users.csv users-train.csv users-test.csv
+    deps:
+    - path: split.py
+      md5: b3a178d35c7926190fb8bdce5b7681d5
+      size: 713
+    - path: users.csv
+      md5: a181e156773daf1620f139fd87d0b9eb
+      size: 1119
+    outs:
+    - path: users-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    - path: users-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+  featurize:
+    cmd: python featurize.py users-train.csv users-train-feats.csv
+    deps:
+    - path: featurize.py
+      md5: 7b2a95111520e5fb198f97e83665bb11
+      size: 698
+    - path: users-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+    outs:
+    - path: users-train-feats.csv
+      md5: 15032bccb83038ca69590b92dd4cc205
+      size: 46
+  train:
+    cmd: python train.py users-train-feats.csv model.json
+    deps:
+    - path: train.py
+      md5: 22c11ad787f4adc581fb121264eb5751
+      size: 2240
+    - path: users-train-feats.csv
+      md5: 15032bccb83038ca69590b92dd4cc205
+      size: 46
+    params:
+      params.yaml:
+        concurrent.dense: 600
+        concurrent.features: 2010
+        concurrent.layers: 6
+        concurrent.max_depth: 20
+        concurrent.num_est: 125
+        concurrent.threads: 15
+        concurrent.trees: 72
+        model.batch_size: 1008
+        model.min_features: 2900
+        model.seed: 43598000
+        preprocessing.drop: 0.2
+        preprocessing.max_features: 350
+        preprocessing.ngrams: 2
+        preprocessing.num_est: 100
+        preprocessing.passes: 2
+        preprocessing.seed: 267080000
+        preprocessing.split: 0.3
+        preprocessing.trees: 78
+        preprocessing.weight_factor: 0.2
+        settings.batch_size: 800
+        settings.features: 1550
+        settings.layers: 6
+        settings.min_split: 80
+        settings.split: 0.1
+        variables.batch_size: 672
+        variables.features: 1970
+        variables.learning_rate: 0.08
+        variables.min_features: 2100
+        variables.split: 0.4
+    outs:
+    - path: model.json
+      md5: f82c60b88b7f868ce1521b7b447af874
+      size: 1198
+  evaluate:
+    cmd: python evaluate.py model.json users-test.csv
+    deps:
+    - path: evaluate.py
+      md5: f5a2957322c546989e7808c1aaebddb9
+      size: 41934
+    - path: model.json
+      md5: f82c60b88b7f868ce1521b7b447af874
+      size: 1198
+    - path: users-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    outs:
+    - path: metrics.json
+      md5: 04afca58d54360be176cf12327368a88
+      size: 453

@@ -1,0 +1,34 @@
+concurrent:
+  layers: 6
+  dense: 600
+  trees: 72
+  features: 2010
+  max_depth: 20
+  threads: 15
+  num_est: 125
+variables:
+  min_features: 2100
+  features: 1970
+  learning_rate: 0.08
+  batch_size: 672
+  split: 0.4
+preprocessing:
+  seed: 267080000
+  trees: 78
+  weight_factor: 0.2
+  passes: 2
+  max_features: 350
+  drop: 0.2
+  num_est: 100
+  ngrams: 2
+  split: 0.3
+settings:
+  layers: 6
+  batch_size: 800
+  split: 0.1
+  features: 1550
+  min_split: 80
+model:
+  min_features: 2900
+  batch_size: 1008
+  seed: 43598000
