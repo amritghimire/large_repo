@@ -3,7 +3,7 @@ tagging:
   epochs: 23
   folds: 10
   estimators: 166
-  seed: 527774928
+  seed: 417151150
 concurrent:
   weight_factor: 0.192
   ngrams: 4
