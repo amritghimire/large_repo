@@ -19,7 +19,7 @@ concurrent:
 featurize:
   random_state: 450883920
   batch_size: 1061
-  layers: 2
+  layers: 1
   weight_factor: 0.09327
 model:
   trees: 11
