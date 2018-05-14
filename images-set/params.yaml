@@ -2,7 +2,7 @@ concurrent:
   ngrams: 7
   random_state: 65088950
   split: 0.2
-  columns: 39
+  columns: 61
   features: 1071
 model:
   tags: 90
