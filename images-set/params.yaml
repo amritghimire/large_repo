@@ -1,5 +1,5 @@
 concurrent:
-  ngrams: 7
+  ngrams: 5
   random_state: 65088950
   split: 0.2
   columns: 61
@@ -17,11 +17,11 @@ tagging:
   min_features: 4843
 settings:
   batch_size: 759
-  num_est: 78
+  num_est: 88
   min_features: 1654
   passes: 94
 validation:
   split: 0.49628
   min_split: 36
-  layers: 2
+  layers: 1
   num_est: 128
