@@ -15,7 +15,7 @@ model:
   max_depth: 32
   split: 0.1
   ngrams: 2
-  threads: 16
+  threads: 22
   max_features: 1425
   num_est: 112
   folds: 5
@@ -30,7 +30,7 @@ variables:
 validation:
   learning_rate: 0.04
   weight_factor: 0.26412
-  seed: 71137302
+  seed: 84385554
   features: 1232
   ngrams: 5
-  min_split: 54
+  min_split: 61
