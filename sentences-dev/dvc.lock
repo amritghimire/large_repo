@@ -12,7 +12,7 @@ stages:
     params:
       params.yaml:
         prepare.dense: 339
-        prepare.min_split: 77
+        prepare.min_split: 68
         prepare.num_est: 193
         prepare.passes: 18
     outs:
@@ -42,8 +42,8 @@ stages:
       md5: 4573d461dcbcca50a9a86465ab3459e2
       size: 44
     - path: train.py
-      md5: 8b792c4e52edbd6cda0b58af57d8285f
-      size: 2111
+      md5: 7374702ae3c1ea78aef38d1b641e5afb
+      size: 2112
     params:
       params.yaml:
         model.folds: 5

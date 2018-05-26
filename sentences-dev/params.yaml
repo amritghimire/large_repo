@@ -1,5 +1,5 @@
 prepare:
-  min_split: 77
+  min_split: 68
   dense: 339
   passes: 18
   num_est: 193
