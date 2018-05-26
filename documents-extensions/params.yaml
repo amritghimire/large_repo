@@ -1,6 +1,6 @@
 tagging:
   trees: 79
-  epochs: 23
+  epochs: 21
   folds: 10
   estimators: 166
   seed: 417151150
@@ -17,6 +17,6 @@ train:
   epochs: 44
 settings:
   split: 0.11147
-  estimators: 59
+  estimators: 56
 model:
   split: 0.62394
