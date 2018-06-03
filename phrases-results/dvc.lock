@@ -50,7 +50,7 @@ stages:
         preprocessing.min_features: 119
         preprocessing.min_split: 64
         preprocessing.num_est: 75
-        tagging.epochs: 37
+        tagging.epochs: 33
         tagging.min_features: 800
         tagging.min_split: 56
         tagging.threads: 37
@@ -60,7 +60,7 @@ stages:
         variables.threads: 6
     outs:
     - path: model.json
-      md5: fd6d0dfc9416fdf62da3b7ee24de6d66
+      md5: 10506d1534c99c7864ea24ca6af97675
       size: 778
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
@@ -69,12 +69,12 @@ stages:
       md5: fb242e5fc6bb2a60b5f9de509cfa0e57
       size: 41787
     - path: model.json
-      md5: fd6d0dfc9416fdf62da3b7ee24de6d66
+      md5: 10506d1534c99c7864ea24ca6af97675
       size: 778
     - path: phrases-test.csv
       md5: a34f58f8a2a204150b3a00dbd5422c22
       size: 740
     outs:
     - path: metrics.json
-      md5: ed8592d472d94f21fec0385c303d031f
+      md5: e735b9feefc6c356c46f6ac103a08cd5
       size: 325

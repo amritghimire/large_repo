@@ -14,7 +14,7 @@ tagging:
   threads: 37
   min_features: 800
   min_split: 56
-  epochs: 37
+  epochs: 33
 preprocessing:
   min_features: 119
   layers: 3
