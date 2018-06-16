@@ -1,0 +1,30 @@
+model:
+  num_est: 100
+  random_state: 793000000
+  max_features: 550
+  dense: 400
+featurize:
+  sample: 0.75
+  min_split: 16
+  tags: 98
+  random_state: 20000000
+  trees: 15
+  split: 0.2
+preprocessing:
+  max_features: 4250
+  random_state: 268000000
+  epochs: 55
+  max_depth: 24
+  folds: 12
+  dense: 500
+  split: 0.5
+variables:
+  trees: 81
+  tags: 28
+  min_features: 1650
+  min_split: 64
+concurrent:
+  estimators: 128
+  seed: 877827000
+  trees: 54
+  dense: 500

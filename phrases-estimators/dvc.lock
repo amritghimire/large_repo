@@ -1,0 +1,89 @@
+schema: '2.0'
+stages:
+  split:
+    cmd: python split.py phrases.csv phrases-train.csv phrases-test.csv
+    deps:
+    - path: phrases.csv
+      md5: a181e156773daf1620f139fd87d0b9eb
+      size: 1119
+    - path: split.py
+      md5: b3a178d35c7926190fb8bdce5b7681d5
+      size: 713
+    outs:
+    - path: phrases-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    - path: phrases-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+  featurize:
+    cmd: python featurize.py phrases-train.csv phrases-train-feats.csv
+    deps:
+    - path: featurize.py
+      md5: aeae5b87d539ddff5d10b40519d57e58
+      size: 1352
+    - path: phrases-train.csv
+      md5: bc0884988797a71c9e7dee2d95fb448b
+      size: 774
+    params:
+      params.yaml:
+        featurize.min_split: 16
+        featurize.random_state: 20000000
+        featurize.sample: 0.75
+        featurize.split: 0.2
+        featurize.tags: 98
+        featurize.trees: 15
+    outs:
+    - path: phrases-train-feats.csv
+      md5: bf8d0b91c063665a12356c9631a6ff21
+      size: 274
+  train:
+    cmd: python train.py phrases-train-feats.csv model.json
+    deps:
+    - path: phrases-train-feats.csv
+      md5: bf8d0b91c063665a12356c9631a6ff21
+      size: 274
+    - path: train.py
+      md5: e8537f8d26307b43f634f9a237ebcaf5
+      size: 1833
+    params:
+      params.yaml:
+        concurrent.dense: 500
+        concurrent.estimators: 128
+        concurrent.seed: 877827000
+        concurrent.trees: 54
+        model.dense: 400
+        model.max_features: 550
+        model.num_est: 100
+        model.random_state: 793000000
+        preprocessing.dense: 500
+        preprocessing.epochs: 55
+        preprocessing.folds: 12
+        preprocessing.max_depth: 24
+        preprocessing.max_features: 4250
+        preprocessing.random_state: 268000000
+        preprocessing.split: 0.5
+        variables.min_features: 1650
+        variables.min_split: 64
+        variables.tags: 28
+        variables.trees: 81
+    outs:
+    - path: model.json
+      md5: f92884a2ff82c0364868241adae41715
+      size: 1039
+  evaluate:
+    cmd: python evaluate.py model.json phrases-test.csv
+    deps:
+    - path: evaluate.py
+      md5: b628d729a8fd80ec95fa583c7d005d66
+      size: 41881
+    - path: model.json
+      md5: f92884a2ff82c0364868241adae41715
+      size: 1039
+    - path: phrases-test.csv
+      md5: 012d63ebb79cbf475c14ba8f3c2078d5
+      size: 345
+    outs:
+    - path: metrics.json
+      md5: 0076a71ae5c0da96748b692cd8a39b9d
+      size: 350

@@ -1,0 +1,1 @@
+{"brand": {"falsepos": 0.693428501134801, "meanscore": 0.5514348256835208, "prediction_time": 1.6690947901021727, "time": 7.369636018747285}, "mark": {"distinct": -86}, "reports": {"fullscore": 0.5167317154835513, "weighted_avg": -0.6990194799456311}, "train": {"exp_cost": 237, "fullscore": 0.26064840954722107, "weighted_avg": 0.33893186111208795}}
