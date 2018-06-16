@@ -4,7 +4,7 @@ concurrent:
   trees: 72
   features: 2010
   max_depth: 20
-  threads: 15
+  threads: 17
   num_est: 125
 variables:
   min_features: 2100

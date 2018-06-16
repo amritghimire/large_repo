@@ -45,7 +45,7 @@ stages:
         concurrent.layers: 6
         concurrent.max_depth: 20
         concurrent.num_est: 125
-        concurrent.threads: 15
+        concurrent.threads: 17
         concurrent.trees: 72
         model.batch_size: 1008
         model.min_features: 2900
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.4
     outs:
     - path: model.json
-      md5: c209556676079b868ea9a908ec65dba1
+      md5: 095d5d99156858d420061bb66606765d
       size: 1198
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: f5a2957322c546989e7808c1aaebddb9
       size: 41934
     - path: model.json
-      md5: c209556676079b868ea9a908ec65dba1
+      md5: 095d5d99156858d420061bb66606765d
       size: 1198
     - path: users-test.csv
       md5: 012d63ebb79cbf475c14ba8f3c2078d5
       size: 345
     outs:
     - path: metrics.json
-      md5: 5f633af0e01860c0de7992d79412b1ee
-      size: 453
+      md5: 88dac461617a000f1240f372b7837369
+      size: 454
