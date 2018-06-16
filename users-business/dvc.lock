@@ -4,8 +4,8 @@ stages:
     cmd: python split.py users.csv users-train.csv users-test.csv
     deps:
     - path: split.py
-      md5: b3a178d35c7926190fb8bdce5b7681d5
-      size: 713
+      md5: 4f1d7eede36ffc1f3f3813ac65aad2b7
+      size: 714
     - path: users.csv
       md5: a181e156773daf1620f139fd87d0b9eb
       size: 1119
