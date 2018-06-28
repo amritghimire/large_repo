@@ -13,7 +13,7 @@ variables:
   batch_size: 672
   split: 0.4
 preprocessing:
-  seed: 267080000
+  seed: 317894701
   trees: 78
   weight_factor: 0.2
   passes: 2
