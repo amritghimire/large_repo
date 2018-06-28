@@ -66,13 +66,13 @@ stages:
         settings.split: 0.1
         variables.batch_size: 672
         variables.features: 1970
-        variables.learning_rate: 0.08
+        variables.learning_rate: 0.07316
         variables.min_features: 1998
         variables.split: 0.4
     outs:
     - path: model.json
-      md5: 9b97884c0085ae85b1a5c3d3ca844557
-      size: 1198
+      md5: 2a74fc6acad18cdf2362e5f4d27f8cf4
+      size: 1201
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
     deps:
@@ -80,12 +80,12 @@ stages:
       md5: f5a2957322c546989e7808c1aaebddb9
       size: 41934
     - path: model.json
-      md5: 9b97884c0085ae85b1a5c3d3ca844557
-      size: 1198
+      md5: 2a74fc6acad18cdf2362e5f4d27f8cf4
+      size: 1201
     - path: users-test.csv
       md5: 012d63ebb79cbf475c14ba8f3c2078d5
       size: 345
     outs:
     - path: metrics.json
-      md5: fc8667649b41badc0818237ef55a6b3c
-      size: 453
+      md5: 4c45d57cc5c843ce4dd536bab4875e2b
+      size: 455
