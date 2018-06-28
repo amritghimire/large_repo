@@ -7,7 +7,7 @@ concurrent:
   threads: 17
   num_est: 125
 variables:
-  min_features: 2100
+  min_features: 1998
   features: 1970
   learning_rate: 0.08
   batch_size: 672
@@ -23,7 +23,7 @@ preprocessing:
   ngrams: 2
   split: 0.3
 settings:
-  layers: 6
+  layers: 7
   batch_size: 800
   split: 0.1
   features: 1550
