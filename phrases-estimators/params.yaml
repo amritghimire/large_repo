@@ -1,6 +1,6 @@
 model:
   num_est: 100
-  random_state: 793000000
+  random_state: 951010402
   max_features: 550
   dense: 400
 featurize:
@@ -13,7 +13,7 @@ featurize:
 preprocessing:
   max_features: 4250
   random_state: 281834119
-  epochs: 55
+  epochs: 46
   max_depth: 24
   folds: 12
   dense: 500
@@ -24,7 +24,7 @@ variables:
   min_features: 1650
   min_split: 64
 concurrent:
-  estimators: 128
+  estimators: 144
   seed: 877827000
   trees: 54
   dense: 500
