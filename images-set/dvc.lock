@@ -46,7 +46,7 @@ stages:
         concurrent.random_state: 67507996
         concurrent.split: 0.2
         model.columns: 20
-        model.dense: 200
+        model.dense: 230
         model.estimators: 23
         model.min_split: 28
         model.passes: 101
@@ -64,21 +64,21 @@ stages:
         validation.split: 0.49628
     outs:
     - path: model.json
-      md5: 9f79a5eec245448f1c92d601dcba9d43
+      md5: 79c8a287b86eced50001336d1f180986
       size: 886
   evaluate:
     cmd: python evaluate.py model.json images-test.csv
     deps:
     - path: evaluate.py
-      md5: 1dfd2e9572c4aa47eb50faed19e12f55
-      size: 42001
+      md5: f4874d5ed5a57d427097db76f61f45f6
+      size: 42002
     - path: images-test.csv
       md5: dd65d414be2b7c6324d7cb5c1c048e9e
       size: 967
     - path: model.json
-      md5: 9f79a5eec245448f1c92d601dcba9d43
+      md5: 79c8a287b86eced50001336d1f180986
       size: 886
     outs:
     - path: metrics.json
-      md5: 136e09f316228c009a1738c24a4ee125
-      size: 473
+      md5: 59d0d1b97f90460eb7abee011176f007
+      size: 475
