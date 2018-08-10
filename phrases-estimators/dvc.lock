@@ -7,8 +7,8 @@ stages:
       md5: a181e156773daf1620f139fd87d0b9eb
       size: 1119
     - path: split.py
-      md5: b3a178d35c7926190fb8bdce5b7681d5
-      size: 713
+      md5: 7921b3a27f3709437a452d1fc1cc61e7
+      size: 714
     outs:
     - path: phrases-test.csv
       md5: 012d63ebb79cbf475c14ba8f3c2078d5
@@ -20,7 +20,7 @@ stages:
     cmd: python featurize.py phrases-train.csv phrases-train-feats.csv
     deps:
     - path: featurize.py
-      md5: 65ba71c2a968e9c962b661c5c8e2612d
+      md5: 1788988ba4441dba7bc4bb630378e562
       size: 1353
     - path: phrases-train.csv
       md5: bc0884988797a71c9e7dee2d95fb448b
@@ -35,13 +35,13 @@ stages:
         featurize.trees: 15
     outs:
     - path: phrases-train-feats.csv
-      md5: e4620d85d09e1ed96c4c49aeec50a7e3
+      md5: efeb429c7352252b628f61bcf8c75cc0
       size: 274
   train:
     cmd: python train.py phrases-train-feats.csv model.json
     deps:
     - path: phrases-train-feats.csv
-      md5: e4620d85d09e1ed96c4c49aeec50a7e3
+      md5: efeb429c7352252b628f61bcf8c75cc0
       size: 274
     - path: train.py
       md5: 61991231d50f5de49b0065903679098f
@@ -69,7 +69,7 @@ stages:
         variables.trees: 81
     outs:
     - path: model.json
-      md5: 621739ce9b31740a81d8b54ce741fd17
+      md5: 8fe04f6f14ff1848825e37f73ef419ec
       size: 1041
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
@@ -78,12 +78,12 @@ stages:
       md5: 33cace476c4c9ccd9db98533132ca215
       size: 41882
     - path: model.json
-      md5: 621739ce9b31740a81d8b54ce741fd17
+      md5: 8fe04f6f14ff1848825e37f73ef419ec
       size: 1041
     - path: phrases-test.csv
       md5: 012d63ebb79cbf475c14ba8f3c2078d5
       size: 345
     outs:
     - path: metrics.json
-      md5: 1bedf354cdef8cc4dc4e951e1d09799e
+      md5: fe4b64e722293dd73a57341efbd22a4d
       size: 348
