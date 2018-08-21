@@ -21,5 +21,5 @@ tagging:
   columns: 12
 model:
   drop: 0.17023
-  min_features: 121
+  min_features: 101
   max_features: 2209
