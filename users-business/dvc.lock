@@ -20,8 +20,8 @@ stages:
     cmd: python featurize.py users-train.csv users-train-feats.csv
     deps:
     - path: featurize.py
-      md5: 6df1a0984c8e618fbd96bbe95f3a3b2f
-      size: 698
+      md5: c7c15e6cd937bc6a0515bb6dd6528931
+      size: 699
     - path: users-train.csv
       md5: bc0884988797a71c9e7dee2d95fb448b
       size: 774
@@ -40,7 +40,7 @@ stages:
       size: 46
     params:
       params.yaml:
-        concurrent.dense: 600
+        concurrent.dense: 576
         concurrent.features: 2010
         concurrent.layers: 6
         concurrent.max_depth: 20
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.4
     outs:
     - path: model.json
-      md5: 22be267cebc2fee872ede228cabf1025
+      md5: 59c118cf8d1cf028ef304cec5c52a8a9
       size: 1201
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: f5a2957322c546989e7808c1aaebddb9
       size: 41934
     - path: model.json
-      md5: 22be267cebc2fee872ede228cabf1025
+      md5: 59c118cf8d1cf028ef304cec5c52a8a9
       size: 1201
     - path: users-test.csv
       md5: 012d63ebb79cbf475c14ba8f3c2078d5
       size: 345
     outs:
     - path: metrics.json
-      md5: 5f180c05d568b76ffeb706628bf3fe92
-      size: 452
+      md5: a917a825f03cf5ffb9df1d88f10be92c
+      size: 454
