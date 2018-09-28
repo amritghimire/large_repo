@@ -7,15 +7,15 @@ stages:
       md5: 46633abf7819c536207fc2f6c8b4e46c
       size: 715
     - path: users.csv
-      md5: a181e156773daf1620f139fd87d0b9eb
-      size: 1119
+      md5: ce33a68d919492a73682497ae7f512fa
+      size: 1734
     outs:
     - path: users-test.csv
-      md5: 012d63ebb79cbf475c14ba8f3c2078d5
-      size: 345
+      md5: 7a6870c133a3496425103878f7452be9
+      size: 548
     - path: users-train.csv
-      md5: bc0884988797a71c9e7dee2d95fb448b
-      size: 774
+      md5: 96d57a11a5da135bf5c965b4d4434bd7
+      size: 1186
   featurize:
     cmd: python featurize.py users-train.csv users-train-feats.csv
     deps:
@@ -23,11 +23,11 @@ stages:
       md5: c7c15e6cd937bc6a0515bb6dd6528931
       size: 699
     - path: users-train.csv
-      md5: bc0884988797a71c9e7dee2d95fb448b
-      size: 774
+      md5: 96d57a11a5da135bf5c965b4d4434bd7
+      size: 1186
     outs:
     - path: users-train-feats.csv
-      md5: 6c1ad32ef03035b12dfcaffe15d36b60
+      md5: 6f1277a5245c0761e0d96c1d36f9838e
       size: 46
   train:
     cmd: python train.py users-train-feats.csv model.json
@@ -36,7 +36,7 @@ stages:
       md5: 832793f3e5d7ccb951a338a0153ef659
       size: 2240
     - path: users-train-feats.csv
-      md5: 6c1ad32ef03035b12dfcaffe15d36b60
+      md5: 6f1277a5245c0761e0d96c1d36f9838e
       size: 46
     params:
       params.yaml:
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.4
     outs:
     - path: model.json
-      md5: b9b1d276b675248e3cfc7552cec2dc3c
+      md5: 9e7ff89985febed4fe10d6e925c3330c
       size: 1201
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: f5a2957322c546989e7808c1aaebddb9
       size: 41934
     - path: model.json
-      md5: b9b1d276b675248e3cfc7552cec2dc3c
+      md5: 9e7ff89985febed4fe10d6e925c3330c
       size: 1201
     - path: users-test.csv
-      md5: 012d63ebb79cbf475c14ba8f3c2078d5
-      size: 345
+      md5: 7a6870c133a3496425103878f7452be9
+      size: 548
     outs:
     - path: metrics.json
-      md5: 549ff6d6bc3e23fcaef32d32bb6dee86
+      md5: d89b5ea1f426051a162f23dbcbd97849
       size: 451
