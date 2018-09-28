@@ -4,14 +4,14 @@ prepare:
   passes: 18
   num_est: 193
 train:
-  min_split: 71
+  min_split: 78
   estimators: 50
   min_features: 4000
   max_features: 1716
   columns: 15
   threads: 2
 model:
-  random_state: 727168549
+  random_state: 578370347
   max_depth: 32
   split: 0.1
   ngrams: 2
