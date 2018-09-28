@@ -9,7 +9,7 @@ concurrent:
   ngrams: 4
   passes: 2
   features: 2974
-  estimators: 127
+  estimators: 141
 train:
   estimators: 64
   batch_size: 800
