@@ -7,7 +7,7 @@ train:
   min_split: 71
   estimators: 50
   min_features: 4000
-  max_features: 1478
+  max_features: 1716
   columns: 15
   threads: 2
 model:
@@ -25,12 +25,12 @@ variables:
   num_est: 69
   min_split: 62
   columns: 14
-  weight_factor: 0.15292
+  weight_factor: 0.2087
   features: 6058
 validation:
   learning_rate: 0.04
-  weight_factor: 0.26412
+  weight_factor: 0.36561
   seed: 84385554
   features: 1232
-  ngrams: 5
-  min_split: 61
+  ngrams: 6
+  min_split: 59
