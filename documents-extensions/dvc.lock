@@ -40,7 +40,7 @@ stages:
       size: 1722
     params:
       params.yaml:
-        concurrent.estimators: 141
+        concurrent.estimators: 188
         concurrent.features: 2974
         concurrent.ngrams: 4
         concurrent.passes: 2
@@ -50,16 +50,16 @@ stages:
         settings.split: 0.10289
         tagging.epochs: 21
         tagging.estimators: 177
-        tagging.folds: 10
+        tagging.folds: 11
         tagging.seed: 417151150
-        tagging.trees: 79
+        tagging.trees: 78
         train.batch_size: 800
-        train.epochs: 44
+        train.epochs: 30
         train.estimators: 64
         train.weight_factor: 0.19211
     outs:
     - path: model.json
-      md5: 957f7b2f59022137cf41984d9f891a02
+      md5: d9fa5d3f5f05f76ef1285abd56c12864
       size: 694
   evaluate:
     cmd: python evaluate.py model.json documents-test.csv
@@ -71,9 +71,9 @@ stages:
       md5: f6e0c0686ccb34c1bb6cc8f2396c3d49
       size: 41950
     - path: model.json
-      md5: 957f7b2f59022137cf41984d9f891a02
+      md5: d9fa5d3f5f05f76ef1285abd56c12864
       size: 694
     outs:
     - path: metrics.json
-      md5: 673bc162b54707826b1180aad3b47c35
-      size: 460
+      md5: de4def17ea0a1ddb41c6a6a627ef84da
+      size: 459
