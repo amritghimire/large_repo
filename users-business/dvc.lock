@@ -77,8 +77,8 @@ stages:
     cmd: python evaluate.py model.json users-test.csv
     deps:
     - path: evaluate.py
-      md5: f5a2957322c546989e7808c1aaebddb9
-      size: 41934
+      md5: b2d63249a5a383ccb648db4d9705ef53
+      size: 41935
     - path: model.json
       md5: 9e7ff89985febed4fe10d6e925c3330c
       size: 1201
