@@ -8,7 +8,7 @@ model:
   tags: 90
   estimators: 23
   columns: 20
-  passes: 101
+  passes: 93
   min_split: 28
   dense: 230
 tagging:
@@ -17,7 +17,7 @@ tagging:
   min_features: 4843
 settings:
   batch_size: 759
-  num_est: 88
+  num_est: 81
   min_features: 1654
   passes: 94
 validation:
