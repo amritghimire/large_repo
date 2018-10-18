@@ -5,12 +5,12 @@ concurrent:
   features: 2010
   max_depth: 20
   threads: 17
-  num_est: 125
+  num_est: 130
 variables:
   min_features: 1998
   features: 1574
   learning_rate: 0.08112
-  batch_size: 672
+  batch_size: 531
   split: 0.4
 preprocessing:
   seed: 317894701
@@ -19,7 +19,7 @@ preprocessing:
   passes: 2
   max_features: 350
   drop: 0.2
-  num_est: 100
+  num_est: 98
   ngrams: 2
   split: 0.3
 settings:
@@ -27,8 +27,8 @@ settings:
   batch_size: 800
   split: 0.1
   features: 1550
-  min_split: 80
+  min_split: 88
 model:
-  min_features: 2900
+  min_features: 3352
   batch_size: 1064
   seed: 43598000
