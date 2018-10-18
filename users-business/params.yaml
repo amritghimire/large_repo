@@ -1,5 +1,5 @@
 concurrent:
-  layers: 6
+  layers: 4
   dense: 574
   trees: 72
   features: 2010
@@ -8,7 +8,7 @@ concurrent:
   num_est: 130
 variables:
   min_features: 1998
-  features: 1574
+  features: 1735
   learning_rate: 0.08112
   batch_size: 531
   split: 0.4
@@ -16,7 +16,7 @@ preprocessing:
   seed: 317894701
   trees: 64
   weight_factor: 0.22048
-  passes: 2
+  passes: 1
   max_features: 350
   drop: 0.2
   num_est: 98
