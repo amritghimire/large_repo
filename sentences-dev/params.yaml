@@ -5,10 +5,10 @@ prepare:
   num_est: 193
 train:
   min_split: 78
-  estimators: 50
+  estimators: 37
   min_features: 3929
   max_features: 1716
-  columns: 15
+  columns: 14
   threads: 2
 model:
   random_state: 714328618
@@ -17,11 +17,11 @@ model:
   ngrams: 2
   threads: 22
   max_features: 1276
-  num_est: 122
+  num_est: 80
   folds: 5
   passes: 6
 variables:
-  sample: 0.59391
+  sample: 0.877
   num_est: 69
   min_split: 62
   columns: 14
@@ -32,5 +32,5 @@ validation:
   weight_factor: 0.27834
   seed: 70817687
   features: 1232
-  ngrams: 6
+  ngrams: 4
   min_split: 55
