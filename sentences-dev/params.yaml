@@ -5,7 +5,7 @@ prepare:
   num_est: 193
 train:
   min_split: 78
-  estimators: 37
+  estimators: 33
   min_features: 3929
   max_features: 1716
   columns: 14
@@ -24,9 +24,9 @@ variables:
   sample: 0.877
   num_est: 69
   min_split: 62
-  columns: 14
+  columns: 22
   weight_factor: 0.17419
-  features: 6058
+  features: 5341
 validation:
   learning_rate: 0.04
   weight_factor: 0.27834
