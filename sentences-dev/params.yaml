@@ -15,7 +15,7 @@ model:
   max_depth: 32
   split: 0.1
   ngrams: 2
-  threads: 22
+  threads: 18
   max_features: 1276
   num_est: 80
   folds: 5
