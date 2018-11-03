@@ -14,7 +14,7 @@ stages:
         prepare.dense: 290
         prepare.min_split: 68
         prepare.num_est: 193
-        prepare.passes: 18
+        prepare.passes: 13
     outs:
     - path: sentences-test.csv
       md5: 2d144ed44512217fd2328277be8b4820
