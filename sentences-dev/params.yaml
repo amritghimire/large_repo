@@ -5,9 +5,9 @@ prepare:
   num_est: 193
 train:
   min_split: 78
-  estimators: 33
-  min_features: 3929
-  max_features: 1716
+  estimators: 32
+  min_features: 4211
+  max_features: 1311
   columns: 14
   threads: 2
 model:
@@ -31,6 +31,6 @@ validation:
   learning_rate: 0.04
   weight_factor: 0.22699
   seed: 70817687
-  features: 1232
+  features: 1226
   ngrams: 4
   min_split: 55
