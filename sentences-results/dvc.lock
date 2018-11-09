@@ -49,26 +49,26 @@ stages:
         concurrent.columns: 11
         concurrent.dense: 427
         concurrent.estimators: 218
-        concurrent.random_state: 179085327
+        concurrent.random_state: 177755644
         concurrent.split: 0.11842
-        concurrent.tags: 79
+        concurrent.tags: 108
         model.estimators: 189
         model.min_features: 3731
         model.num_est: 119
         model.trees: 11
-        settings.columns: 58
+        settings.columns: 55
         settings.epochs: 4
         settings.layers: 1
         settings.random_state: 1158769847
         tagging.epochs: 18
         tagging.learning_rate: 0.09729
-        tagging.sample: 0.9884
+        tagging.sample: 0.93601
         tagging.split: 0.10786
         tagging.tags: 118
     outs:
     - path: model.json
-      md5: f7e317702dfaa1b2605e002897b2b67a
-      size: 949
+      md5: 46988a08a7edfa54fdbc68b95158d849
+      size: 951
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
     deps:
@@ -76,12 +76,12 @@ stages:
       md5: 0aeffcea5fd0f4eeb05a0068797b7fc2
       size: 41850
     - path: model.json
-      md5: f7e317702dfaa1b2605e002897b2b67a
-      size: 949
+      md5: 46988a08a7edfa54fdbc68b95158d849
+      size: 951
     - path: sentences-test.csv
       md5: 4681c21c7975fbb1ddff89067a3564b4
       size: 1687
     outs:
     - path: metrics.json
-      md5: 6035727ab2426d97f201121bda77dd78
-      size: 416
+      md5: 7ace8a6572d6a0dcca6c5709722df30c
+      size: 417
