@@ -8,7 +8,7 @@ train:
   estimators: 32
   min_features: 4211
   max_features: 1311
-  columns: 14
+  columns: 11
   threads: 2
 model:
   random_state: 714328618
