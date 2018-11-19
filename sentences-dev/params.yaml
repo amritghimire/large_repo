@@ -8,7 +8,7 @@ train:
   estimators: 32
   min_features: 4211
   max_features: 1311
-  columns: 15
+  columns: 16
   threads: 2
 model:
   random_state: 714328618
@@ -28,7 +28,7 @@ variables:
   weight_factor: 0.17419
   features: 6090
 validation:
-  learning_rate: 0.04
+  learning_rate: 0.04542
   weight_factor: 0.22699
   seed: 70817687
   features: 1226
