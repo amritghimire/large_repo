@@ -41,7 +41,7 @@ stages:
     params:
       params.yaml:
         concurrent.dense: 574
-        concurrent.features: 2010
+        concurrent.features: 1684
         concurrent.layers: 4
         concurrent.max_depth: 20
         concurrent.num_est: 130
@@ -58,7 +58,7 @@ stages:
         preprocessing.seed: 317894701
         preprocessing.split: 0.3
         preprocessing.trees: 64
-        preprocessing.weight_factor: 0.22048
+        preprocessing.weight_factor: 0.15092
         settings.batch_size: 800
         settings.features: 1550
         settings.layers: 5
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.35653
     outs:
     - path: model.json
-      md5: 929e7dc1a0a5f3577008496e5865fe5a
+      md5: 5236700ea9df05b75a26e85e7bcc6e3e
       size: 1212
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: 64d2674c27a75e74ec13d7c55b40013b
       size: 41937
     - path: model.json
-      md5: 929e7dc1a0a5f3577008496e5865fe5a
+      md5: 5236700ea9df05b75a26e85e7bcc6e3e
       size: 1212
     - path: users-test.csv
       md5: 7a6870c133a3496425103878f7452be9
       size: 548
     outs:
     - path: metrics.json
-      md5: 180f8b6ce6b003ccca5522d58e5523ea
-      size: 452
+      md5: 867a1cfc58b3c41371bc81ef27565dcf
+      size: 450
