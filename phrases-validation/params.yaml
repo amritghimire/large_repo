@@ -3,7 +3,7 @@ variables:
   random_state: 36954175
   split: 0.42712
 train:
-  features: 1800
+  features: 1710
   folds: 3
   layers: 2
   num_est: 192
@@ -13,7 +13,7 @@ train:
   trees: 25
 concurrent:
   trees: 62
-  features: 3026
+  features: 2252
   epochs: 45
   layers: 4
 featurize:
