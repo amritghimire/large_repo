@@ -1,5 +1,5 @@
 variables:
-  max_depth: 4
+  max_depth: 3
   random_state: 36954175
   split: 0.42712
 train:
@@ -24,9 +24,9 @@ featurize:
   layers: 3
   ngrams: 4
 tagging:
-  dense: 424
+  dense: 384
   epochs: 17
   sample: 0.19246
-  weight_factor: 0.28432
+  weight_factor: 0.23514
   max_depth: 4
   ngrams: 6
