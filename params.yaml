@@ -1,6 +1,6 @@
 validation:
   columns: 34
-  dense: 168
+  dense: 195
 prepare:
   epochs: 61
   trees: 81
@@ -20,6 +20,6 @@ tagging:
   tags: 143
   columns: 17
 model:
-  drop: 0.15838
+  drop: 0.20456
   min_features: 101
   max_features: 2239
