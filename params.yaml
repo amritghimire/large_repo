@@ -8,10 +8,10 @@ prepare:
   layers: 2
   learning_rate: 0.09147
 concurrent:
-  columns: 52
+  columns: 79
   sample: 0.86317
   batch_size: 95
-  layers: 7
+  layers: 4
   min_split: 28
 tagging:
   drop: 0.32663
