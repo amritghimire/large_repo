@@ -18,8 +18,8 @@ concurrent:
   estimators: 218
 featurize:
   random_state: 613526439
-  batch_size: 887
-  layers: 2
+  batch_size: 1026
+  layers: 1
   weight_factor: 0.08535
 model:
   trees: 11
