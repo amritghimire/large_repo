@@ -1,5 +1,5 @@
 concurrent:
-  ngrams: 4
+  ngrams: 7
   split: 0.19741
   min_features: 1450
   drop: 0.09869
@@ -9,15 +9,15 @@ validation:
   split: 0.33515
 variables:
   random_state: 610142014
-  threads: 6
+  threads: 5
 tagging:
   threads: 37
-  min_features: 800
+  min_features: 942
   min_split: 56
   epochs: 33
 preprocessing:
   min_features: 119
-  layers: 3
+  layers: 4
   min_split: 64
-  num_est: 75
+  num_est: 66
   max_features: 580
