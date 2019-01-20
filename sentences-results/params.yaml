@@ -6,7 +6,7 @@ tagging:
   split: 0.10786
 settings:
   layers: 1
-  random_state: 1158769847
+  random_state: 1146644908
   columns: 55
   epochs: 4
 concurrent:
