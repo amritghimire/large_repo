@@ -3,13 +3,13 @@ variables:
   random_state: 36954175
   split: 0.42712
 train:
-  features: 1710
-  folds: 3
+  features: 1841
+  folds: 2
   layers: 2
-  num_est: 192
+  num_est: 165
   seed: 240221571
   tags: 68
-  batch_size: 568
+  batch_size: 636
   trees: 25
 concurrent:
   trees: 62
