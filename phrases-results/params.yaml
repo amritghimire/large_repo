@@ -5,10 +5,10 @@ concurrent:
   drop: 0.09869
   tags: 42
 validation:
-  batch_size: 556
+  batch_size: 680
   split: 0.33515
 variables:
-  random_state: 610142014
+  random_state: 652055155
   threads: 5
 tagging:
   threads: 37
@@ -18,6 +18,6 @@ tagging:
 preprocessing:
   min_features: 119
   layers: 4
-  min_split: 64
+  min_split: 65
   num_est: 66
   max_features: 580
