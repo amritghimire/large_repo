@@ -17,20 +17,20 @@ model:
   ngrams: 2
   threads: 18
   max_features: 1478
-  num_est: 80
+  num_est: 96
   folds: 5
-  passes: 5
+  passes: 7
 variables:
   sample: 0.877
   num_est: 69
-  min_split: 62
-  columns: 22
+  min_split: 95
+  columns: 15
   weight_factor: 0.17419
   features: 6090
 validation:
   learning_rate: 0.04542
   weight_factor: 0.22699
   seed: 70817687
-  features: 1226
+  features: 1384
   ngrams: 4
   min_split: 55
