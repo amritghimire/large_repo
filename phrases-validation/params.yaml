@@ -1,11 +1,11 @@
 variables:
   max_depth: 3
-  random_state: 36954175
+  random_state: 49638038
   split: 0.42712
 train:
   features: 1841
   folds: 2
-  layers: 2
+  layers: 1
   num_est: 165
   seed: 240221571
   tags: 68
@@ -27,6 +27,6 @@ tagging:
   dense: 384
   epochs: 17
   sample: 0.19246
-  weight_factor: 0.23514
+  weight_factor: 0.31451
   max_depth: 4
   ngrams: 6
