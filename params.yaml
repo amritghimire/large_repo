@@ -15,11 +15,11 @@ concurrent:
   min_split: 28
 tagging:
   drop: 0.32663
-  features: 3346
-  batch_size: 162
+  features: 3364
+  batch_size: 113
   tags: 143
   columns: 17
 model:
   drop: 0.20456
-  min_features: 101
+  min_features: 114
   max_features: 2239
