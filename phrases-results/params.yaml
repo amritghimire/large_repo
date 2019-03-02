@@ -1,5 +1,5 @@
 concurrent:
-  ngrams: 7
+  ngrams: 5
   split: 0.19741
   min_features: 1450
   drop: 0.09869
@@ -8,7 +8,7 @@ validation:
   batch_size: 680
   split: 0.33515
 variables:
-  random_state: 652055155
+  random_state: 706906364
   threads: 5
 tagging:
   threads: 37
