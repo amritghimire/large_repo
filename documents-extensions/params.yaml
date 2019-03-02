@@ -9,14 +9,14 @@ concurrent:
   ngrams: 3
   passes: 2
   features: 2974
-  estimators: 188
+  estimators: 172
 train:
   estimators: 64
-  batch_size: 655
+  batch_size: 633
   weight_factor: 0.19211
   epochs: 30
 settings:
   split: 0.11426
-  estimators: 51
+  estimators: 46
 model:
-  split: 0.61034
+  split: 0.40704
