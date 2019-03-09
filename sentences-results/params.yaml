@@ -14,7 +14,7 @@ concurrent:
   tags: 108
   split: 0.11842
   random_state: 177755644
-  dense: 427
+  dense: 553
   estimators: 218
 featurize:
   random_state: 409658558
