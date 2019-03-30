@@ -8,13 +8,13 @@ model:
   tags: 71
   estimators: 17
   columns: 27
-  passes: 147
+  passes: 96
   min_split: 28
   dense: 243
 tagging:
   learning_rate: 0.07496
   features: 3792
-  min_features: 4843
+  min_features: 4868
 settings:
   batch_size: 752
   num_est: 74
