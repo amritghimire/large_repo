@@ -55,7 +55,7 @@ stages:
         preprocessing.ngrams: 2
         preprocessing.num_est: 98
         preprocessing.passes: 1
-        preprocessing.seed: 317894701
+        preprocessing.seed: 269128075
         preprocessing.split: 0.3
         preprocessing.trees: 64
         preprocessing.weight_factor: 0.15092
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.35653
     outs:
     - path: model.json
-      md5: da5a530aa10311817e3a7f3e84f1ab47
+      md5: 2f48853013f414446972fe21e42b4e60
       size: 1212
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: 64d2674c27a75e74ec13d7c55b40013b
       size: 41937
     - path: model.json
-      md5: da5a530aa10311817e3a7f3e84f1ab47
+      md5: 2f48853013f414446972fe21e42b4e60
       size: 1212
     - path: users-test.csv
       md5: 7a6870c133a3496425103878f7452be9
       size: 548
     outs:
     - path: metrics.json
-      md5: 8ff77cb189adda90dec83e8b6990acec
-      size: 452
+      md5: aceb7c2ff52262ada73e143977419c9c
+      size: 454
