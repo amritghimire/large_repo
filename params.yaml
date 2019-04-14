@@ -20,6 +20,6 @@ tagging:
   tags: 143
   columns: 17
 model:
-  drop: 0.20456
+  drop: 0.17888
   min_features: 114
   max_features: 2239
