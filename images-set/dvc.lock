@@ -7,8 +7,8 @@ stages:
       md5: a52466fad7a1447ca158458c2e948521
       size: 4269
     - path: split.py
-      md5: 54e5f142d1af683d6ac77fc2b3b9677e
-      size: 715
+      md5: c05d2245c43e022b33b6da41e52258aa
+      size: 716
     outs:
     - path: images-test.csv
       md5: aa98a19812aee3cf6e57043caa318ac4
