@@ -1,7 +1,7 @@
 concurrent:
   ngrams: 5
   random_state: 89873151
-  split: 0.2
+  split: 0.19536
   columns: 61
   features: 1071
 model:
@@ -14,14 +14,14 @@ model:
 tagging:
   learning_rate: 0.07496
   features: 3792
-  min_features: 4868
+  min_features: 4196
 settings:
-  batch_size: 752
+  batch_size: 527
   num_est: 74
   min_features: 1456
   passes: 65
 validation:
-  split: 0.49628
-  min_split: 36
+  split: 0.36286
+  min_split: 58
   layers: 1
   num_est: 113
