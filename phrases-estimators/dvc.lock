@@ -4,18 +4,18 @@ stages:
     cmd: python split.py phrases.csv phrases-train.csv phrases-test.csv
     deps:
     - path: phrases.csv
-      md5: f2048b5c1f20c7d4d8131b54195e3a77
-      size: 1503
+      md5: ce99d04bb9df96330fc09dfd6d1fc887
+      size: 1976
     - path: split.py
       md5: 0f14e81e915068c6a28134833112408a
       size: 717
     outs:
     - path: phrases-test.csv
-      md5: 405495810e743b30a51dddc736569a2f
-      size: 484
+      md5: a225eaa1f3c56ae52569d4c997372e49
+      size: 612
     - path: phrases-train.csv
-      md5: 9990af563e4936312bcfb9837413ad88
-      size: 1019
+      md5: 3fa24d109de4667d3f7827960d1b044c
+      size: 1364
   featurize:
     cmd: python featurize.py phrases-train.csv phrases-train-feats.csv
     deps:
@@ -23,8 +23,8 @@ stages:
       md5: 290f9103b510b8a3dfd170817e995c2b
       size: 1353
     - path: phrases-train.csv
-      md5: 9990af563e4936312bcfb9837413ad88
-      size: 1019
+      md5: 3fa24d109de4667d3f7827960d1b044c
+      size: 1364
     params:
       params.yaml:
         featurize.min_split: 18
@@ -35,17 +35,17 @@ stages:
         featurize.trees: 15
     outs:
     - path: phrases-train-feats.csv
-      md5: de7292b8603de21491208c5199063d09
-      size: 278
+      md5: 7ee2428a709d135fef9fc2a5004c9c17
+      size: 277
   train:
     cmd: python train.py phrases-train-feats.csv model.json
     deps:
     - path: phrases-train-feats.csv
-      md5: de7292b8603de21491208c5199063d09
-      size: 278
+      md5: 7ee2428a709d135fef9fc2a5004c9c17
+      size: 277
     - path: train.py
-      md5: d216a384b36b890254174e9461edb277
-      size: 1836
+      md5: bc63fba411489315cabbe5fabe69b27a
+      size: 1838
     params:
       params.yaml:
         concurrent.dense: 408
@@ -69,8 +69,8 @@ stages:
         variables.trees: 81
     outs:
     - path: model.json
-      md5: 7dea76204c24932703b4b5002cd70f4e
-      size: 1047
+      md5: 309e968058c145b052a800ff23a5a577
+      size: 1046
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
     deps:
@@ -78,12 +78,12 @@ stages:
       md5: 0adb6682e59faeb9d319fac9626306c9
       size: 41883
     - path: model.json
-      md5: 7dea76204c24932703b4b5002cd70f4e
-      size: 1047
+      md5: 309e968058c145b052a800ff23a5a577
+      size: 1046
     - path: phrases-test.csv
-      md5: 405495810e743b30a51dddc736569a2f
-      size: 484
+      md5: a225eaa1f3c56ae52569d4c997372e49
+      size: 612
     outs:
     - path: metrics.json
-      md5: 4fd659bca707e786f26d55ceaccc7a72
+      md5: 1e295e19edec798f774da957cd411e96
       size: 349
