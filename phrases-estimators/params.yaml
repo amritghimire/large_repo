@@ -1,6 +1,6 @@
 model:
   num_est: 122
-  random_state: 951010402
+  random_state: 723175047
   max_features: 550
   dense: 405
 featurize:
@@ -27,4 +27,4 @@ concurrent:
   estimators: 144
   seed: 911123663
   trees: 54
-  dense: 408
+  dense: 611
