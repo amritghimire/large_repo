@@ -3,21 +3,21 @@ concurrent:
   split: 0.19741
   min_features: 1450
   drop: 0.09869
-  tags: 42
+  tags: 36
 validation:
   batch_size: 680
   split: 0.33515
 variables:
-  random_state: 706906364
+  random_state: 771011060
   threads: 5
 tagging:
-  threads: 37
+  threads: 24
   min_features: 846
-  min_split: 39
+  min_split: 37
   epochs: 33
 preprocessing:
   min_features: 119
   layers: 4
   min_split: 65
   num_est: 78
-  max_features: 580
+  max_features: 649
