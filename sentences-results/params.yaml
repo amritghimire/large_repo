@@ -20,7 +20,7 @@ featurize:
   random_state: 398287778
   batch_size: 1216
   layers: 1
-  weight_factor: 0.08142
+  weight_factor: 0.09913
 model:
   trees: 11
   estimators: 189
