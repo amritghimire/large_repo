@@ -1,6 +1,6 @@
 variables:
   max_depth: 3
-  random_state: 37406032
+  random_state: 37621115
   split: 0.39011
 train:
   features: 1841
