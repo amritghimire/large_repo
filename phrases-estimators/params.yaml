@@ -5,7 +5,7 @@ model:
   dense: 405
 featurize:
   sample: 0.76964
-  min_split: 14
+  min_split: 13
   tags: 80
   random_state: 21409827
   trees: 14
