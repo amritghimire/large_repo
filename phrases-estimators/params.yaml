@@ -1,7 +1,7 @@
 model:
   num_est: 122
   random_state: 723175047
-  max_features: 550
+  max_features: 547
   dense: 405
 featurize:
   sample: 0.76964
