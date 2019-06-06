@@ -43,7 +43,7 @@ stages:
         concurrent.drop: 0.09869
         concurrent.min_features: 1450
         concurrent.ngrams: 5
-        concurrent.split: 0.19741
+        concurrent.split: 0.19346
         concurrent.tags: 36
         preprocessing.layers: 4
         preprocessing.max_features: 649
@@ -60,7 +60,7 @@ stages:
         variables.threads: 5
     outs:
     - path: model.json
-      md5: 63d5bd4a7bbb171242a2c110f2bd7519
+      md5: c02db34d42d6cf53ce714cbf7c6410f7
       size: 777
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
@@ -69,12 +69,12 @@ stages:
       md5: fb242e5fc6bb2a60b5f9de509cfa0e57
       size: 41787
     - path: model.json
-      md5: 63d5bd4a7bbb171242a2c110f2bd7519
+      md5: c02db34d42d6cf53ce714cbf7c6410f7
       size: 777
     - path: phrases-test.csv
       md5: 1a243c07617eeec0e4552da24bd4fe0e
       size: 1072
     outs:
     - path: metrics.json
-      md5: 5989dc1df51181013edaa6b9448ebfee
+      md5: 19321bb9129292c0452aa389d19d8415
       size: 330
