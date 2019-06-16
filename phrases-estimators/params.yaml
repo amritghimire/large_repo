@@ -13,7 +13,7 @@ featurize:
 preprocessing:
   max_features: 3616
   random_state: 306382453
-  epochs: 54
+  epochs: 62
   max_depth: 25
   folds: 12
   dense: 436
