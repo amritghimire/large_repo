@@ -11,7 +11,7 @@ train:
   columns: 16
   threads: 2
 model:
-  random_state: 714328618
+  random_state: 472619921
   max_depth: 32
   split: 0.1
   ngrams: 2
@@ -26,7 +26,7 @@ variables:
   min_split: 95
   columns: 15
   weight_factor: 0.17419
-  features: 6090
+  features: 4194
 validation:
   learning_rate: 0.04542
   weight_factor: 0.22699
