@@ -15,7 +15,7 @@ variables:
 preprocessing:
   seed: 269128075
   trees: 92
-  weight_factor: 0.15092
+  weight_factor: 0.15099
   passes: 1
   max_features: 350
   drop: 0.2
