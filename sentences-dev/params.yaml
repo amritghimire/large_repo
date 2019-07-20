@@ -6,7 +6,7 @@ prepare:
 train:
   min_split: 78
   estimators: 46
-  min_features: 4211
+  min_features: 3084
   max_features: 1311
   columns: 16
   threads: 2
@@ -22,7 +22,7 @@ model:
   passes: 7
 variables:
   sample: 0.84145
-  num_est: 88
+  num_est: 82
   min_split: 95
   columns: 15
   weight_factor: 0.17419
