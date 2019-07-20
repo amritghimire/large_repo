@@ -21,7 +21,7 @@ model:
   folds: 5
   passes: 7
 variables:
-  sample: 0.877
+  sample: 0.84145
   num_est: 88
   min_split: 95
   columns: 15
