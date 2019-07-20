@@ -5,7 +5,7 @@ concurrent:
   features: 1970
   max_depth: 24
   threads: 15
-  num_est: 130
+  num_est: 125
 variables:
   min_features: 1998
   features: 1599
@@ -19,7 +19,7 @@ preprocessing:
   passes: 1
   max_features: 350
   drop: 0.2
-  num_est: 80
+  num_est: 83
   ngrams: 1
   split: 0.3
 settings:
