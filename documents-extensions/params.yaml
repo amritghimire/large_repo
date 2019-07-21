@@ -16,7 +16,7 @@ train:
   weight_factor: 0.15841
   epochs: 40
 settings:
-  split: 0.11063
+  split: 0.0811
   estimators: 43
 model:
-  split: 0.52922
+  split: 0.5613
