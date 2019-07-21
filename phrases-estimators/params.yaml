@@ -1,5 +1,5 @@
 model:
-  num_est: 122
+  num_est: 113
   random_state: 723175047
   max_features: 547
   dense: 405
