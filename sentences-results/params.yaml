@@ -25,4 +25,4 @@ model:
   trees: 11
   estimators: 189
   min_features: 3731
-  num_est: 119
+  num_est: 75
