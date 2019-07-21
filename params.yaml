@@ -3,7 +3,7 @@ validation:
   dense: 195
 prepare:
   epochs: 80
-  trees: 55
+  trees: 74
   batch_size: 417
   layers: 2
   learning_rate: 0.11858
