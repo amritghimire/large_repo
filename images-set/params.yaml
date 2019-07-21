@@ -3,11 +3,11 @@ concurrent:
   random_state: 89873151
   split: 0.19536
   columns: 61
-  features: 1270
+  features: 1028
 model:
   tags: 71
   estimators: 17
-  columns: 28
+  columns: 29
   passes: 96
   min_split: 28
   dense: 248
