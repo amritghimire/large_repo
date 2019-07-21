@@ -55,11 +55,11 @@ stages:
         tagging.trees: 88
         train.batch_size: 982
         train.epochs: 40
-        train.estimators: 44
+        train.estimators: 56
         train.weight_factor: 0.15841
     outs:
     - path: model.json
-      md5: 6f15e5a5c34157921550fe1e8e7465c1
+      md5: 01e7f59fd982f96f9351276a9f7b6afb
       size: 693
   evaluate:
     cmd: python evaluate.py model.json documents-test.csv
@@ -71,9 +71,9 @@ stages:
       md5: 42f0ecdd55237626f4feec9114083540
       size: 41952
     - path: model.json
-      md5: 6f15e5a5c34157921550fe1e8e7465c1
+      md5: 01e7f59fd982f96f9351276a9f7b6afb
       size: 693
     outs:
     - path: metrics.json
-      md5: 3354c920b5f1796ecae24aa545b5ab8f
-      size: 460
+      md5: 25a296f44eda2630798a4cad331c7694
+      size: 461
