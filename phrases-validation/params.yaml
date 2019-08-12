@@ -10,7 +10,7 @@ train:
   seed: 240221571
   tags: 54
   batch_size: 636
-  trees: 25
+  trees: 18
 concurrent:
   trees: 61
   features: 2261
@@ -26,7 +26,7 @@ featurize:
 tagging:
   dense: 604
   epochs: 13
-  sample: 0.22789
+  sample: 0.21034
   weight_factor: 0.3237
   max_depth: 4
   ngrams: 6
