@@ -23,8 +23,8 @@ stages:
       md5: 0c420be22e4089bd82bee2e9ea4cbd86
       size: 7036
     - path: featurize.py
-      md5: ff1cbfbc8d6f6f07c1a926dc309033cb
-      size: 703
+      md5: 61fcaf75e0cbeece987dd26be8cea4fd
+      size: 704
     outs:
     - path: documents-train-feats.csv
       md5: 29f735fb0de377fb75bb13b001aa8f66
