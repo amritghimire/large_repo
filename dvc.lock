@@ -14,7 +14,7 @@ stages:
         prepare.batch_size: 417
         prepare.epochs: 80
         prepare.layers: 2
-        prepare.learning_rate: 0.11858
+        prepare.learning_rate: 0.12174
         prepare.trees: 74
     outs:
     - path: sentences-test.csv

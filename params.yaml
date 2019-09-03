@@ -6,7 +6,7 @@ prepare:
   trees: 74
   batch_size: 417
   layers: 2
-  learning_rate: 0.11858
+  learning_rate: 0.12174
 concurrent:
   columns: 79
   sample: 1.13872
