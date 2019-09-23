@@ -1,10 +1,10 @@
 concurrent:
   layers: 6
   dense: 590
-  trees: 58
+  trees: 79
   features: 1970
   max_depth: 24
-  threads: 15
+  threads: 17
   num_est: 125
 variables:
   min_features: 1998
@@ -24,7 +24,7 @@ preprocessing:
   split: 0.3
 settings:
   layers: 4
-  batch_size: 800
+  batch_size: 663
   split: 0.08314
   features: 1327
   min_split: 93
