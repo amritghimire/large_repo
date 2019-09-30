@@ -12,7 +12,7 @@ train:
   batch_size: 636
   trees: 18
 concurrent:
-  trees: 61
+  trees: 57
   features: 2261
   epochs: 45
   layers: 4
@@ -24,7 +24,7 @@ featurize:
   layers: 3
   ngrams: 4
 tagging:
-  dense: 604
+  dense: 437
   epochs: 13
   sample: 0.21034
   weight_factor: 0.3237
