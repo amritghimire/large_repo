@@ -14,7 +14,7 @@ train:
 concurrent:
   trees: 57
   features: 3000
-  epochs: 45
+  epochs: 44
   layers: 4
 featurize:
   threads: 25
