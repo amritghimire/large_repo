@@ -6,10 +6,10 @@ tagging:
   seed: 417151150
 concurrent:
   weight_factor: 0.16754
-  ngrams: 3
+  ngrams: 4
   passes: 1
   features: 2974
-  estimators: 132
+  estimators: 144
 train:
   estimators: 64
   batch_size: 982
