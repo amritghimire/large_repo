@@ -10,11 +10,11 @@ settings:
   columns: 70
   epochs: 4
 concurrent:
-  columns: 10
+  columns: 11
   tags: 108
   split: 0.1075
   random_state: 206562972
-  dense: 553
+  dense: 518
   estimators: 218
 featurize:
   random_state: 479583692
