@@ -13,14 +13,14 @@ featurize:
 preprocessing:
   max_features: 4267
   random_state: 306382453
-  epochs: 62
+  epochs: 68
   max_depth: 25
-  folds: 12
+  folds: 14
   dense: 436
   split: 0.5281
 variables:
   trees: 81
-  tags: 33
+  tags: 21
   min_features: 1250
   min_split: 53
 concurrent:
