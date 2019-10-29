@@ -5,7 +5,7 @@ concurrent:
   columns: 61
   features: 967
 model:
-  tags: 71
+  tags: 106
   estimators: 17
   columns: 29
   passes: 96
@@ -19,9 +19,9 @@ settings:
   batch_size: 527
   num_est: 74
   min_features: 1456
-  passes: 65
+  passes: 78
 validation:
   split: 0.34309
-  min_split: 39
+  min_split: 58
   layers: 2
   num_est: 187
