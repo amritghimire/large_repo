@@ -10,7 +10,7 @@ model:
   columns: 29
   passes: 96
   min_split: 28
-  dense: 248
+  dense: 245
 tagging:
   learning_rate: 0.08713
   features: 3792
