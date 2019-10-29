@@ -3,7 +3,7 @@ concurrent:
   random_state: 89873151
   split: 0.19536
   columns: 61
-  features: 1028
+  features: 967
 model:
   tags: 71
   estimators: 17
@@ -21,7 +21,7 @@ settings:
   min_features: 1456
   passes: 65
 validation:
-  split: 0.31926
-  min_split: 58
+  split: 0.34309
+  min_split: 39
   layers: 2
-  num_est: 113
+  num_est: 187
