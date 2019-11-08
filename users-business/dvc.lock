@@ -20,14 +20,14 @@ stages:
     cmd: python featurize.py users-train.csv users-train-feats.csv
     deps:
     - path: featurize.py
-      md5: ae78786cb7d804af64b77092d6b61069
+      md5: e236cad7675fa2fa7cd9693cf804a290
       size: 700
     - path: users-train.csv
       md5: 69193e294cea3ff4b5defdcfb370ca8f
       size: 1958
     outs:
     - path: users-train-feats.csv
-      md5: bc7ea2bc01b49bcd39be6cb6994492d5
+      md5: 18f0ccddcbd268dccae75608b88cf1a9
       size: 47
   train:
     cmd: python train.py users-train-feats.csv model.json
@@ -36,7 +36,7 @@ stages:
       md5: 00b287873dd88e5cc001cab8ad02cf68
       size: 2241
     - path: users-train-feats.csv
-      md5: bc7ea2bc01b49bcd39be6cb6994492d5
+      md5: 18f0ccddcbd268dccae75608b88cf1a9
       size: 47
     params:
       params.yaml:
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.35653
     outs:
     - path: model.json
-      md5: c04f9158099dd6a482444c2a804d4a63
+      md5: 203a57e1c5e3835f24ef35ea3a82d54b
       size: 1216
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: cfd47cb4f1881a270f0caef63cc6807f
       size: 41939
     - path: model.json
-      md5: c04f9158099dd6a482444c2a804d4a63
+      md5: 203a57e1c5e3835f24ef35ea3a82d54b
       size: 1216
     - path: users-test.csv
       md5: 7d19574b5cd804f74c454a293f0fe614
       size: 734
     outs:
     - path: metrics.json
-      md5: 2996b48cb86f04053fe3bcf1ed219427
-      size: 449
+      md5: 74309002bf493cbc0308d64d3caa763b
+      size: 452
