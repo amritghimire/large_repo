@@ -13,8 +13,8 @@ variables:
 tagging:
   threads: 24
   min_features: 846
-  min_split: 37
-  epochs: 33
+  min_split: 59
+  epochs: 38
 preprocessing:
   min_features: 119
   layers: 4
