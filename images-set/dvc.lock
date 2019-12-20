@@ -48,24 +48,24 @@ stages:
         model.columns: 29
         model.dense: 245
         model.estimators: 17
-        model.min_split: 28
-        model.passes: 96
+        model.min_split: 27
+        model.passes: 114
         model.tags: 106
         settings.batch_size: 527
         settings.min_features: 1456
-        settings.num_est: 74
+        settings.num_est: 64
         settings.passes: 68
         tagging.features: 3792
         tagging.learning_rate: 0.08713
-        tagging.min_features: 3070
+        tagging.min_features: 3808
         validation.layers: 2
-        validation.min_split: 48
+        validation.min_split: 38
         validation.num_est: 187
         validation.split: 0.34309
     outs:
     - path: model.json
-      md5: cde7adfd54d242a16689198a6dbb3e70
-      size: 888
+      md5: c974aa62811ba5a987824d85bb4a0e99
+      size: 889
   evaluate:
     cmd: python evaluate.py model.json images-test.csv
     deps:
@@ -76,9 +76,9 @@ stages:
       md5: d20038a0269293ffe6d57247d5fcfb82
       size: 1089
     - path: model.json
-      md5: cde7adfd54d242a16689198a6dbb3e70
-      size: 888
+      md5: c974aa62811ba5a987824d85bb4a0e99
+      size: 889
     outs:
     - path: metrics.json
-      md5: e7884e1255b0b0e999bf533a5044a671
+      md5: 4d09d609862fa4814a0176d64b73f9e8
       size: 481
