@@ -1,8 +1,8 @@
 tagging:
   learning_rate: 0.09045
   tags: 118
-  epochs: 17
-  sample: 0.93601
+  epochs: 22
+  sample: 0.76943
   split: 0.10786
 settings:
   layers: 1
@@ -23,6 +23,6 @@ featurize:
   weight_factor: 0.09853
 model:
   trees: 11
-  estimators: 133
+  estimators: 176
   min_features: 3731
   num_est: 75
