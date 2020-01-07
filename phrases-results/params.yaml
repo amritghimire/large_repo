@@ -8,7 +8,7 @@ validation:
   batch_size: 558
   split: 0.3072
 variables:
-  random_state: 771011060
+  random_state: 815902020
   threads: 5
 tagging:
   threads: 28
