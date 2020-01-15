@@ -21,7 +21,7 @@ preprocessing:
 variables:
   trees: 83
   tags: 21
-  min_features: 1250
+  min_features: 1756
   min_split: 53
 concurrent:
   estimators: 144
