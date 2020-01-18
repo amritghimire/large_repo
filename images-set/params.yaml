@@ -3,7 +3,7 @@ concurrent:
   random_state: 76798585
   split: 0.19536
   columns: 61
-  features: 967
+  features: 1503
 model:
   tags: 106
   estimators: 17
