@@ -20,8 +20,8 @@ stages:
     cmd: python featurize.py images-train.csv images-train-feats.csv
     deps:
     - path: featurize.py
-      md5: 62848fd2b38beedcfbb0f866138103f5
-      size: 702
+      md5: 8bc2ff500e3f81f66e0dcbd104b7c94e
+      size: 703
     - path: images-train.csv
       md5: 7c62a68e6f48a8a2c00cfa4543bda58d
       size: 3627
