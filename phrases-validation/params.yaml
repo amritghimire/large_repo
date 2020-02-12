@@ -1,6 +1,6 @@
 variables:
-  max_depth: 3
-  random_state: 37621115
+  max_depth: 4
+  random_state: 53766682
   split: 0.39011
 train:
   features: 1841
@@ -28,5 +28,5 @@ tagging:
   epochs: 13
   sample: 0.21034
   weight_factor: 0.3237
-  max_depth: 4
+  max_depth: 3
   ngrams: 6
