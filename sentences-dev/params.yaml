@@ -23,7 +23,7 @@ model:
 variables:
   sample: 0.84145
   num_est: 64
-  min_split: 95
+  min_split: 76
   columns: 15
   weight_factor: 0.17419
   features: 4194
