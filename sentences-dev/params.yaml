@@ -19,10 +19,10 @@ model:
   max_features: 1478
   num_est: 96
   folds: 5
-  passes: 7
+  passes: 5
 variables:
   sample: 0.84145
-  num_est: 82
+  num_est: 64
   min_split: 95
   columns: 15
   weight_factor: 0.17419
