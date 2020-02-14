@@ -4,37 +4,37 @@ stages:
     cmd: python split.py documents.csv documents-train.csv documents-test.csv
     deps:
     - path: documents.csv
-      md5: b27934daff58c12afedce557e2942005
-      size: 8677
+      md5: 1dd9c9b310984f35a5746729178f2ab7
+      size: 9150
     - path: split.py
       md5: 62231f30684cac1e2fdca21a59c6ba48
       size: 722
     outs:
     - path: documents-test.csv
-      md5: af540571a45d471c57d477536ebe4334
-      size: 1641
+      md5: a8111b949e8e33e1f4972f8dc6f860fa
+      size: 1666
     - path: documents-train.csv
-      md5: 0c420be22e4089bd82bee2e9ea4cbd86
-      size: 7036
+      md5: 4b59504d860c04b390a0d62b21f195cc
+      size: 7484
   featurize:
     cmd: python featurize.py documents-train.csv documents-train-feats.csv
     deps:
     - path: documents-train.csv
-      md5: 0c420be22e4089bd82bee2e9ea4cbd86
-      size: 7036
+      md5: 4b59504d860c04b390a0d62b21f195cc
+      size: 7484
     - path: featurize.py
       md5: 2b0095699a48e38f6ce2c200f167d798
       size: 704
     outs:
     - path: documents-train-feats.csv
-      md5: d3377cd420f1867d60b2696d34d25948
-      size: 46
+      md5: f887fab792c5e8f5d4c6cc5a8c9b5899
+      size: 47
   train:
     cmd: python train.py documents-train-feats.csv model.json
     deps:
     - path: documents-train-feats.csv
-      md5: d3377cd420f1867d60b2696d34d25948
-      size: 46
+      md5: f887fab792c5e8f5d4c6cc5a8c9b5899
+      size: 47
     - path: train.py
       md5: b807980c16ea8e0e8ea8ed7b8675261c
       size: 1726
@@ -59,21 +59,21 @@ stages:
         train.weight_factor: 0.15841
     outs:
     - path: model.json
-      md5: 8102e3af120e64268f711cfeeb75e7cd
-      size: 691
+      md5: 2de9ea1546c4ea06a20e6c3d6177fc4a
+      size: 692
   evaluate:
     cmd: python evaluate.py model.json documents-test.csv
     deps:
     - path: documents-test.csv
-      md5: af540571a45d471c57d477536ebe4334
-      size: 1641
+      md5: a8111b949e8e33e1f4972f8dc6f860fa
+      size: 1666
     - path: evaluate.py
       md5: 8183a1104c7a4916ab0d6e0cc11c7b7e
       size: 41953
     - path: model.json
-      md5: 8102e3af120e64268f711cfeeb75e7cd
-      size: 691
+      md5: 2de9ea1546c4ea06a20e6c3d6177fc4a
+      size: 692
     outs:
     - path: metrics.json
-      md5: fbc9c9b354b07ce555843274b8fd1b2a
+      md5: da4179683380223099e5e24784dbf26e
       size: 461
