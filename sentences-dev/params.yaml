@@ -14,7 +14,7 @@ model:
   random_state: 472619921
   max_depth: 32
   split: 0.10941
-  ngrams: 2
+  ngrams: 1
   threads: 18
   max_features: 1478
   num_est: 96
