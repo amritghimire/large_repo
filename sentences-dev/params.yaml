@@ -6,14 +6,14 @@ prepare:
 train:
   min_split: 78
   estimators: 46
-  min_features: 3084
+  min_features: 3996
   max_features: 1311
   columns: 16
   threads: 2
 model:
   random_state: 472619921
   max_depth: 32
-  split: 0.1
+  split: 0.10941
   ngrams: 2
   threads: 18
   max_features: 1478
