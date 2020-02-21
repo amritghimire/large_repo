@@ -1,8 +1,8 @@
 prepare:
-  min_split: 52
+  min_split: 76
   dense: 290
   passes: 16
-  num_est: 204
+  num_est: 258
 train:
   min_split: 78
   estimators: 46
