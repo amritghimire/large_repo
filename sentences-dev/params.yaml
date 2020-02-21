@@ -1,6 +1,6 @@
 prepare:
   min_split: 76
-  dense: 290
+  dense: 262
   passes: 16
   num_est: 258
 train:
