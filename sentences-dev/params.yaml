@@ -5,7 +5,7 @@ prepare:
   num_est: 258
 train:
   min_split: 78
-  estimators: 46
+  estimators: 49
   min_features: 3996
   max_features: 1311
   columns: 16
