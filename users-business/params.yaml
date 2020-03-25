@@ -5,7 +5,7 @@ concurrent:
   features: 1926
   max_depth: 24
   threads: 17
-  num_est: 107
+  num_est: 114
 variables:
   min_features: 2563
   features: 1944
