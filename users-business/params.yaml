@@ -1,6 +1,6 @@
 concurrent:
   layers: 6
-  dense: 590
+  dense: 565
   trees: 61
   features: 1926
   max_depth: 24
