@@ -7,8 +7,8 @@ stages:
       md5: 2e236c8384f65e89f7bde4987ce5272b
       size: 17446
     - path: split.py
-      md5: b75e0f557248543bcaa3e94a1513b522
-      size: 1334
+      md5: 328116075661ad8a42ae59ad74f9c321
+      size: 1335
     params:
       params.yaml:
         prepare.batch_size: 464
@@ -43,7 +43,7 @@ stages:
       md5: 43cab074a0b8aacb6e492b7e90d37b66
       size: 48
     - path: train.py
-      md5: 4eb59244a3fadb2a04ca9229fc4d41cc
+      md5: 95b2d1076ebaf62adc608313c3f11673
       size: 1669
     params:
       params.yaml:
@@ -64,7 +64,7 @@ stages:
         validation.dense: 195
     outs:
     - path: model.json
-      md5: 59b45420c2b4f7447bf3fc6850b09fd2
+      md5: c082d5c820ea45a6893d806506b54f05
       size: 620
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -73,12 +73,12 @@ stages:
       md5: 020276fd71575aca30bca88638c2819a
       size: 42005
     - path: model.json
-      md5: 59b45420c2b4f7447bf3fc6850b09fd2
+      md5: c082d5c820ea45a6893d806506b54f05
       size: 620
     - path: sentences-test.csv
       md5: 9b19d89962511213f67bb3060b781385
       size: 3162
     outs:
     - path: metrics.json
-      md5: 6d63f722c2c47045c33d35886458fed9
-      size: 492
+      md5: 9629e16923dec6a9230c10ae964e74cf
+      size: 493
