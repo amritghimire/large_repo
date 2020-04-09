@@ -4,8 +4,8 @@ stages:
     cmd: python split.py users.csv users-train.csv users-test.csv
     deps:
     - path: split.py
-      md5: ad1e92f447f106739bcf7d4e20132b1c
-      size: 721
+      md5: 66a3b3fd8012699f2191832179109808
+      size: 722
     - path: users.csv
       md5: 80e65ef72d01a78865d3caf53e2b4750
       size: 3665
@@ -33,8 +33,8 @@ stages:
     cmd: python train.py users-train-feats.csv model.json
     deps:
     - path: train.py
-      md5: 28fc588a0c0e7d70fa6125d04dca0362
-      size: 2241
+      md5: 291064ab4ad7f2a44bedc7e915905c82
+      size: 2242
     - path: users-train-feats.csv
       md5: 857a090972a58533e35a047dd0889f8e
       size: 47
@@ -43,7 +43,7 @@ stages:
         concurrent.dense: 565
         concurrent.features: 1926
         concurrent.layers: 6
-        concurrent.max_depth: 24
+        concurrent.max_depth: 16
         concurrent.num_est: 114
         concurrent.threads: 17
         concurrent.trees: 61
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.35653
     outs:
     - path: model.json
-      md5: bf17c4e03ad63666d20ba4c1f2069c75
+      md5: 98814f510ae58321bb65b84bcfd979d0
       size: 1217
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: cfd47cb4f1881a270f0caef63cc6807f
       size: 41939
     - path: model.json
-      md5: bf17c4e03ad63666d20ba4c1f2069c75
+      md5: 98814f510ae58321bb65b84bcfd979d0
       size: 1217
     - path: users-test.csv
       md5: aa64e56b8d423e64d80767e296d43ac8
       size: 874
     outs:
     - path: metrics.json
-      md5: b3d3da1f6f252f1fcbc7fc0a8aafad28
-      size: 455
+      md5: c0f09cf52b421787af39151e6b3d018e
+      size: 456

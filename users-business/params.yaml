@@ -3,7 +3,7 @@ concurrent:
   dense: 565
   trees: 61
   features: 1926
-  max_depth: 24
+  max_depth: 16
   threads: 17
   num_est: 114
 variables:
