@@ -7,7 +7,7 @@ featurize:
   sample: 0.78761
   min_split: 14
   tags: 116
-  random_state: 18714394
+  random_state: 22159211
   trees: 13
   split: 0.17286
 preprocessing:
