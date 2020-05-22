@@ -4,8 +4,8 @@ stages:
     cmd: python split.py sentences.csv sentences-train.csv sentences-test.csv
     deps:
     - path: sentences.csv
-      md5: f69bc3fd226895b80303c556d77192bd
-      size: 6129
+      md5: 7a23ffb42fee6c72b835c9d761387745
+      size: 6744
     - path: split.py
       md5: 324c0dd465ff46961b1d32ac430e1ad7
       size: 1290
@@ -17,11 +17,11 @@ stages:
         prepare.passes: 17
     outs:
     - path: sentences-test.csv
-      md5: 2d144ed44512217fd2328277be8b4820
-      size: 1213
+      md5: e782af26ead901a7bf546be6ad04ef5e
+      size: 1316
     - path: sentences-train.csv
-      md5: 6cbdf8cdac8a689f22e82494eb76f7f9
-      size: 4916
+      md5: 3b0cf17eedb821885da8079f8f22bbb4
+      size: 5428
   featurize:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
@@ -29,18 +29,18 @@ stages:
       md5: 547d69de16042f79636d66d0a941ded1
       size: 710
     - path: sentences-train.csv
-      md5: 6cbdf8cdac8a689f22e82494eb76f7f9
-      size: 4916
+      md5: 3b0cf17eedb821885da8079f8f22bbb4
+      size: 5428
     outs:
     - path: sentences-train-feats.csv
-      md5: 972c32bc9f496a266e6bd0a3ed3e6930
-      size: 46
+      md5: 4a42c4220d91ba2ad5d330b22422e01a
+      size: 47
   train:
     cmd: python train.py sentences-train-feats.csv model.json
     deps:
     - path: sentences-train-feats.csv
-      md5: 972c32bc9f496a266e6bd0a3ed3e6930
-      size: 46
+      md5: 4a42c4220d91ba2ad5d330b22422e01a
+      size: 47
     - path: train.py
       md5: 92f223e5d15d7c51673568003b541787
       size: 2116
@@ -75,8 +75,8 @@ stages:
         variables.weight_factor: 0.17419
     outs:
     - path: model.json
-      md5: d69113e401b185cba8d136dd7afce945
-      size: 1076
+      md5: 97c7f737760f0a057696770acb16f064
+      size: 1077
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
     deps:
@@ -84,12 +84,12 @@ stages:
       md5: 639a31f2d83a637ccf098522e3020016
       size: 42026
     - path: model.json
-      md5: d69113e401b185cba8d136dd7afce945
-      size: 1076
+      md5: 97c7f737760f0a057696770acb16f064
+      size: 1077
     - path: sentences-test.csv
-      md5: 2d144ed44512217fd2328277be8b4820
-      size: 1213
+      md5: e782af26ead901a7bf546be6ad04ef5e
+      size: 1316
     outs:
     - path: metrics.json
-      md5: ec5db65d72fca5091cbc642afaaea263
-      size: 424
+      md5: d071fb7d5b3803e871a63c6f28b14f27
+      size: 427
