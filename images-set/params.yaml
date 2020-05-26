@@ -23,5 +23,5 @@ settings:
 validation:
   split: 0.34309
   min_split: 38
-  layers: 1
+  layers: 2
   num_est: 187
