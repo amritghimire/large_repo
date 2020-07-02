@@ -9,7 +9,7 @@ train:
   num_est: 165
   seed: 234387773
   tags: 59
-  batch_size: 636
+  batch_size: 588
   trees: 18
 concurrent:
   trees: 57
