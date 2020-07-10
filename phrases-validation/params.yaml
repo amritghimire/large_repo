@@ -17,7 +17,7 @@ concurrent:
   epochs: 44
   layers: 4
 featurize:
-  threads: 25
+  threads: 32
   estimators: 120
   trees: 47
   tags: 48
