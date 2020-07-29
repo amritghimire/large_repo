@@ -7,7 +7,7 @@ train:
   folds: 2
   layers: 2
   num_est: 165
-  seed: 234387773
+  seed: 229488276
   tags: 59
   batch_size: 588
   trees: 18
