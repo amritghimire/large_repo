@@ -43,7 +43,7 @@ stages:
         concurrent.columns: 61
         concurrent.features: 1503
         concurrent.ngrams: 5
-        concurrent.random_state: 76798585
+        concurrent.random_state: 98659984
         concurrent.split: 0.19536
         model.columns: 29
         model.dense: 241
@@ -55,7 +55,7 @@ stages:
         settings.min_features: 1456
         settings.num_est: 64
         settings.passes: 68
-        tagging.features: 3792
+        tagging.features: 3770
         tagging.learning_rate: 0.08355
         tagging.min_features: 3808
         validation.layers: 2
@@ -64,7 +64,7 @@ stages:
         validation.split: 0.34309
     outs:
     - path: model.json
-      md5: 832c6158550ac16caf0cc9c5a9ff775d
+      md5: 6775b50551728e86a5fa97eb41f7ed30
       size: 890
   evaluate:
     cmd: python evaluate.py model.json images-test.csv
@@ -76,9 +76,9 @@ stages:
       md5: 69d0a19043b882d90fe59d8be354e070
       size: 1239
     - path: model.json
-      md5: 832c6158550ac16caf0cc9c5a9ff775d
+      md5: 6775b50551728e86a5fa97eb41f7ed30
       size: 890
     outs:
     - path: metrics.json
-      md5: de68df4753a828348fca65e103e7c8b7
-      size: 480
+      md5: c0343092bdfe98e6f78404cee7bad99f
+      size: 479

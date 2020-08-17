@@ -1,6 +1,6 @@
 concurrent:
   ngrams: 5
-  random_state: 76798585
+  random_state: 98659984
   split: 0.19536
   columns: 61
   features: 1503
@@ -13,7 +13,7 @@ model:
   dense: 241
 tagging:
   learning_rate: 0.08355
-  features: 3792
+  features: 3770
   min_features: 3808
 settings:
   batch_size: 527
