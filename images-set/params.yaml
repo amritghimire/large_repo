@@ -9,10 +9,10 @@ model:
   estimators: 17
   columns: 29
   passes: 118
-  min_split: 27
+  min_split: 24
   dense: 241
 tagging:
-  learning_rate: 0.08713
+  learning_rate: 0.08355
   features: 3792
   min_features: 3808
 settings:
