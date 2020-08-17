@@ -42,7 +42,7 @@ stages:
       md5: 1486ced3b98176693c18b535d88b647f
       size: 219
     - path: train.py
-      md5: af95ff8a99d7a3fe594f9b3e09ba908b
+      md5: 502138e44d6227757447104d73314599
       size: 1805
     params:
       params.yaml:
@@ -67,7 +67,7 @@ stages:
         tagging.tags: 118
     outs:
     - path: model.json
-      md5: f63438e1faa560d3a55bb41bbc49e6a2
+      md5: ff69f78a818b5519d1057d494c357b82
       size: 949
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -76,12 +76,12 @@ stages:
       md5: 5479f9d4f7dd3bc10fafd7d59c5cce8f
       size: 41853
     - path: model.json
-      md5: f63438e1faa560d3a55bb41bbc49e6a2
+      md5: ff69f78a818b5519d1057d494c357b82
       size: 949
     - path: sentences-test.csv
       md5: ddf8846f4e149c70052f84beef3352b7
       size: 1895
     outs:
     - path: metrics.json
-      md5: 325e14e1121cb5e2a5431776a00589f3
-      size: 418
+      md5: 5ae0a639ac0da075a25767a6fd38c646
+      size: 416
