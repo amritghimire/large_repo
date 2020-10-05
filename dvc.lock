@@ -27,8 +27,8 @@ stages:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
     - path: featurize.py
-      md5: 256fd1d9440fb2e107b33501a5140d07
-      size: 712
+      md5: 5666faf8f4d3d745ead6409736789416
+      size: 713
     - path: sentences-train.csv
       md5: 5e5863322573e60087ffd8cf1b6c840a
       size: 15976
