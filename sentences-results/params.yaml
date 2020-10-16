@@ -1,5 +1,5 @@
 tagging:
-  learning_rate: 0.09045
+  learning_rate: 0.11781
   tags: 118
   epochs: 22
   sample: 0.76943
