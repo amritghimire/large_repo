@@ -63,11 +63,11 @@ stages:
         tagging.epochs: 22
         tagging.learning_rate: 0.11781
         tagging.sample: 0.76943
-        tagging.split: 0.10786
+        tagging.split: 0.12172
         tagging.tags: 118
     outs:
     - path: model.json
-      md5: 220b04486833c690224bd62072f16c25
+      md5: 04edd018b8673d927c7b08c272f698b0
       size: 948
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -76,12 +76,12 @@ stages:
       md5: 5479f9d4f7dd3bc10fafd7d59c5cce8f
       size: 41853
     - path: model.json
-      md5: 220b04486833c690224bd62072f16c25
+      md5: 04edd018b8673d927c7b08c272f698b0
       size: 948
     - path: sentences-test.csv
       md5: ddf8846f4e149c70052f84beef3352b7
       size: 1895
     outs:
     - path: metrics.json
-      md5: b0c88948b4b54ac8548ddc7d9871aea0
+      md5: a53aac8e725ad9080fdcaae84bfe436d
       size: 415
