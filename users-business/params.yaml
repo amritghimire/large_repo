@@ -25,7 +25,7 @@ preprocessing:
 settings:
   layers: 4
   batch_size: 663
-  split: 0.09589
+  split: 0.07572
   features: 1327
   min_split: 93
 model:
