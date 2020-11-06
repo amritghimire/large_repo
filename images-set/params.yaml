@@ -5,7 +5,7 @@ concurrent:
   columns: 61
   features: 1503
 model:
-  tags: 106
+  tags: 74
   estimators: 17
   columns: 29
   passes: 118
