@@ -16,7 +16,7 @@ preprocessing:
   epochs: 68
   max_depth: 20
   folds: 14
-  dense: 436
+  dense: 452
   split: 0.58761
 variables:
   trees: 63
