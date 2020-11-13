@@ -2,7 +2,7 @@
 import os, sys, json, math
 import random
 
-VERSION = 87
+VERSION = 88
 
 
 import yaml
