@@ -13,17 +13,17 @@ variables:
   batch_size: 805
   split: 0.35653
 preprocessing:
-  seed: 269128075
+  seed: 280306941
   trees: 93
   weight_factor: 0.15099
   passes: 1
   max_features: 410
   drop: 0.24578
-  num_est: 118
+  num_est: 87
   ngrams: 1
-  split: 0.3
+  split: 0.27536
 settings:
-  layers: 4
+  layers: 5
   batch_size: 663
   split: 0.07572
   features: 1327
