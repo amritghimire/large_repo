@@ -6,7 +6,7 @@ concurrent:
   tags: 51
 validation:
   batch_size: 663
-  split: 0.32518
+  split: 0.23802
 variables:
   random_state: 815902020
   threads: 5
