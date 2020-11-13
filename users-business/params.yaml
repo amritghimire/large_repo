@@ -8,7 +8,7 @@ concurrent:
   num_est: 114
 variables:
   min_features: 2563
-  features: 1944
+  features: 1916
   learning_rate: 0.0876
   batch_size: 805
   split: 0.35653
@@ -18,10 +18,10 @@ preprocessing:
   weight_factor: 0.15099
   passes: 1
   max_features: 410
-  drop: 0.24578
+  drop: 0.19105
   num_est: 87
   ngrams: 1
-  split: 0.27536
+  split: 0.24729
 settings:
   layers: 5
   batch_size: 663
