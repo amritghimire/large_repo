@@ -49,7 +49,7 @@ stages:
         concurrent.trees: 61
         model.batch_size: 921
         model.min_features: 2430
-        model.seed: 43820241
+        model.seed: 52293081
         preprocessing.drop: 0.19105
         preprocessing.max_features: 410
         preprocessing.ngrams: 1
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.35653
     outs:
     - path: model.json
-      md5: 6e6e634620291624fe10b8d823137f16
+      md5: bb5f9bfa979a6bc025225b63bf95f126
       size: 1220
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: cfd47cb4f1881a270f0caef63cc6807f
       size: 41939
     - path: model.json
-      md5: 6e6e634620291624fe10b8d823137f16
+      md5: bb5f9bfa979a6bc025225b63bf95f126
       size: 1220
     - path: users-test.csv
       md5: 81fbe5ae36793f16fb75a8da55a3cd44
       size: 1026
     outs:
     - path: metrics.json
-      md5: bcedda314c43e9fb3fb03c74f33a7e6a
-      size: 456
+      md5: b66dc26eb564f9d82c4b7ff79b02670c
+      size: 455

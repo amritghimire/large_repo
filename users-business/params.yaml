@@ -31,4 +31,4 @@ settings:
 model:
   min_features: 2430
   batch_size: 921
-  seed: 43820241
+  seed: 52293081
