@@ -1,6 +1,6 @@
 concurrent:
   layers: 5
-  dense: 565
+  dense: 739
   trees: 61
   features: 1926
   max_depth: 16
@@ -31,4 +31,4 @@ settings:
 model:
   min_features: 2430
   batch_size: 1083
-  seed: 52293081
+  seed: 47301599
