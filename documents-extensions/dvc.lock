@@ -36,7 +36,7 @@ stages:
       md5: 06622743e9efa34fc17de8f3822c5d10
       size: 47
     - path: train.py
-      md5: d71fcb13c081c85b7a6886fee17f4d89
+      md5: 02419f153f2c8b49dd6269a04763a547
       size: 1726
     params:
       params.yaml:
@@ -59,7 +59,7 @@ stages:
         train.weight_factor: 0.15841
     outs:
     - path: model.json
-      md5: 24ce58d315c5110452ec5cb37be40b88
+      md5: 0c19caf5df8494ec1591cf4d8b94db23
       size: 692
   evaluate:
     cmd: python evaluate.py model.json documents-test.csv
@@ -71,9 +71,9 @@ stages:
       md5: 8040207b5c47b3c95932c769fa725daf
       size: 41954
     - path: model.json
-      md5: 24ce58d315c5110452ec5cb37be40b88
+      md5: 0c19caf5df8494ec1591cf4d8b94db23
       size: 692
     outs:
     - path: metrics.json
-      md5: b19c4a6a9e8e5fd2f21c55b06d9a6124
-      size: 461
+      md5: 65107fb6e78b254808aff5e5ee84616a
+      size: 464
