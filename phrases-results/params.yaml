@@ -11,8 +11,8 @@ variables:
   random_state: 815902020
   threads: 5
 tagging:
-  threads: 28
-  min_features: 755
+  threads: 36
+  min_features: 926
   min_split: 59
   epochs: 38
 preprocessing:
