@@ -33,4 +33,4 @@ validation:
   seed: 70817687
   features: 1179
   ngrams: 4
-  min_split: 55
+  min_split: 71
