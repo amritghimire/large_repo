@@ -9,7 +9,7 @@ model:
   estimators: 17
   columns: 29
   passes: 118
-  min_split: 24
+  min_split: 32
   dense: 175
 tagging:
   learning_rate: 0.08355
