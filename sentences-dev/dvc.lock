@@ -7,8 +7,8 @@ stages:
       md5: 7a23ffb42fee6c72b835c9d761387745
       size: 6744
     - path: split.py
-      md5: 88a0a9b26bbe6106989e06943e99c4e2
-      size: 1291
+      md5: 7053268014a19c10cd86f2f2f48ba4a5
+      size: 1292
     params:
       params.yaml:
         prepare.dense: 262
@@ -26,8 +26,8 @@ stages:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
     - path: featurize.py
-      md5: 22225e00d0ff187de79ee93545cbc799
-      size: 710
+      md5: 0af0d7efb45f32d15b8e91eb47c14842
+      size: 712
     - path: sentences-train.csv
       md5: 3b0cf17eedb821885da8079f8f22bbb4
       size: 5428
