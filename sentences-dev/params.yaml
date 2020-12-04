@@ -7,7 +7,7 @@ train:
   min_split: 78
   estimators: 32
   min_features: 3103
-  max_features: 1311
+  max_features: 1252
   columns: 16
   threads: 2
 model:
