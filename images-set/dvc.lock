@@ -61,10 +61,10 @@ stages:
         validation.layers: 2
         validation.min_split: 38
         validation.num_est: 154
-        validation.split: 0.44244
+        validation.split: 0.47024
     outs:
     - path: model.json
-      md5: 5b9f94c8c4dd25377b7c9f0279fc1147
+      md5: fa67f3d5c6f62fdfb5553322eb6d1023
       size: 890
   evaluate:
     cmd: python evaluate.py model.json images-test.csv
@@ -76,9 +76,9 @@ stages:
       md5: 69d0a19043b882d90fe59d8be354e070
       size: 1239
     - path: model.json
-      md5: 5b9f94c8c4dd25377b7c9f0279fc1147
+      md5: fa67f3d5c6f62fdfb5553322eb6d1023
       size: 890
     outs:
     - path: metrics.json
-      md5: b1e874b575239ca0e90643f4e264724d
-      size: 483
+      md5: cde319982184acb1805db5c1418ff66b
+      size: 485

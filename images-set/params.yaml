@@ -21,7 +21,7 @@ settings:
   min_features: 1456
   passes: 80
 validation:
-  split: 0.44244
+  split: 0.47024
   min_split: 38
   layers: 2
   num_est: 154
