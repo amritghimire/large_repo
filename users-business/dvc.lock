@@ -33,8 +33,8 @@ stages:
     cmd: python train.py users-train-feats.csv model.json
     deps:
     - path: train.py
-      md5: 94957f27760c9c452ed8605dfe00335c
-      size: 2242
+      md5: 1bd0d2f0fbf9db412924db5f64673a6e
+      size: 2243
     - path: users-train-feats.csv
       md5: 5dcdf727fecb22e5f9d7986c7e0fc249
       size: 47
