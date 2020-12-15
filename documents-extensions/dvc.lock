@@ -4,36 +4,36 @@ stages:
     cmd: python split.py documents.csv documents-train.csv documents-test.csv
     deps:
     - path: documents.csv
-      md5: 0e7d57b0c546f9cb19c717dc293c4655
-      size: 10186
+      md5: 4701c505cb083bc72631b7f6b87531e2
+      size: 10749
     - path: split.py
       md5: dfc67041e84b24f9afb8c5546d260cd0
       size: 725
     outs:
     - path: documents-test.csv
-      md5: 217b4828a08687aafad77e38d0f5c1b2
-      size: 1893
+      md5: d9f092d7e46d33c60ccc511893f0d0e1
+      size: 1994
     - path: documents-train.csv
-      md5: 250bf73c9bb05681761fa0a1b766bff1
-      size: 8293
+      md5: ca64e934b2ad26cda573bb994324d9b4
+      size: 8755
   featurize:
     cmd: python featurize.py documents-train.csv documents-train-feats.csv
     deps:
     - path: documents-train.csv
-      md5: 250bf73c9bb05681761fa0a1b766bff1
-      size: 8293
+      md5: ca64e934b2ad26cda573bb994324d9b4
+      size: 8755
     - path: featurize.py
       md5: a0dcb7964d8e4bcf86756495901fa4b0
       size: 704
     outs:
     - path: documents-train-feats.csv
-      md5: 06622743e9efa34fc17de8f3822c5d10
+      md5: e3e0acc06370f59e25db89d164d4535e
       size: 47
   train:
     cmd: python train.py documents-train-feats.csv model.json
     deps:
     - path: documents-train-feats.csv
-      md5: 06622743e9efa34fc17de8f3822c5d10
+      md5: e3e0acc06370f59e25db89d164d4535e
       size: 47
     - path: train.py
       md5: ba934b26cce1665e21bf552f78509c6a
@@ -59,21 +59,21 @@ stages:
         train.weight_factor: 0.15841
     outs:
     - path: model.json
-      md5: 771e2314a2a9af5440a7f1d6361b3ba1
+      md5: 4cd731446a87249719f33ae7cee81bce
       size: 692
   evaluate:
     cmd: python evaluate.py model.json documents-test.csv
     deps:
     - path: documents-test.csv
-      md5: 217b4828a08687aafad77e38d0f5c1b2
-      size: 1893
+      md5: d9f092d7e46d33c60ccc511893f0d0e1
+      size: 1994
     - path: evaluate.py
       md5: 8040207b5c47b3c95932c769fa725daf
       size: 41954
     - path: model.json
-      md5: 771e2314a2a9af5440a7f1d6361b3ba1
+      md5: 4cd731446a87249719f33ae7cee81bce
       size: 692
     outs:
     - path: metrics.json
-      md5: 2e315c8198763ea61baed6f87abb952c
-      size: 462
+      md5: 7c5da79f5fdbde288e203466f10743c8
+      size: 461
