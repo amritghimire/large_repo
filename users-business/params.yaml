@@ -8,19 +8,19 @@ concurrent:
   num_est: 114
 variables:
   min_features: 2563
-  features: 1916
+  features: 2118
   learning_rate: 0.0876
   batch_size: 805
-  split: 0.42914
+  split: 0.31392
 preprocessing:
   seed: 280306941
   trees: 87
   weight_factor: 0.15099
   passes: 2
-  max_features: 410
+  max_features: 342
   drop: 0.19105
   num_est: 95
-  ngrams: 2
+  ngrams: 1
   split: 0.24729
 settings:
   layers: 5
