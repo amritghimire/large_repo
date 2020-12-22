@@ -2,7 +2,7 @@ concurrent:
   ngrams: 7
   split: 0.23018
   min_features: 1592
-  drop: 0.09869
+  drop: 0.10177
   tags: 51
 validation:
   batch_size: 663
@@ -14,9 +14,9 @@ tagging:
   threads: 36
   min_features: 926
   min_split: 59
-  epochs: 38
+  epochs: 39
 preprocessing:
-  min_features: 114
+  min_features: 111
   layers: 4
   min_split: 73
   num_est: 80
