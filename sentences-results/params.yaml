@@ -1,8 +1,8 @@
 tagging:
   learning_rate: 0.11781
   tags: 116
-  epochs: 15
-  sample: 0.87338
+  epochs: 24
+  sample: 0.80045
   split: 0.12172
 settings:
   layers: 2
