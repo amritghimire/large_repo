@@ -11,10 +11,10 @@ stages:
       size: 1292
     params:
       params.yaml:
-        prepare.dense: 300
-        prepare.min_split: 66
-        prepare.num_est: 309
-        prepare.passes: 17
+        prepare.dense: 246
+        prepare.min_split: 76
+        prepare.num_est: 237
+        prepare.passes: 15
     outs:
     - path: sentences-test.csv
       md5: e782af26ead901a7bf546be6ad04ef5e
