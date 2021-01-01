@@ -17,7 +17,7 @@ tagging:
   min_features: 4013
 settings:
   batch_size: 821
-  num_est: 69
+  num_est: 73
   min_features: 1141
   passes: 80
 validation:
