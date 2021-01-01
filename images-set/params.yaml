@@ -1,13 +1,13 @@
 concurrent:
   ngrams: 5
   random_state: 98659984
-  split: 0.19536
+  split: 0.20124
   columns: 44
   features: 1503
 model:
   tags: 100
   estimators: 17
-  columns: 29
+  columns: 25
   passes: 118
   min_split: 32
   dense: 184
@@ -16,7 +16,7 @@ tagging:
   features: 3770
   min_features: 3808
 settings:
-  batch_size: 527
+  batch_size: 821
   num_est: 69
   min_features: 1456
   passes: 80
@@ -24,4 +24,4 @@ validation:
   split: 0.47024
   min_split: 38
   layers: 2
-  num_est: 155
+  num_est: 173
