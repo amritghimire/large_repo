@@ -7,8 +7,8 @@ stages:
       md5: 621d9313de1a19a4e89e112a8bb1aa02
       size: 19786
     - path: split.py
-      md5: 328116075661ad8a42ae59ad74f9c321
-      size: 1335
+      md5: 1cc4ed7ea3c68536bebdaa08b8ec1872
+      size: 1336
     params:
       params.yaml:
         prepare.batch_size: 402
