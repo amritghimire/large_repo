@@ -1,5 +1,5 @@
 concurrent:
-  ngrams: 7
+  ngrams: 6
   split: 0.23018
   min_features: 1265
   drop: 0.07713
