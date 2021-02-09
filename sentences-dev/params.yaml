@@ -29,7 +29,7 @@ variables:
   features: 4194
 validation:
   learning_rate: 0.04415
-  weight_factor: 0.29307
+  weight_factor: 0.28561
   seed: 70817687
   features: 1179
   ngrams: 4
