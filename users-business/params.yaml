@@ -17,11 +17,11 @@ preprocessing:
   trees: 87
   weight_factor: 0.15099
   passes: 2
-  max_features: 342
+  max_features: 321
   drop: 0.19105
   num_est: 95
   ngrams: 1
-  split: 0.24729
+  split: 0.26817
 settings:
   layers: 5
   batch_size: 663
