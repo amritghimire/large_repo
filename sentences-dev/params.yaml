@@ -21,8 +21,8 @@ model:
   folds: 5
   passes: 6
 variables:
-  sample: 0.62285
-  num_est: 85
+  sample: 0.86478
+  num_est: 58
   min_split: 76
   columns: 15
   weight_factor: 0.22878
@@ -33,4 +33,4 @@ validation:
   seed: 70817687
   features: 1179
   ngrams: 4
-  min_split: 79
+  min_split: 60
