@@ -53,9 +53,9 @@ stages:
         model.num_est: 96
         model.passes: 6
         model.random_state: 472619921
-        model.split: 0.10941
+        model.split: 0.08844
         model.threads: 24
-        train.columns: 16
+        train.columns: 13
         train.estimators: 32
         train.max_features: 1252
         train.min_features: 3103
@@ -63,7 +63,7 @@ stages:
         train.threads: 2
         validation.features: 1179
         validation.learning_rate: 0.04415
-        validation.min_split: 60
+        validation.min_split: 48
         validation.ngrams: 4
         validation.seed: 70817687
         validation.weight_factor: 0.28561
@@ -75,7 +75,7 @@ stages:
         variables.weight_factor: 0.22878
     outs:
     - path: model.json
-      md5: b936c77f427400fdca68247fa79128e4
+      md5: 54f41eea302f21d3110b7f14508e5e49
       size: 1077
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -84,12 +84,12 @@ stages:
       md5: e75872bbbbfd0aef2c7705ca328a5bcc
       size: 42029
     - path: model.json
-      md5: b936c77f427400fdca68247fa79128e4
+      md5: 54f41eea302f21d3110b7f14508e5e49
       size: 1077
     - path: sentences-test.csv
       md5: e782af26ead901a7bf546be6ad04ef5e
       size: 1316
     outs:
     - path: metrics.json
-      md5: 2b68ca2ef5e8c8a48add9df9d2a02ebf
-      size: 431
+      md5: 76e1c2fd9fb052444f1a6a9e4505438b
+      size: 429

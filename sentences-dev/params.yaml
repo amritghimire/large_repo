@@ -8,12 +8,12 @@ train:
   estimators: 32
   min_features: 3103
   max_features: 1252
-  columns: 16
+  columns: 13
   threads: 2
 model:
   random_state: 472619921
   max_depth: 32
-  split: 0.10941
+  split: 0.08844
   ngrams: 2
   threads: 24
   max_features: 1155
@@ -33,4 +33,4 @@ validation:
   seed: 70817687
   features: 1179
   ngrams: 4
-  min_split: 60
+  min_split: 48
