@@ -70,8 +70,8 @@ stages:
     cmd: python evaluate.py model.json images-test.csv
     deps:
     - path: evaluate.py
-      md5: fc01381315b2f28f5bd8db3853c70b49
-      size: 42005
+      md5: 46b5d6faa67df6a19580bf0603778354
+      size: 42006
     - path: images-test.csv
       md5: d9afc7775ed13d9ea18e948f42b82dc1
       size: 1427
