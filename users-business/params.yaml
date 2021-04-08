@@ -2,7 +2,7 @@ concurrent:
   layers: 5
   dense: 739
   trees: 73
-  features: 1926
+  features: 1667
   max_depth: 20
   threads: 17
   num_est: 114
@@ -19,7 +19,7 @@ preprocessing:
   passes: 1
   max_features: 376
   drop: 0.19105
-  num_est: 95
+  num_est: 117
   ngrams: 1
   split: 0.26817
 settings:
