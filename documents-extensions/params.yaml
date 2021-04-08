@@ -12,11 +12,11 @@ concurrent:
   estimators: 138
 train:
   estimators: 51
-  batch_size: 750
+  batch_size: 814
   weight_factor: 0.22682
   epochs: 41
 settings:
   split: 0.0811
   estimators: 45
 model:
-  split: 0.5613
+  split: 0.43389
