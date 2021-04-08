@@ -11,13 +11,13 @@ variables:
   features: 2118
   learning_rate: 0.0876
   batch_size: 569
-  split: 0.31392
+  split: 0.39526
 preprocessing:
   seed: 280306941
   trees: 87
   weight_factor: 0.15099
-  passes: 2
-  max_features: 321
+  passes: 1
+  max_features: 376
   drop: 0.19105
   num_est: 95
   ngrams: 1
@@ -31,4 +31,4 @@ settings:
 model:
   min_features: 2430
   batch_size: 1083
-  seed: 47301599
+  seed: 54031165
