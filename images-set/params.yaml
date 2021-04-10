@@ -22,6 +22,6 @@ settings:
   passes: 80
 validation:
   split: 0.39586
-  min_split: 38
+  min_split: 59
   layers: 2
   num_est: 144
