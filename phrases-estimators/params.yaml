@@ -12,7 +12,7 @@ featurize:
   split: 0.16161
 preprocessing:
   max_features: 4214
-  random_state: 313811340
+  random_state: 286295522
   epochs: 68
   max_depth: 20
   folds: 14
