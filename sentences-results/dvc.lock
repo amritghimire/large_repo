@@ -4,18 +4,18 @@ stages:
     cmd: python split.py sentences.csv sentences-train.csv sentences-test.csv
     deps:
     - path: sentences.csv
-      md5: b6074c2c4d1ceb3801429d09526cc261
-      size: 11237
+      md5: b5b169a5424db16a5224b0db104fd450
+      size: 11852
     - path: split.py
       md5: 3a19700e3a4223088773b0728da7b6dc
       size: 724
     outs:
     - path: sentences-test.csv
-      md5: 29be749df30d1bde9a1d1fee824d79cc
-      size: 2104
+      md5: 87f1068734520956ef6afd2c856b2caf
+      size: 2168
     - path: sentences-train.csv
-      md5: 8bf581e1284fd32471e27e5cf85471b5
-      size: 9133
+      md5: d9fcb23dbb63f257730573c6e81dba53
+      size: 9684
   featurize:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
@@ -23,8 +23,8 @@ stages:
       md5: f60b4fc0597dd6942627fd44c75cc2b1
       size: 1304
     - path: sentences-train.csv
-      md5: 8bf581e1284fd32471e27e5cf85471b5
-      size: 9133
+      md5: d9fcb23dbb63f257730573c6e81dba53
+      size: 9684
     params:
       params.yaml:
         featurize.batch_size: 1116
@@ -33,13 +33,13 @@ stages:
         featurize.weight_factor: 0.08543
     outs:
     - path: sentences-train-feats.csv
-      md5: 1b32a2868bea908ff9b79e92796189dd
+      md5: 032624e1c065011e3ebad7cd6ae000c2
       size: 219
   train:
     cmd: python train.py sentences-train-feats.csv model.json
     deps:
     - path: sentences-train-feats.csv
-      md5: 1b32a2868bea908ff9b79e92796189dd
+      md5: 032624e1c065011e3ebad7cd6ae000c2
       size: 219
     - path: train.py
       md5: 0786bfc779a44dc6bcf62fd36016ee5d
@@ -67,7 +67,7 @@ stages:
         tagging.tags: 116
     outs:
     - path: model.json
-      md5: 555edffe9b3edff9316dc08429729740
+      md5: f8e28fd909b49a0df84f8ab83a1fc451
       size: 950
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -76,12 +76,12 @@ stages:
       md5: bef2c4d2b2ae16a54b2251f8cb4cd6f4
       size: 41855
     - path: model.json
-      md5: 555edffe9b3edff9316dc08429729740
+      md5: f8e28fd909b49a0df84f8ab83a1fc451
       size: 950
     - path: sentences-test.csv
-      md5: 29be749df30d1bde9a1d1fee824d79cc
-      size: 2104
+      md5: 87f1068734520956ef6afd2c856b2caf
+      size: 2168
     outs:
     - path: metrics.json
-      md5: 4c8ff9ae271726c7a43900aab5aed13e
-      size: 416
+      md5: 500faae794d42483befa41b824e20811
+      size: 414
