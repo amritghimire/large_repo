@@ -1,6 +1,6 @@
 concurrent:
   ngrams: 7
-  random_state: 98659984
+  random_state: 75378570
   split: 0.20124
   columns: 44
   features: 1503
@@ -8,15 +8,15 @@ model:
   tags: 100
   estimators: 17
   columns: 27
-  passes: 118
+  passes: 125
   min_split: 32
   dense: 184
 tagging:
   learning_rate: 0.05705
-  features: 3770
+  features: 4280
   min_features: 4013
 settings:
-  batch_size: 821
+  batch_size: 694
   num_est: 84
   min_features: 1141
   passes: 80
