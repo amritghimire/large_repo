@@ -41,7 +41,7 @@ stages:
     params:
       params.yaml:
         concurrent.drop: 0.07713
-        concurrent.min_features: 1265
+        concurrent.min_features: 1476
         concurrent.ngrams: 6
         concurrent.split: 0.23018
         concurrent.tags: 51
@@ -60,21 +60,21 @@ stages:
         variables.threads: 5
     outs:
     - path: model.json
-      md5: 8d2fd4ca0c9d4e07226aa446eb30ddc6
+      md5: e752755c102747cdf2ccd1fcfdf1f02c
       size: 778
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
     deps:
     - path: evaluate.py
-      md5: 2a94b4ae3b76a73b64bb93ee47ce22d4
-      size: 41793
+      md5: ca5b10965583c029bcfb1df27627b91a
+      size: 41794
     - path: model.json
-      md5: 8d2fd4ca0c9d4e07226aa446eb30ddc6
+      md5: e752755c102747cdf2ccd1fcfdf1f02c
       size: 778
     - path: phrases-test.csv
       md5: 4127a9b317672172a02e5af591f7ca46
       size: 1396
     outs:
     - path: metrics.json
-      md5: c7fe1efc101d6da37a6ce1f62a528176
-      size: 331
+      md5: 14fb71f949d6fa5a91b9c85167a34c7c
+      size: 333
