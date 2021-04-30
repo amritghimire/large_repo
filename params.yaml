@@ -22,4 +22,4 @@ tagging:
 model:
   drop: 0.22577
   min_features: 101
-  max_features: 2234
+  max_features: 2809
