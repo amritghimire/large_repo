@@ -66,8 +66,8 @@ stages:
     cmd: python evaluate.py model.json phrases-test.csv
     deps:
     - path: evaluate.py
-      md5: 7af82aec0d4b192beb6405777855e7ae
-      size: 41792
+      md5: 2a94b4ae3b76a73b64bb93ee47ce22d4
+      size: 41793
     - path: model.json
       md5: 8d2fd4ca0c9d4e07226aa446eb30ddc6
       size: 778
