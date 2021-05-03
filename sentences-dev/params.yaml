@@ -11,8 +11,8 @@ train:
   columns: 13
   threads: 2
 model:
-  random_state: 472619921
-  max_depth: 32
+  random_state: 493655995
+  max_depth: 29
   split: 0.08844
   ngrams: 2
   threads: 24
@@ -21,7 +21,7 @@ model:
   folds: 5
   passes: 6
 variables:
-  sample: 0.86478
+  sample: 0.67622
   num_est: 58
   min_split: 76
   columns: 15
