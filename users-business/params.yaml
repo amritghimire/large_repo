@@ -3,12 +3,12 @@ concurrent:
   dense: 739
   trees: 73
   features: 1667
-  max_depth: 20
+  max_depth: 16
   threads: 17
   num_est: 114
 variables:
   min_features: 2563
-  features: 2118
+  features: 2385
   learning_rate: 0.0876
   batch_size: 569
   split: 0.39526
@@ -26,7 +26,7 @@ settings:
   layers: 5
   batch_size: 663
   split: 0.07572
-  features: 1327
+  features: 1594
   min_split: 93
 model:
   min_features: 2430
