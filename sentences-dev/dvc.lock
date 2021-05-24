@@ -12,7 +12,7 @@ stages:
     params:
       params.yaml:
         prepare.dense: 277
-        prepare.min_split: 56
+        prepare.min_split: 68
         prepare.num_est: 248
         prepare.passes: 15
     outs:
