@@ -13,7 +13,7 @@ stages:
       params.yaml:
         prepare.dense: 275
         prepare.min_split: 49
-        prepare.num_est: 295
+        prepare.num_est: 287
         prepare.passes: 18
     outs:
     - path: sentences-test.csv
@@ -42,8 +42,8 @@ stages:
       md5: 182048511cd6960c80e897d6689e97be
       size: 47
     - path: train.py
-      md5: 76c51cea1ae1aa3a5aaa18d6a9b8df94
-      size: 2120
+      md5: deef20186e5cf4ec449ef8acb1930170
+      size: 2121
     params:
       params.yaml:
         model.folds: 5
