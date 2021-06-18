@@ -14,7 +14,7 @@ train:
   estimators: 47
   batch_size: 814
   weight_factor: 0.22682
-  epochs: 32
+  epochs: 42
 settings:
   split: 0.0811
   estimators: 45
