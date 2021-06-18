@@ -19,4 +19,4 @@ settings:
   split: 0.0811
   estimators: 45
 model:
-  split: 0.43389
+  split: 0.3902
