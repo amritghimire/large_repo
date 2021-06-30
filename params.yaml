@@ -1,5 +1,5 @@
 validation:
-  columns: 23
+  columns: 34
   dense: 153
 prepare:
   epochs: 69
@@ -22,4 +22,4 @@ tagging:
 model:
   drop: 0.22577
   min_features: 103
-  max_features: 1797
+  max_features: 2239
