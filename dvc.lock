@@ -48,9 +48,9 @@ stages:
     params:
       params.yaml:
         concurrent.batch_size: 136
-        concurrent.columns: 54
+        concurrent.columns: 70
         concurrent.layers: 4
-        concurrent.min_split: 36
+        concurrent.min_split: 24
         concurrent.sample: 1.0979
         model.drop: 0.22577
         model.max_features: 2239
@@ -64,7 +64,7 @@ stages:
         validation.dense: 153
     outs:
     - path: model.json
-      md5: a15aeb4ccf04d20d9c4abfbcec789d9c
+      md5: c7708d1a50ad3f4f01e240c0eacf48e7
       size: 619
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -73,12 +73,12 @@ stages:
       md5: 71f2116bd16c65ab82105181c03044b9
       size: 42009
     - path: model.json
-      md5: a15aeb4ccf04d20d9c4abfbcec789d9c
+      md5: c7708d1a50ad3f4f01e240c0eacf48e7
       size: 619
     - path: sentences-test.csv
       md5: 24fdb537195c997b0f4a425cb4a40086
       size: 3579
     outs:
     - path: metrics.json
-      md5: a125676621d9e7bb44cfa2ae86a01b33
+      md5: 5f9aba7e805b8a926505912f1579f55f
       size: 479

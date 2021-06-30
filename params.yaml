@@ -8,11 +8,11 @@ prepare:
   layers: 2
   learning_rate: 0.12076
 concurrent:
-  columns: 54
+  columns: 70
   sample: 1.0979
   batch_size: 136
   layers: 4
-  min_split: 36
+  min_split: 24
 tagging:
   drop: 0.32541
   features: 4392
