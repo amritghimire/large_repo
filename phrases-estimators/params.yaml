@@ -6,10 +6,10 @@ model:
 featurize:
   sample: 0.68453
   min_split: 15
-  tags: 101
-  random_state: 21358746
-  trees: 14
-  split: 0.16161
+  tags: 89
+  random_state: 22377903
+  trees: 16
+  split: 0.15121
 preprocessing:
   max_features: 3905
   random_state: 286295522
