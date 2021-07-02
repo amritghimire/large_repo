@@ -1,7 +1,7 @@
 model:
   num_est: 115
   random_state: 735765816
-  max_features: 541
+  max_features: 530
   dense: 346
 featurize:
   sample: 0.68453
@@ -14,7 +14,7 @@ preprocessing:
   max_features: 4926
   random_state: 286295522
   epochs: 60
-  max_depth: 20
+  max_depth: 29
   folds: 14
   dense: 452
   split: 0.58761
@@ -24,7 +24,7 @@ variables:
   min_features: 1755
   min_split: 64
 concurrent:
-  estimators: 159
+  estimators: 145
   seed: 1075719985
   trees: 54
   dense: 514
