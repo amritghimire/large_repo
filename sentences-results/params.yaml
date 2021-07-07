@@ -1,7 +1,7 @@
 tagging:
-  learning_rate: 0.11781
+  learning_rate: 0.11539
   tags: 116
-  epochs: 23
+  epochs: 19
   sample: 0.80045
   split: 0.12489
 settings:
@@ -10,7 +10,7 @@ settings:
   columns: 70
   epochs: 4
 concurrent:
-  columns: 11
+  columns: 13
   tags: 100
   split: 0.09286
   random_state: 195233372
@@ -24,5 +24,5 @@ featurize:
 model:
   trees: 11
   estimators: 176
-  min_features: 2873
-  num_est: 75
+  min_features: 4272
+  num_est: 116
