@@ -12,8 +12,8 @@ model:
   min_split: 32
   dense: 184
 tagging:
-  learning_rate: 0.05705
-  features: 4280
+  learning_rate: 0.05605
+  features: 3935
   min_features: 4013
 settings:
   batch_size: 585
