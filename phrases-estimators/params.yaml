@@ -21,10 +21,10 @@ preprocessing:
 variables:
   trees: 63
   tags: 24
-  min_features: 1755
-  min_split: 64
+  min_features: 1384
+  min_split: 54
 concurrent:
   estimators: 145
-  seed: 1075719985
+  seed: 805068757
   trees: 54
   dense: 514
