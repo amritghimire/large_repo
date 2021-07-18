@@ -4,7 +4,7 @@ prepare:
   passes: 12
   num_est: 287
 train:
-  min_split: 78
+  min_split: 57
   estimators: 32
   min_features: 3103
   max_features: 1252
