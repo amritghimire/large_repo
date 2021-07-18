@@ -16,7 +16,7 @@ model:
   split: 0.08844
   ngrams: 2
   threads: 24
-  max_features: 1155
+  max_features: 1204
   num_est: 96
   folds: 5
   passes: 6
