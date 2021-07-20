@@ -19,7 +19,7 @@ settings:
   batch_size: 585
   num_est: 71
   min_features: 1195
-  passes: 80
+  passes: 82
 validation:
   split: 0.39586
   min_split: 59
