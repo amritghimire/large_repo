@@ -21,8 +21,8 @@ featurize:
   estimators: 110
   trees: 38
   tags: 65
-  layers: 3
-  ngrams: 5
+  layers: 4
+  ngrams: 6
 tagging:
   dense: 589
   epochs: 11
