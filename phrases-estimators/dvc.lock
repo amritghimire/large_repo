@@ -4,18 +4,18 @@ stages:
     cmd: python split.py phrases.csv phrases-train.csv phrases-test.csv
     deps:
     - path: phrases.csv
-      md5: 755dad3d03bc2a6089899e472e115c03
-      size: 4647
+      md5: 4f8af7f3169a2ad73edaec4987fefa98
+      size: 5146
     - path: split.py
       md5: 0f14e81e915068c6a28134833112408a
       size: 717
     outs:
     - path: phrases-test.csv
-      md5: 9c72d4b37053fa8286c91dbb56402658
-      size: 1039
+      md5: b037bd80e8a60f1706af1b2cab24fb64
+      size: 1116
     - path: phrases-train.csv
-      md5: 76b399a70be5b573aae5c47b76d53b42
-      size: 3608
+      md5: f4bc5a6385fd6903fa0b6e28d8118dcd
+      size: 4030
   featurize:
     cmd: python featurize.py phrases-train.csv phrases-train-feats.csv
     deps:
@@ -23,8 +23,8 @@ stages:
       md5: 5647dd4f6a57db9054d37ddd1c3a77e3
       size: 1362
     - path: phrases-train.csv
-      md5: 76b399a70be5b573aae5c47b76d53b42
-      size: 3608
+      md5: f4bc5a6385fd6903fa0b6e28d8118dcd
+      size: 4030
     params:
       params.yaml:
         featurize.min_split: 18
@@ -35,14 +35,14 @@ stages:
         featurize.trees: 17
     outs:
     - path: phrases-train-feats.csv
-      md5: 5f0fe46fda8b2ba15e72acf17d957bd3
-      size: 280
+      md5: 29ed3b98bdfdd797cd9db05e6d7aa02e
+      size: 281
   train:
     cmd: python train.py phrases-train-feats.csv model.json
     deps:
     - path: phrases-train-feats.csv
-      md5: 5f0fe46fda8b2ba15e72acf17d957bd3
-      size: 280
+      md5: 29ed3b98bdfdd797cd9db05e6d7aa02e
+      size: 281
     - path: train.py
       md5: 2b21b4dd56858b0bab394e289a313d46
       size: 1844
@@ -69,8 +69,8 @@ stages:
         variables.trees: 63
     outs:
     - path: model.json
-      md5: 54e4430621e2c31c0f2173893724bad9
-      size: 1049
+      md5: 6ce9d88e0214f5a2f1c2ebc0be31337a
+      size: 1050
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
     deps:
@@ -78,12 +78,12 @@ stages:
       md5: 2389103bb986dde3b1f6be3e1f2f4e11
       size: 41884
     - path: model.json
-      md5: 54e4430621e2c31c0f2173893724bad9
-      size: 1049
+      md5: 6ce9d88e0214f5a2f1c2ebc0be31337a
+      size: 1050
     - path: phrases-test.csv
-      md5: 9c72d4b37053fa8286c91dbb56402658
-      size: 1039
+      md5: b037bd80e8a60f1706af1b2cab24fb64
+      size: 1116
     outs:
     - path: metrics.json
-      md5: 132eac0f9fc03d695aa34c5b2e748ede
-      size: 352
+      md5: 8237c5eea6f195383720a2a36e7b91ec
+      size: 356
