@@ -12,7 +12,7 @@ concurrent:
   estimators: 138
 train:
   estimators: 47
-  batch_size: 814
+  batch_size: 926
   weight_factor: 0.22682
   epochs: 42
 settings:
