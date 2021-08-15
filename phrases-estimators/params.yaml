@@ -24,7 +24,7 @@ variables:
   min_features: 1384
   min_split: 54
 concurrent:
-  estimators: 140
+  estimators: 152
   seed: 805068757
   trees: 54
   dense: 514
