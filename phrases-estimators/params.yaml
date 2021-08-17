@@ -8,8 +8,8 @@ featurize:
   min_split: 19
   tags: 117
   random_state: 21946169
-  trees: 17
-  split: 0.19651
+  trees: 16
+  split: 0.17178
 preprocessing:
   max_features: 3905
   random_state: 286295522
