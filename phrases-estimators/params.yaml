@@ -5,10 +5,10 @@ model:
   dense: 346
 featurize:
   sample: 0.83799
-  min_split: 19
-  tags: 81
-  random_state: 21946169
-  trees: 18
+  min_split: 13
+  tags: 107
+  random_state: 21585975
+  trees: 13
   split: 0.17178
 preprocessing:
   max_features: 3905
