@@ -22,7 +22,7 @@ variables:
   trees: 98
   tags: 24
   min_features: 1384
-  min_split: 54
+  min_split: 74
 concurrent:
   estimators: 152
   seed: 895714802
