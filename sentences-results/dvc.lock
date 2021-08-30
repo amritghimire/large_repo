@@ -7,8 +7,8 @@ stages:
       md5: b5b169a5424db16a5224b0db104fd450
       size: 11852
     - path: split.py
-      md5: 3a19700e3a4223088773b0728da7b6dc
-      size: 724
+      md5: 5b0ac538fe21b5b55e33b2cb0493b820
+      size: 725
     outs:
     - path: sentences-test.csv
       md5: 87f1068734520956ef6afd2c856b2caf
