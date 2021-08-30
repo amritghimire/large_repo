@@ -14,7 +14,7 @@ variables:
   split: 0.39526
 preprocessing:
   seed: 280306941
-  trees: 87
+  trees: 88
   weight_factor: 0.15099
   passes: 1
   max_features: 376
