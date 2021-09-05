@@ -4,37 +4,37 @@ stages:
     cmd: python split.py documents.csv documents-train.csv documents-test.csv
     deps:
     - path: documents.csv
-      md5: 2a52880c9d02228262f4f3da5b9c2538
-      size: 11785
+      md5: ecd3737202d058a54eb00dec25c6fef0
+      size: 12169
     - path: split.py
       md5: fb3a1b952a0a2e39981916f752e8f408
       size: 726
     outs:
     - path: documents-test.csv
-      md5: 026ed9d5039c9ccebd00edeccb0a33c0
-      size: 2185
+      md5: 6d6792a5237e06cd4cf08efa0d85c7a4
+      size: 2221
     - path: documents-train.csv
-      md5: 65801e30a18349b226d1a34905155399
-      size: 9600
+      md5: 80ac2b73b425b9eecdcb69e523b314c2
+      size: 9948
   featurize:
     cmd: python featurize.py documents-train.csv documents-train-feats.csv
     deps:
     - path: documents-train.csv
-      md5: 65801e30a18349b226d1a34905155399
-      size: 9600
+      md5: 80ac2b73b425b9eecdcb69e523b314c2
+      size: 9948
     - path: featurize.py
       md5: 731b6255a6de9da725e76874b1ac7032
       size: 706
     outs:
     - path: documents-train-feats.csv
-      md5: 4aed2d905e2ef0c0d0d073ca75ad2f27
-      size: 47
+      md5: d4938b690c7f4333320192ec446e2b3c
+      size: 46
   train:
     cmd: python train.py documents-train-feats.csv model.json
     deps:
     - path: documents-train-feats.csv
-      md5: 4aed2d905e2ef0c0d0d073ca75ad2f27
-      size: 47
+      md5: d4938b690c7f4333320192ec446e2b3c
+      size: 46
     - path: train.py
       md5: eae47cc4ffd735d18cc9488c465bf1a6
       size: 1727
@@ -59,21 +59,21 @@ stages:
         train.weight_factor: 0.22714
     outs:
     - path: model.json
-      md5: a0adc892b90c380a2e6b9c1fa90a0f3b
-      size: 692
+      md5: c99dadd9227f3c65fe6591bb6ca64566
+      size: 691
   evaluate:
     cmd: python evaluate.py model.json documents-test.csv
     deps:
     - path: documents-test.csv
-      md5: 026ed9d5039c9ccebd00edeccb0a33c0
-      size: 2185
+      md5: 6d6792a5237e06cd4cf08efa0d85c7a4
+      size: 2221
     - path: evaluate.py
       md5: 8040207b5c47b3c95932c769fa725daf
       size: 41954
     - path: model.json
-      md5: a0adc892b90c380a2e6b9c1fa90a0f3b
-      size: 692
+      md5: c99dadd9227f3c65fe6591bb6ca64566
+      size: 691
     outs:
     - path: metrics.json
-      md5: eaa42583d322d8737965f55fc168aeea
-      size: 433
+      md5: cf838b61543b13ea192e76f0dda31036
+      size: 432
