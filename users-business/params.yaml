@@ -15,7 +15,7 @@ variables:
 preprocessing:
   seed: 280306941
   trees: 88
-  weight_factor: 0.15099
+  weight_factor: 0.23837
   passes: 1
   max_features: 376
   drop: 0.19105
@@ -29,6 +29,6 @@ settings:
   features: 1594
   min_split: 65
 model:
-  min_features: 2430
+  min_features: 3427
   batch_size: 1083
   seed: 54031165
