@@ -33,7 +33,7 @@ stages:
     cmd: python train.py users-train-feats.csv model.json
     deps:
     - path: train.py
-      md5: db91f3acf70c15156578ffc654989f07
+      md5: 021c078083260371ce87f2c1be061f2d
       size: 2244
     - path: users-train-feats.csv
       md5: abad0f2beb43742febcf03daee2ef1d3
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.39526
     outs:
     - path: model.json
-      md5: 0509deadaf429a9018c0931e1d4490f4
+      md5: db51206b7076f6c1ad40006e1fedf530
       size: 1222
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: db5e4b193b4778b247899220264e5c8a
       size: 41948
     - path: model.json
-      md5: 0509deadaf429a9018c0931e1d4490f4
+      md5: db51206b7076f6c1ad40006e1fedf530
       size: 1222
     - path: users-test.csv
       md5: a349250b672152faf934391d82f9c531
       size: 1318
     outs:
     - path: metrics.json
-      md5: 71d07e07640626cddae9fd88a87a48da
-      size: 457
+      md5: 0be2a15652b5105ad321350dd226a903
+      size: 458
