@@ -18,6 +18,6 @@ tagging:
 preprocessing:
   min_features: 121
   layers: 4
-  min_split: 51
+  min_split: 55
   num_est: 87
   max_features: 830
