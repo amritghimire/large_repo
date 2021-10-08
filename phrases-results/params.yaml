@@ -6,14 +6,14 @@ concurrent:
   tags: 39
 validation:
   batch_size: 663
-  split: 0.36513
+  split: 0.31784
 variables:
   random_state: 760009935
   threads: 6
 tagging:
   threads: 28
   min_features: 830
-  min_split: 44
+  min_split: 40
   epochs: 40
 preprocessing:
   min_features: 121
