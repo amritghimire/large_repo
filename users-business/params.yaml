@@ -26,7 +26,7 @@ settings:
   layers: 5
   batch_size: 663
   split: 0.07572
-  features: 1594
+  features: 1439
   min_split: 65
 model:
   min_features: 3427
