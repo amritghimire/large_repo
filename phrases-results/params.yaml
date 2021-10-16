@@ -2,7 +2,7 @@ concurrent:
   ngrams: 7
   split: 0.21945
   min_features: 1476
-  drop: 0.07713
+  drop: 0.0825
   tags: 39
 validation:
   batch_size: 663
