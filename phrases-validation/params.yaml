@@ -22,7 +22,7 @@ featurize:
   trees: 38
   tags: 58
   layers: 4
-  ngrams: 6
+  ngrams: 5
 tagging:
   dense: 604
   epochs: 11
