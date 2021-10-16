@@ -10,7 +10,7 @@ variables:
   min_features: 2563
   features: 2385
   learning_rate: 0.09653
-  batch_size: 569
+  batch_size: 616
   split: 0.39526
 preprocessing:
   seed: 280306941
