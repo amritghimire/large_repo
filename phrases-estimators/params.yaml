@@ -1,6 +1,6 @@
 model:
   num_est: 91
-  random_state: 976664582
+  random_state: 698713468
   max_features: 442
   dense: 346
 featurize:
