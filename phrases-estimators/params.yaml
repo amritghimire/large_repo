@@ -11,7 +11,7 @@ featurize:
   trees: 13
   split: 0.21908
 preprocessing:
-  max_features: 3905
+  max_features: 3830
   random_state: 286295522
   epochs: 42
   max_depth: 29
