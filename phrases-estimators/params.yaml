@@ -11,7 +11,7 @@ featurize:
   trees: 17
   split: 0.21908
 preprocessing:
-  max_features: 3830
+  max_features: 4750
   random_state: 286295522
   epochs: 42
   max_depth: 21
@@ -26,5 +26,5 @@ variables:
 concurrent:
   estimators: 152
   seed: 895714802
-  trees: 54
-  dense: 514
+  trees: 43
+  dense: 604
