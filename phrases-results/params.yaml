@@ -17,7 +17,7 @@ tagging:
   epochs: 40
 preprocessing:
   min_features: 121
-  layers: 4
+  layers: 3
   min_split: 55
   num_est: 87
   max_features: 562
