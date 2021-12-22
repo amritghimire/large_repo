@@ -5,7 +5,7 @@ prepare:
   num_est: 284
 train:
   min_split: 57
-  estimators: 49
+  estimators: 50
   min_features: 3103
   max_features: 1252
   columns: 13
@@ -13,9 +13,9 @@ train:
 model:
   random_state: 493655995
   max_depth: 29
-  split: 0.08844
+  split: 0.12122
   ngrams: 2
-  threads: 24
+  threads: 15
   max_features: 1204
   num_est: 96
   folds: 5
@@ -23,12 +23,12 @@ model:
 variables:
   sample: 0.67622
   num_est: 58
-  min_split: 76
+  min_split: 62
   columns: 15
   weight_factor: 0.22878
   features: 4194
 validation:
-  learning_rate: 0.04415
+  learning_rate: 0.0431
   weight_factor: 0.28561
   seed: 61322272
   features: 1179
