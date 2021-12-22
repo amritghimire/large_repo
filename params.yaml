@@ -5,8 +5,8 @@ prepare:
   epochs: 69
   trees: 78
   batch_size: 402
-  layers: 1
-  learning_rate: 0.12076
+  layers: 2
+  learning_rate: 0.09913
 concurrent:
   columns: 70
   sample: 1.0979
