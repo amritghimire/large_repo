@@ -1,5 +1,5 @@
 validation:
-  columns: 24
+  columns: 35
   dense: 153
 prepare:
   epochs: 69
