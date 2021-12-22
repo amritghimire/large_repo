@@ -14,7 +14,7 @@ concurrent:
   layers: 4
   min_split: 24
 tagging:
-  drop: 0.32541
+  drop: 0.26048
   features: 4392
   batch_size: 145
   tags: 116
