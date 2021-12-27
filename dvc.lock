@@ -7,8 +7,8 @@ stages:
       md5: ef694a0c1d7221934c01a23f8dc4b6b7
       size: 20900
     - path: split.py
-      md5: ffb35995ec198ddc6d09f7c70daf8b17
-      size: 1337
+      md5: d1a36f7c3704e2d82f2e00de3a0a3c89
+      size: 1339
     params:
       params.yaml:
         prepare.batch_size: 402
@@ -70,8 +70,8 @@ stages:
     cmd: python evaluate.py model.json sentences-test.csv
     deps:
     - path: evaluate.py
-      md5: 71f2116bd16c65ab82105181c03044b9
-      size: 42009
+      md5: b1f8dfd6d8753bef317569741d1efb1c
+      size: 42010
     - path: model.json
       md5: 70f842590ada5f36edf73f6951652357
       size: 619
