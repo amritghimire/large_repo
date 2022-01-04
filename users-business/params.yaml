@@ -8,7 +8,7 @@ concurrent:
   num_est: 132
 variables:
   min_features: 2563
-  features: 2385
+  features: 2257
   learning_rate: 0.09653
   batch_size: 517
   split: 0.39526
