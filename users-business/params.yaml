@@ -2,7 +2,7 @@ concurrent:
   layers: 4
   dense: 739
   trees: 73
-  features: 2427
+  features: 1729
   max_depth: 18
   threads: 17
   num_est: 132
