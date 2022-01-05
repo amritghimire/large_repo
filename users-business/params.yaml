@@ -9,15 +9,15 @@ concurrent:
 variables:
   min_features: 2563
   features: 2257
-  learning_rate: 0.09653
+  learning_rate: 0.07588
   batch_size: 517
-  split: 0.39526
+  split: 0.39322
 preprocessing:
   seed: 280306941
   trees: 88
   weight_factor: 0.23837
   passes: 1
-  max_features: 376
+  max_features: 289
   drop: 0.19105
   num_est: 90
   ngrams: 1
@@ -29,6 +29,6 @@ settings:
   features: 1439
   min_split: 65
 model:
-  min_features: 3427
+  min_features: 3583
   batch_size: 1083
   seed: 37733230
