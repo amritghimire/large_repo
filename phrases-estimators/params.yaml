@@ -4,7 +4,7 @@ model:
   max_features: 442
   dense: 346
 featurize:
-  sample: 0.83799
+  sample: 0.69157
   min_split: 13
   tags: 107
   random_state: 21585975
