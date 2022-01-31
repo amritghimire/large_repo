@@ -1,6 +1,6 @@
 model:
   num_est: 91
-  random_state: 698713468
+  random_state: 771416303
   max_features: 442
   dense: 346
 featurize:
@@ -11,7 +11,7 @@ featurize:
   trees: 15
   split: 0.19544
 preprocessing:
-  max_features: 4750
+  max_features: 4462
   random_state: 286295522
   epochs: 42
   max_depth: 21
