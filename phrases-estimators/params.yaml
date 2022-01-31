@@ -11,20 +11,20 @@ featurize:
   trees: 15
   split: 0.19544
 preprocessing:
-  max_features: 4462
+  max_features: 3240
   random_state: 286295522
   epochs: 42
   max_depth: 21
   folds: 13
-  dense: 452
-  split: 0.61124
+  dense: 402
+  split: 0.5734
 variables:
   trees: 86
   tags: 24
-  min_features: 2046
+  min_features: 1971
   min_split: 74
 concurrent:
-  estimators: 152
+  estimators: 137
   seed: 895714802
   trees: 43
   dense: 604
