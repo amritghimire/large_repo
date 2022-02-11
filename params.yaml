@@ -11,7 +11,7 @@ concurrent:
   columns: 57
   sample: 1.02849
   batch_size: 136
-  layers: 4
+  layers: 7
   min_split: 28
 tagging:
   drop: 0.26048
