@@ -8,11 +8,11 @@ train:
   layers: 2
   num_est: 229
   seed: 229488276
-  tags: 65
+  tags: 47
   batch_size: 493
   trees: 18
 concurrent:
-  trees: 57
+  trees: 52
   features: 1972
   epochs: 64
   layers: 4
@@ -24,7 +24,7 @@ featurize:
   layers: 4
   ngrams: 6
 tagging:
-  dense: 519
+  dense: 447
   epochs: 13
   sample: 0.18998
   weight_factor: 0.3237
