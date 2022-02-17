@@ -5,11 +5,11 @@ variables:
 train:
   features: 1890
   folds: 2
-  layers: 2
+  layers: 1
   num_est: 229
   seed: 229488276
   tags: 47
-  batch_size: 493
+  batch_size: 653
   trees: 18
 concurrent:
   trees: 52
