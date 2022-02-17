@@ -24,7 +24,7 @@ featurize:
   layers: 4
   ngrams: 5
 tagging:
-  dense: 609
+  dense: 566
   epochs: 13
   sample: 0.18998
   weight_factor: 0.3237
