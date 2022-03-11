@@ -7,7 +7,7 @@ concurrent:
 model:
   tags: 100
   estimators: 21
-  columns: 27
+  columns: 20
   passes: 131
   min_split: 24
   dense: 233
@@ -22,6 +22,6 @@ settings:
   passes: 60
 validation:
   split: 0.39586
-  min_split: 47
+  min_split: 48
   layers: 2
   num_est: 144
