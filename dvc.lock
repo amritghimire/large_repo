@@ -13,7 +13,7 @@ stages:
       params.yaml:
         prepare.batch_size: 399
         prepare.epochs: 96
-        prepare.layers: 1
+        prepare.layers: 2
         prepare.learning_rate: 0.1349
         prepare.trees: 74
     outs:
