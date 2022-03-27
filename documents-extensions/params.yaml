@@ -11,7 +11,7 @@ concurrent:
   features: 2960
   estimators: 175
 train:
-  estimators: 47
+  estimators: 54
   batch_size: 652
   weight_factor: 0.22714
   epochs: 33
