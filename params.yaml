@@ -15,7 +15,7 @@ concurrent:
   min_split: 28
 tagging:
   drop: 0.26048
-  features: 3825
+  features: 3671
   batch_size: 125
   tags: 116
   columns: 16
