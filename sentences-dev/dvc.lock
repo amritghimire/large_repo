@@ -67,7 +67,7 @@ stages:
         validation.ngrams: 4
         validation.seed: 61322272
         validation.weight_factor: 0.28561
-        variables.columns: 15
+        variables.columns: 13
         variables.features: 4194
         variables.min_split: 62
         variables.num_est: 58
@@ -75,7 +75,7 @@ stages:
         variables.weight_factor: 0.22878
     outs:
     - path: model.json
-      md5: bb561b1ed8d1658dacc55f6ad401f761
+      md5: ab6bc23c240605953514b6bbeeea761c
       size: 1078
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
@@ -84,12 +84,12 @@ stages:
       md5: edc0cd0dd7a1916f47f847bd1b045cad
       size: 42031
     - path: model.json
-      md5: bb561b1ed8d1658dacc55f6ad401f761
+      md5: ab6bc23c240605953514b6bbeeea761c
       size: 1078
     - path: sentences-test.csv
       md5: 03a4ea648e3e252a9f92370491b40d12
       size: 1691
     outs:
     - path: metrics.json
-      md5: c5c83f909052e0f00ea38628f21efc43
-      size: 431
+      md5: 53c4078780e59a68a1d774331cba5287
+      size: 430
