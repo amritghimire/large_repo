@@ -3,7 +3,7 @@ tagging:
   tags: 116
   epochs: 20
   sample: 0.80045
-  split: 0.12489
+  split: 0.11513
 settings:
   layers: 2
   random_state: 794927742
