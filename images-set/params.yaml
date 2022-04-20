@@ -5,12 +5,12 @@ concurrent:
   columns: 44
   features: 1503
 model:
-  tags: 100
-  estimators: 21
+  tags: 102
+  estimators: 22
   columns: 20
   passes: 131
-  min_split: 24
-  dense: 191
+  min_split: 38
+  dense: 176
 tagging:
   learning_rate: 0.0573
   features: 3408
@@ -22,6 +22,6 @@ settings:
   passes: 60
 validation:
   split: 0.39586
-  min_split: 40
+  min_split: 46
   layers: 2
   num_est: 144
