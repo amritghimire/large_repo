@@ -1,5 +1,5 @@
 validation:
-  columns: 32
+  columns: 35
   dense: 196
 prepare:
   epochs: 96
@@ -16,9 +16,9 @@ concurrent:
 tagging:
   drop: 0.26048
   features: 3671
-  batch_size: 115
-  tags: 116
-  columns: 16
+  batch_size: 164
+  tags: 143
+  columns: 17
 model:
   drop: 0.22906
   min_features: 103
