@@ -5,7 +5,7 @@ concurrent:
   features: 2275
   max_depth: 18
   threads: 17
-  num_est: 132
+  num_est: 121
 variables:
   min_features: 2563
   features: 2257
@@ -15,7 +15,7 @@ variables:
 preprocessing:
   seed: 280306941
   trees: 88
-  weight_factor: 0.23837
+  weight_factor: 0.1627
   passes: 1
   max_features: 289
   drop: 0.19105
