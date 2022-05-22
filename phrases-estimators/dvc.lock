@@ -44,8 +44,8 @@ stages:
       md5: ffb66487ed2e0d7648eba50389b8cb31
       size: 282
     - path: train.py
-      md5: 2a15a67d271c74c0fe47b8a2b2f0ac56
-      size: 1846
+      md5: 3f2fb812f6b9301acdf9fbccd90d4baa
+      size: 1849
     params:
       params.yaml:
         concurrent.dense: 604
