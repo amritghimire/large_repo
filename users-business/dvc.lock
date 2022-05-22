@@ -59,11 +59,11 @@ stages:
         preprocessing.split: 0.26817
         preprocessing.trees: 88
         preprocessing.weight_factor: 0.1627
-        settings.batch_size: 663
+        settings.batch_size: 874
         settings.features: 1439
         settings.layers: 6
         settings.min_split: 65
-        settings.split: 0.07572
+        settings.split: 0.075
         variables.batch_size: 517
         variables.features: 2257
         variables.learning_rate: 0.07588
@@ -71,8 +71,8 @@ stages:
         variables.split: 0.39322
     outs:
     - path: model.json
-      md5: 486d5adcfda0f0d3ceb0cda48f73c460
-      size: 1221
+      md5: 9dc6ee02bdfd89edf8b71b27ffc1199a
+      size: 1219
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
     deps:
@@ -80,12 +80,12 @@ stages:
       md5: 964ac0dd52849f4076140ffff1d46b1f
       size: 41951
     - path: model.json
-      md5: 486d5adcfda0f0d3ceb0cda48f73c460
-      size: 1221
+      md5: 9dc6ee02bdfd89edf8b71b27ffc1199a
+      size: 1219
     - path: users-test.csv
       md5: 8e96e6f65b1914992eefe5bfcd9f30fe
       size: 1406
     outs:
     - path: metrics.json
-      md5: 3a634a86af4587769f6d5bc16685a721
-      size: 462
+      md5: c1c136687baa81fae7bba41cb2aa798d
+      size: 463
