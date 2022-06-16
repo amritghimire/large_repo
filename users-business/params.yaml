@@ -4,7 +4,7 @@ concurrent:
   trees: 73
   features: 2275
   max_depth: 18
-  threads: 17
+  threads: 15
   num_est: 121
 variables:
   min_features: 1857
@@ -15,7 +15,7 @@ variables:
 preprocessing:
   seed: 280306941
   trees: 88
-  weight_factor: 0.1627
+  weight_factor: 0.21503
   passes: 1
   max_features: 289
   drop: 0.19105
@@ -31,4 +31,4 @@ settings:
 model:
   min_features: 3583
   batch_size: 1083
-  seed: 37733230
+  seed: 50054803
