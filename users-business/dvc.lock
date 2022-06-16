@@ -7,15 +7,15 @@ stages:
       md5: ac802d5dd208d9344359a898eb61256b
       size: 728
     - path: users.csv
-      md5: 644eec45d87055dd98e5f5e9f0c5d846
-      size: 7005
+      md5: 4f453a6b0ad35647df7a9c379e33aa47
+      size: 7620
     outs:
     - path: users-test.csv
-      md5: 8e96e6f65b1914992eefe5bfcd9f30fe
-      size: 1406
+      md5: e8e8a465b78ef0664134a1cfcf778935
+      size: 1494
     - path: users-train.csv
-      md5: b94dba16e96bf77fe2095765a930d1d1
-      size: 5599
+      md5: 5b0ab9dac4bb369af5ac85186e3da112
+      size: 6126
   featurize:
     cmd: python featurize.py users-train.csv users-train-feats.csv
     deps:
@@ -23,11 +23,11 @@ stages:
       md5: 04cbe50874e2c5ef081b462ab647aaf4
       size: 704
     - path: users-train.csv
-      md5: b94dba16e96bf77fe2095765a930d1d1
-      size: 5599
+      md5: 5b0ab9dac4bb369af5ac85186e3da112
+      size: 6126
     outs:
     - path: users-train-feats.csv
-      md5: a11f6239e17ab9fabd71d863a9f652a2
+      md5: d165c42435a3b2cef3f1eb0f3d7685bc
       size: 47
   train:
     cmd: python train.py users-train-feats.csv model.json
@@ -36,7 +36,7 @@ stages:
       md5: 3ed367b237766e7dffdb400816f37313
       size: 2244
     - path: users-train-feats.csv
-      md5: a11f6239e17ab9fabd71d863a9f652a2
+      md5: d165c42435a3b2cef3f1eb0f3d7685bc
       size: 47
     params:
       params.yaml:
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.39322
     outs:
     - path: model.json
-      md5: e214b3aeeb319f28fb5d3bc4c0f7dd4f
+      md5: 824ecab012f86d52eb543974ac694c0d
       size: 1220
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: 964ac0dd52849f4076140ffff1d46b1f
       size: 41951
     - path: model.json
-      md5: e214b3aeeb319f28fb5d3bc4c0f7dd4f
+      md5: 824ecab012f86d52eb543974ac694c0d
       size: 1220
     - path: users-test.csv
-      md5: 8e96e6f65b1914992eefe5bfcd9f30fe
-      size: 1406
+      md5: e8e8a465b78ef0664134a1cfcf778935
+      size: 1494
     outs:
     - path: metrics.json
-      md5: 79bd1c00305ce33175a1dbbfe9ef2d5e
+      md5: bac29c2469607c27e6d139ab08d8fe53
       size: 462
