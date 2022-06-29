@@ -2,7 +2,7 @@ model:
   num_est: 91
   random_state: 771416303
   max_features: 442
-  dense: 346
+  dense: 310
 featurize:
   sample: 0.57763
   min_split: 12
@@ -21,10 +21,10 @@ preprocessing:
 variables:
   trees: 86
   tags: 24
-  min_features: 1971
+  min_features: 1826
   min_split: 74
 concurrent:
-  estimators: 137
-  seed: 895714802
+  estimators: 142
+  seed: 966664176
   trees: 43
   dense: 604
