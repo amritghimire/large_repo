@@ -1,13 +1,13 @@
 concurrent:
   ngrams: 4
-  random_state: 75378570
-  split: 0.20094
+  random_state: 65020193
+  split: 0.2271
   columns: 44
-  features: 1503
+  features: 1150
 model:
   tags: 111
   estimators: 22
-  columns: 20
+  columns: 21
   passes: 131
   min_split: 38
   dense: 245
