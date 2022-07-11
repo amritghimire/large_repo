@@ -8,18 +8,18 @@ prepare:
   layers: 2
   learning_rate: 0.14029
 concurrent:
-  columns: 68
+  columns: 81
   sample: 0.79179
   batch_size: 136
   layers: 7
   min_split: 31
 tagging:
   drop: 0.26048
-  features: 3671
-  batch_size: 164
+  features: 4092
+  batch_size: 138
   tags: 143
   columns: 17
 model:
   drop: 0.22906
-  min_features: 103
+  min_features: 82
   max_features: 1759
