@@ -11,14 +11,14 @@ concurrent:
   columns: 81
   sample: 0.79179
   batch_size: 136
-  layers: 7
+  layers: 4
   min_split: 31
 tagging:
   drop: 0.26048
   features: 4092
   batch_size: 138
   tags: 143
-  columns: 17
+  columns: 14
 model:
   drop: 0.22906
   min_features: 82
