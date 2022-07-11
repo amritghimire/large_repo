@@ -4,8 +4,8 @@ stages:
     cmd: python split.py sentences.csv sentences-train.csv sentences-test.csv
     deps:
     - path: sentences.csv
-      md5: 16c43809a8d1c205b9013188e602d0ec
-      size: 21515
+      md5: d05db413a39d5f835335bac68f1139e6
+      size: 22026
     - path: split.py
       md5: d1a36f7c3704e2d82f2e00de3a0a3c89
       size: 1339
@@ -18,11 +18,11 @@ stages:
         prepare.trees: 59
     outs:
     - path: sentences-test.csv
-      md5: f2dd87d424ef058509ab6013dd0e66be
-      size: 3978
+      md5: 72f166a56aa0f73549eb2d56b29ef80a
+      size: 4155
     - path: sentences-train.csv
-      md5: 94d4bf5fb8cbc7fe3df223268818140c
-      size: 17537
+      md5: 1c61eb8cfd171fee759c12697e2c7238
+      size: 17871
   featurize:
     cmd: python featurize.py sentences-train.csv sentences-train-feats.csv
     deps:
@@ -30,18 +30,18 @@ stages:
       md5: 9a7dc12a125458110ceb2371a8076586
       size: 713
     - path: sentences-train.csv
-      md5: 94d4bf5fb8cbc7fe3df223268818140c
-      size: 17537
+      md5: 1c61eb8cfd171fee759c12697e2c7238
+      size: 17871
     outs:
     - path: sentences-train-feats.csv
-      md5: 7f902e439466cbf0d27234d6144d1f14
-      size: 46
+      md5: da6fc4c10c356f31754d5daa0ec30940
+      size: 48
   train:
     cmd: python train.py sentences-train-feats.csv model.json
     deps:
     - path: sentences-train-feats.csv
-      md5: 7f902e439466cbf0d27234d6144d1f14
-      size: 46
+      md5: da6fc4c10c356f31754d5daa0ec30940
+      size: 48
     - path: train.py
       md5: 3df673e2c2cb44acc1bfab99a96b3d6e
       size: 1672
@@ -64,8 +64,8 @@ stages:
         validation.dense: 196
     outs:
     - path: model.json
-      md5: 7685e22378cb87b72669586ac4ce1f9c
-      size: 617
+      md5: 0dce64eb6d05884176c73a8c985676ec
+      size: 619
   evaluate:
     cmd: python evaluate.py model.json sentences-test.csv
     deps:
@@ -73,12 +73,12 @@ stages:
       md5: b1f8dfd6d8753bef317569741d1efb1c
       size: 42010
     - path: model.json
-      md5: 7685e22378cb87b72669586ac4ce1f9c
-      size: 617
+      md5: 0dce64eb6d05884176c73a8c985676ec
+      size: 619
     - path: sentences-test.csv
-      md5: f2dd87d424ef058509ab6013dd0e66be
-      size: 3978
+      md5: 72f166a56aa0f73549eb2d56b29ef80a
+      size: 4155
     outs:
     - path: metrics.json
-      md5: b06b8c5b5cbc444df7524b95c7797bba
+      md5: 1ff874ee553d45c7e0dcbb7c7467f60e
       size: 431
