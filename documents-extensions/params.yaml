@@ -1,18 +1,18 @@
 tagging:
-  trees: 77
+  trees: 82
   epochs: 25
   folds: 14
   estimators: 223
-  seed: 473825141
+  seed: 567277192
 concurrent:
   weight_factor: 0.1887
   ngrams: 4
   passes: 2
-  features: 2960
+  features: 2428
   estimators: 175
 train:
-  estimators: 54
-  batch_size: 652
+  estimators: 51
+  batch_size: 707
   weight_factor: 0.22714
   epochs: 33
 settings:
