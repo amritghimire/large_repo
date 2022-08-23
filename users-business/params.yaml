@@ -2,7 +2,7 @@ concurrent:
   layers: 4
   dense: 739
   trees: 73
-  features: 2275
+  features: 1857
   max_depth: 18
   threads: 15
   num_est: 121
@@ -19,7 +19,7 @@ preprocessing:
   passes: 1
   max_features: 289
   drop: 0.19105
-  num_est: 90
+  num_est: 110
   ngrams: 1
   split: 0.26817
 settings:
@@ -27,7 +27,7 @@ settings:
   batch_size: 874
   split: 0.075
   features: 1439
-  min_split: 65
+  min_split: 99
 model:
   min_features: 3583
   batch_size: 1083
