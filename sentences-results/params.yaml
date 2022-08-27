@@ -17,10 +17,10 @@ concurrent:
   dense: 412
   estimators: 179
 featurize:
-  random_state: 467997249
+  random_state: 624170813
   batch_size: 917
-  layers: 1
-  weight_factor: 0.10489
+  layers: 2
+  weight_factor: 0.08478
 model:
   trees: 11
   estimators: 176
