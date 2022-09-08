@@ -10,7 +10,7 @@ variables:
   min_features: 1857
   features: 2257
   learning_rate: 0.07588
-  batch_size: 517
+  batch_size: 674
   split: 0.39322
 preprocessing:
   seed: 280306941
@@ -23,8 +23,8 @@ preprocessing:
   ngrams: 1
   split: 0.26817
 settings:
-  layers: 6
-  batch_size: 874
+  layers: 7
+  batch_size: 721
   split: 0.075
   features: 1439
   min_split: 99
