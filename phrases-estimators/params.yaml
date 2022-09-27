@@ -4,12 +4,12 @@ model:
   max_features: 442
   dense: 310
 featurize:
-  sample: 0.57763
+  sample: 0.91903
   min_split: 17
   tags: 110
   random_state: 17441692
-  trees: 17
-  split: 0.2216
+  trees: 11
+  split: 0.1706
 preprocessing:
   max_features: 3240
   random_state: 286295522
