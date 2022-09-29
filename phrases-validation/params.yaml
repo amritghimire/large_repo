@@ -7,15 +7,15 @@ train:
   folds: 2
   layers: 1
   num_est: 229
-  seed: 229488276
+  seed: 211220253
   tags: 52
   batch_size: 653
-  trees: 18
+  trees: 22
 concurrent:
   trees: 52
   features: 1972
   epochs: 64
-  layers: 7
+  layers: 6
 featurize:
   threads: 25
   estimators: 98
