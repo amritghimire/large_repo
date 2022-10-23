@@ -73,8 +73,8 @@ stages:
     cmd: python evaluate.py model.json sentences-test.csv
     deps:
     - path: evaluate.py
-      md5: dde5f5190c98c2c44285f6f60e16f1c9
-      size: 41861
+      md5: 662859dea1bc667c0c9556a6a87ce9d4
+      size: 41862
     - path: model.json
       md5: 1f166e6847c0cda244b2ba861af30884
       size: 950
