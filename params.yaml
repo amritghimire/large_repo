@@ -10,7 +10,7 @@ prepare:
 concurrent:
   columns: 81
   sample: 0.79179
-  batch_size: 136
+  batch_size: 118
   layers: 4
   min_split: 31
 tagging:
