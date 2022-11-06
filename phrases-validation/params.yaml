@@ -13,8 +13,8 @@ train:
   trees: 22
 concurrent:
   trees: 52
-  features: 1972
-  epochs: 64
+  features: 2526
+  epochs: 63
   layers: 6
 featurize:
   threads: 25
@@ -25,7 +25,7 @@ featurize:
   ngrams: 5
 tagging:
   dense: 534
-  epochs: 13
+  epochs: 11
   sample: 0.28409
   weight_factor: 0.29708
   max_depth: 4
