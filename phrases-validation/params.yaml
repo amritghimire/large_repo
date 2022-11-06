@@ -6,16 +6,16 @@ train:
   features: 1890
   folds: 2
   layers: 1
-  num_est: 229
+  num_est: 168
   seed: 211220253
-  tags: 52
+  tags: 47
   batch_size: 653
   trees: 22
 concurrent:
   trees: 52
-  features: 2526
+  features: 2220
   epochs: 63
-  layers: 6
+  layers: 5
 featurize:
   threads: 25
   estimators: 98
@@ -29,4 +29,4 @@ tagging:
   sample: 0.28409
   weight_factor: 0.29708
   max_depth: 4
-  ngrams: 5
+  ngrams: 4
