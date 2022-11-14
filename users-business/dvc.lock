@@ -4,18 +4,18 @@ stages:
     cmd: python split.py users.csv users-train.csv users-test.csv
     deps:
     - path: split.py
-      md5: ac802d5dd208d9344359a898eb61256b
-      size: 728
+      md5: f20164b56565810ecbd9c46dab4f7d0c
+      size: 729
     - path: users.csv
-      md5: 864e5f24f07fe9aaeec99e20ab7023a5
-      size: 8004
+      md5: d157d6cf8c51f8e840714490d9db376c
+      size: 8425
     outs:
     - path: users-test.csv
-      md5: d7323f706ca5f1fdee26c2ea3ffaa233
-      size: 1634
+      md5: aaf8c7ca9f2bc053bcfbb59ce8d6d45d
+      size: 1723
     - path: users-train.csv
-      md5: 7c6c966e218da318b44dd82016fb08ca
-      size: 6370
+      md5: fb103ec3359f2fa972ffeadb5ea88149
+      size: 6702
   featurize:
     cmd: python featurize.py users-train.csv users-train-feats.csv
     deps:
@@ -23,20 +23,20 @@ stages:
       md5: fb69c832b09fd8dedcf6a7856e47c171
       size: 707
     - path: users-train.csv
-      md5: 7c6c966e218da318b44dd82016fb08ca
-      size: 6370
+      md5: fb103ec3359f2fa972ffeadb5ea88149
+      size: 6702
     outs:
     - path: users-train-feats.csv
-      md5: 424214dcca5fcffa12b794b459734022
+      md5: 9e39a1d1b03148d4f47ba94c241e1941
       size: 47
   train:
     cmd: python train.py users-train-feats.csv model.json
     deps:
     - path: train.py
-      md5: 6b746f995cccae83348922b5cc5ac0bf
-      size: 2245
+      md5: 69f8892bc02230ce9c7abadd109b7bec
+      size: 2246
     - path: users-train-feats.csv
-      md5: 424214dcca5fcffa12b794b459734022
+      md5: 9e39a1d1b03148d4f47ba94c241e1941
       size: 47
     params:
       params.yaml:
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.39322
     outs:
     - path: model.json
-      md5: c3647496af7e020602b2d768c8f43eb9
+      md5: d81e0d67308e272fcd08464613ce0ab2
       size: 1220
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: 964ac0dd52849f4076140ffff1d46b1f
       size: 41951
     - path: model.json
-      md5: c3647496af7e020602b2d768c8f43eb9
+      md5: d81e0d67308e272fcd08464613ce0ab2
       size: 1220
     - path: users-test.csv
-      md5: d7323f706ca5f1fdee26c2ea3ffaa233
-      size: 1634
+      md5: aaf8c7ca9f2bc053bcfbb59ce8d6d45d
+      size: 1723
     outs:
     - path: metrics.json
-      md5: e9136c04c281b82b408a741962f9f3ee
-      size: 462
+      md5: 24aed4bf0696eb24acb067e4ffdf96c8
+      size: 461
