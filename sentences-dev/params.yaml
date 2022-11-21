@@ -30,7 +30,7 @@ variables:
 validation:
   learning_rate: 0.0431
   weight_factor: 0.28561
-  seed: 61322272
+  seed: 59277662
   features: 1304
   ngrams: 4
   min_split: 48
