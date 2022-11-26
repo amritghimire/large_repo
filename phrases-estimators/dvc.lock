@@ -54,7 +54,7 @@ stages:
         concurrent.trees: 48
         model.dense: 392
         model.max_features: 600
-        model.num_est: 91
+        model.num_est: 88
         model.random_state: 771416303
         preprocessing.dense: 402
         preprocessing.epochs: 58
@@ -62,15 +62,15 @@ stages:
         preprocessing.max_depth: 21
         preprocessing.max_features: 3296
         preprocessing.random_state: 286295522
-        preprocessing.split: 0.5734
+        preprocessing.split: 0.45484
         variables.min_features: 1826
         variables.min_split: 74
         variables.tags: 24
-        variables.trees: 86
+        variables.trees: 62
     outs:
     - path: model.json
-      md5: db385d0df2ee6905e40feb623f3c4c96
-      size: 1050
+      md5: 157c535c846c5feddd9b43304c4067d1
+      size: 1051
   evaluate:
     cmd: python evaluate.py model.json phrases-test.csv
     deps:
@@ -78,12 +78,12 @@ stages:
       md5: 3a453de105c48c21d118897c6bec69ee
       size: 41888
     - path: model.json
-      md5: db385d0df2ee6905e40feb623f3c4c96
-      size: 1050
+      md5: 157c535c846c5feddd9b43304c4067d1
+      size: 1051
     - path: phrases-test.csv
       md5: bf28aefa9365795ff6d88dda08f0315a
       size: 1490
     outs:
     - path: metrics.json
-      md5: 2beaebe0e82041b12be14b82d8406d24
-      size: 355
+      md5: 9bbf4a80deb8d6fbf28796d145032b21
+      size: 354
