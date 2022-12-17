@@ -27,4 +27,4 @@ concurrent:
   estimators: 142
   seed: 966664176
   trees: 48
-  dense: 402
+  dense: 465
