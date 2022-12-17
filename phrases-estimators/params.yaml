@@ -6,7 +6,7 @@ model:
 featurize:
   sample: 0.91903
   min_split: 17
-  tags: 110
+  tags: 87
   random_state: 17441692
   trees: 14
   split: 0.1706
