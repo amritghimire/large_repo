@@ -29,6 +29,6 @@ settings:
   features: 1439
   min_split: 99
 model:
-  min_features: 3583
+  min_features: 2381
   batch_size: 893
   seed: 50054803

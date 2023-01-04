@@ -4,8 +4,8 @@ stages:
     cmd: python split.py users.csv users-train.csv users-test.csv
     deps:
     - path: split.py
-      md5: f20164b56565810ecbd9c46dab4f7d0c
-      size: 729
+      md5: 8040fd69e53c0bd4aab975b6991296ee
+      size: 730
     - path: users.csv
       md5: 066360a4afe811e4b5ed1e10dc41acaf
       size: 8820
@@ -48,7 +48,7 @@ stages:
         concurrent.threads: 11
         concurrent.trees: 73
         model.batch_size: 893
-        model.min_features: 3583
+        model.min_features: 2381
         model.seed: 50054803
         preprocessing.drop: 0.19105
         preprocessing.max_features: 289
@@ -71,7 +71,7 @@ stages:
         variables.split: 0.39322
     outs:
     - path: model.json
-      md5: 90dfbf171726713312da9cf0f6b4b1b3
+      md5: f49dbea036c324af2fdd8f60eb0bbbab
       size: 1220
   evaluate:
     cmd: python evaluate.py model.json users-test.csv
@@ -80,12 +80,12 @@ stages:
       md5: 964ac0dd52849f4076140ffff1d46b1f
       size: 41951
     - path: model.json
-      md5: 90dfbf171726713312da9cf0f6b4b1b3
+      md5: f49dbea036c324af2fdd8f60eb0bbbab
       size: 1220
     - path: users-test.csv
       md5: da13d09ec9814b811220c875cd49a79d
       size: 1749
     outs:
     - path: metrics.json
-      md5: 1ade4c2594c7d9e985f04ffd12b9bffd
-      size: 459
+      md5: f8e187f9ee8c9a1253f7b8784ce84ced
+      size: 457
