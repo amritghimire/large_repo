@@ -13,7 +13,7 @@ stages:
       params.yaml:
         prepare.dense: 365
         prepare.min_split: 50
-        prepare.num_est: 254
+        prepare.num_est: 213
         prepare.passes: 17
     outs:
     - path: sentences-test.csv
@@ -81,8 +81,8 @@ stages:
     cmd: python evaluate.py model.json sentences-test.csv
     deps:
     - path: evaluate.py
-      md5: d788aee020877cf512d34e083143fa2c
-      size: 42036
+      md5: 443335186bfa26e8c737ada7b5a688b3
+      size: 42037
     - path: model.json
       md5: 2b311d3bd7dd2bb52222bc83beeb4ca2
       size: 1078
