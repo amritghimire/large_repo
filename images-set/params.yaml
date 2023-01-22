@@ -1,5 +1,5 @@
 concurrent:
-  ngrams: 4
+  ngrams: 5
   random_state: 65020193
   split: 0.2271
   columns: 44
