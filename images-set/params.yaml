@@ -14,7 +14,7 @@ model:
 tagging:
   learning_rate: 0.0573
   features: 3408
-  min_features: 3361
+  min_features: 3122
 settings:
   batch_size: 585
   num_est: 85
