@@ -13,7 +13,7 @@ train:
 model:
   random_state: 493655995
   max_depth: 29
-  split: 0.12122
+  split: 0.11732
   ngrams: 2
   threads: 15
   max_features: 1204
